@@ -316,7 +316,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // PinCode
   {
     'llyz0duv': {
-      'en': 'Enter the 4-digit code sent to you at 07539 123456 ',
+      'en': 'Enter the 4-digit code sent to you at Mobile phone',
       'es': 'Ingresa el código de 4 dígitos que te enviaron al 07539 123456',
       'gl': 'Introduce o código de 4 díxitos que che enviaron ao 07539 123456',
     },

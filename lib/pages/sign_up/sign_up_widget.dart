@@ -8,7 +8,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:aligned_dialog/aligned_dialog.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -200,18 +199,8 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(0.0),
-                                                        child:
-                                                            CachedNetworkImage(
-                                                          fadeInDuration:
-                                                              Duration(
-                                                                  milliseconds:
-                                                                      500),
-                                                          fadeOutDuration:
-                                                              Duration(
-                                                                  milliseconds:
-                                                                      500),
-                                                          imageUrl: _model
-                                                              .selectedCounty!
+                                                        child: Image.network(
+                                                          _model.selectedCounty!
                                                               .image,
                                                           width: 32.0,
                                                           height: 20.0,

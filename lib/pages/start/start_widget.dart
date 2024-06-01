@@ -192,11 +192,10 @@ class _StartWidgetState extends State<StartWidget>
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(14.0),
                                     child: Image.asset(
-                                      'assets/images/?fbid=674901479214898&set=pcb.674902865881426',
+                                      'assets/images/Captura_de_pantalla_2024-06-01_091458.png',
                                       width: 100.0,
                                       height: 77.0,
                                       fit: BoxFit.cover,
-                                      alignment: Alignment(0.0, 0.0),
                                     ),
                                   ),
                                   FFButtonWidget(

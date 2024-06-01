@@ -25,8 +25,8 @@ class FFAppState extends ChangeNotifier {
   }
 
   List<CountryStruct> _CountryCode = [
-    CountryStruct.fromSerializableMap(jsonDecode(
-        '{\"Name\":\"Spain\",\"DialCode\":\"+34\",\"Image\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/bmazu9pdyhmy/Vector.png\"}'))
+    CountryStruct.fromSerializableMap(
+        jsonDecode('{\"Name\":\"Spain\",\"DialCode\":\"+34\",\"Image\":\"\"}'))
   ];
   List<CountryStruct> get CountryCode => _CountryCode;
   set CountryCode(List<CountryStruct> _value) {
