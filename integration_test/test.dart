@@ -11,6 +11,8 @@ import 'package:gal_go/flutter_flow/flutter_flow_util.dart';
 
 import 'package:provider/provider.dart';
 import 'package:gal_go/backend/firebase/firebase_config.dart';
+import 'package:gal_go/auth/firebase_auth/auth_util.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 void main() async {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +25,7 @@ void main() async {
   });
 
   setUp(() async {
+    await authManager.signOut();
     FFAppState.reset();
     final appState = FFAppState();
     await appState.initializePersistedState();

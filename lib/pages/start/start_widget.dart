@@ -196,6 +196,7 @@ class _StartWidgetState extends State<StartWidget>
                                       width: 100.0,
                                       height: 77.0,
                                       fit: BoxFit.cover,
+                                      alignment: Alignment(0.0, 0.0),
                                     ),
                                   ),
                                   FFButtonWidget(
