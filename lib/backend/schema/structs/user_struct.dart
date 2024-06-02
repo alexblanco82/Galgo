@@ -3,9 +3,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '/backend/schema/util/firestore_util.dart';
-import '/backend/schema/util/schema_util.dart';
 
-import 'index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 class UserStruct extends FFFirebaseStruct {
@@ -23,7 +21,7 @@ class UserStruct extends FFFirebaseStruct {
   set name(String? val) => _name = val;
   bool hasName() => _name != null;
 
-  // "Email" field.
+  // "email" field.
   String? _email;
   String get email => _email ?? '';
   set email(String? val) => _email = val;
@@ -31,7 +29,7 @@ class UserStruct extends FFFirebaseStruct {
 
   static UserStruct fromMap(Map<String, dynamic> data) => UserStruct(
         name: data['name'] as String?,
-        email: data['Email'] as String?,
+        email: data['email'] as String?,
       );
 
   static UserStruct? maybeFromMap(dynamic data) =>
@@ -39,7 +37,7 @@ class UserStruct extends FFFirebaseStruct {
 
   Map<String, dynamic> toMap() => {
         'name': _name,
-        'Email': _email,
+        'email': _email,
       }.withoutNulls;
 
   @override
@@ -48,7 +46,7 @@ class UserStruct extends FFFirebaseStruct {
           _name,
           ParamType.String,
         ),
-        'Email': serializeParam(
+        'email': serializeParam(
           _email,
           ParamType.String,
         ),
@@ -62,7 +60,7 @@ class UserStruct extends FFFirebaseStruct {
           false,
         ),
         email: deserializeParam(
-          data['Email'],
+          data['email'],
           ParamType.String,
           false,
         ),

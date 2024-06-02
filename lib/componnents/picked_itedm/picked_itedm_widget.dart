@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'picked_itedm_model.dart';
 export 'picked_itedm_model.dart';
 
@@ -41,7 +39,7 @@ class _PickedItedmWidgetState extends State<PickedItedmWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -105,14 +103,14 @@ class _PickedItedmWidgetState extends State<PickedItedmWidget> {
                     ),
                   ],
                 ),
-              ].divide(SizedBox(height: 8.0)),
+              ].divide(const SizedBox(height: 8.0)),
             ),
           ),
           ClipRRect(
             borderRadius: BorderRadius.circular(0.0),
             child: CachedNetworkImage(
-              fadeInDuration: Duration(milliseconds: 500),
-              fadeOutDuration: Duration(milliseconds: 500),
+              fadeInDuration: const Duration(milliseconds: 500),
+              fadeOutDuration: const Duration(milliseconds: 500),
               imageUrl:
                   'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTA3NDI0MTB8MA&ixlib=rb-4.0.3&q=80&w=1080',
               width: 116.0,
@@ -120,7 +118,7 @@ class _PickedItedmWidgetState extends State<PickedItedmWidget> {
               fit: BoxFit.cover,
             ),
           ),
-        ].divide(SizedBox(width: 16.0)),
+        ].divide(const SizedBox(width: 16.0)),
       ),
     );
   }

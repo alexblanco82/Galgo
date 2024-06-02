@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'select_choice_indicator_model.dart';
 export 'select_choice_indicator_model.dart';
 
@@ -14,7 +12,7 @@ class SelectChoiceIndicatorWidget extends StatefulWidget {
     required this.activeItem,
     this.timeFrom,
     this.timeTo,
-  }) : this.text = text ?? 'TITLE';
+  }) : text = text ?? 'TITLE';
 
   final String text;
   final Future Function(String? buttonName)? action;
@@ -127,7 +125,7 @@ class _SelectChoiceIndicatorWidgetState
                         ),
                   ),
                 ),
-              ].divide(SizedBox(width: 4.0)),
+              ].divide(const SizedBox(width: 4.0)),
             ),
             Container(
               width: double.infinity,
@@ -138,7 +136,7 @@ class _SelectChoiceIndicatorWidgetState
                     : FlutterFlowTheme.of(context).greyG200,
               ),
             ),
-          ].divide(SizedBox(height: 4.0)),
+          ].divide(const SizedBox(height: 4.0)),
         ),
       ),
     );

@@ -2,16 +2,9 @@ import '/componnents/delivery_items/delivery_items_widget.dart';
 import '/componnents/nav_bar/nav_bar_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/componnents/order_item/order_item_widget.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'home_widget.dart' show HomeWidget;
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class HomeModel extends FlutterFlowModel<HomeWidget> {
   ///  Local state fields for this page.

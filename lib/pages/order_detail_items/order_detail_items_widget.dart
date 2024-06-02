@@ -2,11 +2,8 @@ import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'order_detail_items_model.dart';
 export 'order_detail_items_model.dart';
 
@@ -48,23 +45,23 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Your Orders',
                           showBackIcon: true,
                         ),
@@ -77,7 +74,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -105,7 +102,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -116,7 +113,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                         context.pushNamed('OrderDetails');
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -130,9 +127,9 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                       BorderRadius.circular(
                                                           0.0),
                                                   child: CachedNetworkImage(
-                                                    fadeInDuration: Duration(
+                                                    fadeInDuration: const Duration(
                                                         milliseconds: 500),
-                                                    fadeOutDuration: Duration(
+                                                    fadeOutDuration: const Duration(
                                                         milliseconds: 500),
                                                     imageUrl:
                                                         'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=400',
@@ -233,7 +230,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 4.0)),
+                                                          const SizedBox(width: 4.0)),
                                                     ),
                                                     Row(
                                                       mainAxisSize:
@@ -292,12 +289,12 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 4.0)),
+                                                          const SizedBox(width: 4.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 4.0)),
+                                                      const SizedBox(height: 4.0)),
                                                 ),
-                                              ].divide(SizedBox(width: 14.0)),
+                                              ].divide(const SizedBox(width: 14.0)),
                                             ),
                                             Flexible(
                                               child: Container(
@@ -310,7 +307,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                           100.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(14.0, 10.0,
                                                           14.0, 10.0),
                                                   child: Row(
@@ -337,21 +334,21 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 10.0)),
+                                                        const SizedBox(width: 10.0)),
                                                   ),
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 14.0)),
+                                          ].divide(const SizedBox(width: 14.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -364,9 +361,9 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=400',
@@ -470,7 +467,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -531,11 +528,11 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 4.0)),
+                                                ].divide(const SizedBox(height: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 14.0)),
+                                            ].divide(const SizedBox(width: 14.0)),
                                           ),
                                           Flexible(
                                             child: Container(
@@ -548,7 +545,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                         100.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         14.0, 10.0, 14.0, 10.0),
                                                 child: Row(
@@ -575,20 +572,20 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 10.0)),
+                                                      const SizedBox(width: 10.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 14.0)),
+                                        ].divide(const SizedBox(width: 14.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -601,9 +598,9 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=400',
@@ -707,7 +704,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -768,11 +765,11 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 4.0)),
+                                                ].divide(const SizedBox(height: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 14.0)),
+                                            ].divide(const SizedBox(width: 14.0)),
                                           ),
                                           Flexible(
                                             child: Container(
@@ -785,7 +782,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                         100.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         14.0, 10.0, 14.0, 10.0),
                                                 child: Row(
@@ -812,20 +809,20 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 10.0)),
+                                                      const SizedBox(width: 10.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 14.0)),
+                                        ].divide(const SizedBox(width: 14.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -838,9 +835,9 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=400',
@@ -944,7 +941,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -1005,11 +1002,11 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 4.0)),
+                                                ].divide(const SizedBox(height: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 14.0)),
+                                            ].divide(const SizedBox(width: 14.0)),
                                           ),
                                           Flexible(
                                             child: Container(
@@ -1022,7 +1019,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                         100.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         14.0, 10.0, 14.0, 10.0),
                                                 child: Row(
@@ -1049,20 +1046,20 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 10.0)),
+                                                      const SizedBox(width: 10.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 14.0)),
+                                        ].divide(const SizedBox(width: 14.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -1075,9 +1072,9 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1181,7 +1178,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -1242,11 +1239,11 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 4.0)),
+                                                ].divide(const SizedBox(height: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 14.0)),
+                                            ].divide(const SizedBox(width: 14.0)),
                                           ),
                                           Flexible(
                                             child: Container(
@@ -1259,7 +1256,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                         100.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         14.0, 10.0, 14.0, 10.0),
                                                 child: Row(
@@ -1286,20 +1283,20 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 10.0)),
+                                                      const SizedBox(width: 10.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 14.0)),
+                                        ].divide(const SizedBox(width: 14.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -1312,9 +1309,9 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1418,7 +1415,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -1479,11 +1476,11 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 4.0)),
+                                                ].divide(const SizedBox(height: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 14.0)),
+                                            ].divide(const SizedBox(width: 14.0)),
                                           ),
                                           Flexible(
                                             child: Container(
@@ -1496,7 +1493,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                         100.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         14.0, 10.0, 14.0, 10.0),
                                                 child: Row(
@@ -1523,20 +1520,20 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 10.0)),
+                                                      const SizedBox(width: 10.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 14.0)),
+                                        ].divide(const SizedBox(width: 14.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -1549,9 +1546,9 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1655,7 +1652,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
                                                   Row(
                                                     mainAxisSize:
@@ -1716,11 +1713,11 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 4.0)),
+                                                        const SizedBox(width: 4.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 4.0)),
+                                                ].divide(const SizedBox(height: 4.0)),
                                               ),
-                                            ].divide(SizedBox(width: 14.0)),
+                                            ].divide(const SizedBox(width: 14.0)),
                                           ),
                                           Flexible(
                                             child: Container(
@@ -1733,7 +1730,7 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                         100.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         14.0, 10.0, 14.0, 10.0),
                                                 child: Row(
@@ -1760,20 +1757,20 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 10.0)),
+                                                      const SizedBox(width: 10.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 14.0)),
+                                        ].divide(const SizedBox(width: 14.0)),
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 16.0))
-                                .addToStart(SizedBox(height: 24.0)),
+                                .divide(const SizedBox(height: 16.0))
+                                .addToStart(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
@@ -1781,11 +1778,11 @@ class _OrderDetailItemsWidgetState extends State<OrderDetailItemsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

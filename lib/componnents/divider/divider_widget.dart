@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'divider_model.dart';
 export 'divider_model.dart';
 
@@ -10,7 +8,7 @@ class DividerWidget extends StatefulWidget {
   const DividerWidget({
     super.key,
     bool? hasText,
-  }) : this.hasText = hasText ?? false;
+  }) : hasText = hasText ?? false;
 
   final bool hasText;
 
@@ -45,7 +43,7 @@ class _DividerWidgetState extends State<DividerWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -59,7 +57,7 @@ class _DividerWidgetState extends State<DividerWidget> {
           ),
           if (widget.hasText)
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
               child: Text(
                 FFLocalizations.of(context).getText(
                   'jv47eino' /* or */,

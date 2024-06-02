@@ -2,8 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
@@ -13,12 +11,8 @@ import '/auth/base_auth_user_provider.dart';
 import '/backend/push_notifications/push_notifications_handler.dart'
     show PushNotificationsHandler;
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -86,319 +80,319 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => _RouteErrorBuilder(
         state: state,
-        child: appStateNotifier.loggedIn ? HomeWidget() : StartWidget(),
+        child: appStateNotifier.loggedIn ? const HomeWidget() : const SignUpWidget(),
       ),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomeWidget() : StartWidget(),
+              appStateNotifier.loggedIn ? const HomeWidget() : const SignUpWidget(),
           routes: [
             FFRoute(
               name: 'Loadings',
               path: 'loadings',
-              builder: (context, params) => LoadingsWidget(),
+              builder: (context, params) => const LoadingsWidget(),
             ),
             FFRoute(
               name: 'Start',
               path: 'start',
-              builder: (context, params) => StartWidget(),
+              builder: (context, params) => const StartWidget(),
             ),
             FFRoute(
               name: 'SignUp',
               path: 'signUp',
-              builder: (context, params) => SignUpWidget(),
+              builder: (context, params) => const SignUpWidget(),
             ),
             FFRoute(
               name: 'PinCode',
               path: 'pinCode',
-              builder: (context, params) => PinCodeWidget(),
+              builder: (context, params) => const PinCodeWidget(),
             ),
             FFRoute(
               name: 'AccountEmail',
               path: 'accountEmail',
-              builder: (context, params) => AccountEmailWidget(),
+              builder: (context, params) => const AccountEmailWidget(),
             ),
             FFRoute(
               name: 'AccountPassword',
               path: 'accountPassword',
-              builder: (context, params) => AccountPasswordWidget(),
+              builder: (context, params) => const AccountPasswordWidget(),
             ),
             FFRoute(
               name: 'AccountName',
               path: 'accountName',
-              builder: (context, params) => AccountNameWidget(),
+              builder: (context, params) => const AccountNameWidget(),
             ),
             FFRoute(
               name: 'AcceptTerms',
               path: 'acceptTerms',
-              builder: (context, params) => AcceptTermsWidget(),
+              builder: (context, params) => const AcceptTermsWidget(),
             ),
             FFRoute(
               name: 'Updates',
               path: 'updates',
-              builder: (context, params) => UpdatesWidget(),
+              builder: (context, params) => const UpdatesWidget(),
             ),
             FFRoute(
               name: 'PermissionAccess',
               path: 'permissionAccess',
-              builder: (context, params) => PermissionAccessWidget(),
+              builder: (context, params) => const PermissionAccessWidget(),
             ),
             FFRoute(
               name: 'PaymentMethod',
               path: 'paymentMethod',
-              builder: (context, params) => PaymentMethodWidget(),
+              builder: (context, params) => const PaymentMethodWidget(),
             ),
             FFRoute(
               name: 'AddCreditCard',
               path: 'addCreditCard',
-              builder: (context, params) => AddCreditCardWidget(),
+              builder: (context, params) => const AddCreditCardWidget(),
             ),
             FFRoute(
               name: 'AddAddress',
               path: 'addAddress',
-              builder: (context, params) => AddAddressWidget(),
+              builder: (context, params) => const AddAddressWidget(),
             ),
             FFRoute(
               name: 'Membership',
               path: 'membership',
-              builder: (context, params) => MembershipWidget(),
+              builder: (context, params) => const MembershipWidget(),
             ),
             FFRoute(
               name: 'FindNearFood',
               path: 'findNearFood',
-              builder: (context, params) => FindNearFoodWidget(),
+              builder: (context, params) => const FindNearFoodWidget(),
             ),
             FFRoute(
               name: 'Delivery',
               path: 'delivery',
-              builder: (context, params) => DeliveryWidget(),
+              builder: (context, params) => const DeliveryWidget(),
             ),
             FFRoute(
               name: 'Home',
               path: 'home',
-              builder: (context, params) => HomeWidget(),
+              builder: (context, params) => const HomeWidget(),
             ),
             FFRoute(
               name: 'Filter',
               path: 'filter',
-              builder: (context, params) => FilterWidget(),
+              builder: (context, params) => const FilterWidget(),
             ),
             FFRoute(
               name: 'Search1',
               path: 'search1',
-              builder: (context, params) => Search1Widget(),
+              builder: (context, params) => const Search1Widget(),
             ),
             FFRoute(
               name: 'Search',
               path: 'search',
-              builder: (context, params) => SearchWidget(),
+              builder: (context, params) => const SearchWidget(),
             ),
             FFRoute(
               name: 'Grocery',
               path: 'grocery',
-              builder: (context, params) => GroceryWidget(),
+              builder: (context, params) => const GroceryWidget(),
             ),
             FFRoute(
               name: 'Restaurants',
               path: 'restaurants',
-              builder: (context, params) => RestaurantsWidget(),
+              builder: (context, params) => const RestaurantsWidget(),
             ),
             FFRoute(
               name: 'SpecialityFoods',
               path: 'specialityFoods',
-              builder: (context, params) => SpecialityFoodsWidget(),
+              builder: (context, params) => const SpecialityFoodsWidget(),
             ),
             FFRoute(
               name: 'StoreInfo',
               path: 'storeInfo',
-              builder: (context, params) => StoreInfoWidget(),
+              builder: (context, params) => const StoreInfoWidget(),
             ),
             FFRoute(
               name: 'Store',
               path: 'store',
-              builder: (context, params) => StoreWidget(),
+              builder: (context, params) => const StoreWidget(),
             ),
             FFRoute(
               name: 'GroupOrder',
               path: 'groupOrder',
-              builder: (context, params) => GroupOrderWidget(),
+              builder: (context, params) => const GroupOrderWidget(),
             ),
             FFRoute(
               name: 'OrderName',
               path: 'orderName',
-              builder: (context, params) => OrderNameWidget(),
+              builder: (context, params) => const OrderNameWidget(),
             ),
             FFRoute(
               name: 'OrderNameDetails',
               path: 'orderNameDetails',
-              builder: (context, params) => OrderNameDetailsWidget(),
+              builder: (context, params) => const OrderNameDetailsWidget(),
             ),
             FFRoute(
               name: 'CoverOrder',
               path: 'coverOrder',
-              builder: (context, params) => CoverOrderWidget(),
+              builder: (context, params) => const CoverOrderWidget(),
             ),
             FFRoute(
               name: 'OrderOptions',
               path: 'orderOptions',
-              builder: (context, params) => OrderOptionsWidget(),
+              builder: (context, params) => const OrderOptionsWidget(),
             ),
             FFRoute(
               name: 'OrderOptionDetails',
               path: 'orderOptionDetails',
-              builder: (context, params) => OrderOptionDetailsWidget(),
+              builder: (context, params) => const OrderOptionDetailsWidget(),
             ),
             FFRoute(
               name: 'Draft',
               path: 'draft',
-              builder: (context, params) => DraftWidget(),
+              builder: (context, params) => const DraftWidget(),
             ),
             FFRoute(
               name: 'PopularRestaurants',
               path: 'popularRestaurants',
-              builder: (context, params) => PopularRestaurantsWidget(),
+              builder: (context, params) => const PopularRestaurantsWidget(),
             ),
             FFRoute(
               name: 'Browse',
               path: 'browse',
-              builder: (context, params) => BrowseWidget(),
+              builder: (context, params) => const BrowseWidget(),
             ),
             FFRoute(
               name: 'Baskets',
               path: 'baskets',
-              builder: (context, params) => BasketsWidget(),
+              builder: (context, params) => const BasketsWidget(),
             ),
             FFRoute(
               name: 'BasketYourOrders',
               path: 'basketYourOrders',
-              builder: (context, params) => BasketYourOrdersWidget(),
+              builder: (context, params) => const BasketYourOrdersWidget(),
             ),
             FFRoute(
               name: 'Account',
               path: 'account',
-              builder: (context, params) => AccountWidget(),
+              builder: (context, params) => const AccountWidget(),
             ),
             FFRoute(
               name: 'AccountDetails',
               path: 'accountDetails',
-              builder: (context, params) => AccountDetailsWidget(),
+              builder: (context, params) => const AccountDetailsWidget(),
             ),
             FFRoute(
               name: 'AccountEdit',
               path: 'accountEdit',
-              builder: (context, params) => AccountEditWidget(),
+              builder: (context, params) => const AccountEditWidget(),
             ),
             FFRoute(
               name: 'UpdateFirstName',
               path: 'updateFirstName',
-              builder: (context, params) => UpdateFirstNameWidget(),
+              builder: (context, params) => const UpdateFirstNameWidget(),
             ),
             FFRoute(
               name: 'UpdatePhoneNumber',
               path: 'updatePhoneNumber',
-              builder: (context, params) => UpdatePhoneNumberWidget(),
+              builder: (context, params) => const UpdatePhoneNumberWidget(),
             ),
             FFRoute(
               name: 'UpdateEmail',
               path: 'updateEmail',
-              builder: (context, params) => UpdateEmailWidget(),
+              builder: (context, params) => const UpdateEmailWidget(),
             ),
             FFRoute(
               name: 'VerifyPassword',
               path: 'verifyPassword',
-              builder: (context, params) => VerifyPasswordWidget(),
+              builder: (context, params) => const VerifyPasswordWidget(),
             ),
             FFRoute(
               name: 'Wallet',
               path: 'wallet',
-              builder: (context, params) => WalletWidget(),
+              builder: (context, params) => const WalletWidget(),
             ),
             FFRoute(
               name: 'Vouchers',
               path: 'vouchers',
-              builder: (context, params) => VouchersWidget(),
+              builder: (context, params) => const VouchersWidget(),
             ),
             FFRoute(
               name: 'AddCode',
               path: 'addCode',
-              builder: (context, params) => AddCodeWidget(),
+              builder: (context, params) => const AddCodeWidget(),
             ),
             FFRoute(
               name: 'AccountPromotions',
               path: 'accountPromotions',
-              builder: (context, params) => AccountPromotionsWidget(),
+              builder: (context, params) => const AccountPromotionsWidget(),
             ),
             FFRoute(
               name: 'AboutApp',
               path: 'aboutApp',
-              builder: (context, params) => AboutAppWidget(),
+              builder: (context, params) => const AboutAppWidget(),
             ),
             FFRoute(
               name: 'RestaurantAwards',
               path: 'restaurantAwards',
-              builder: (context, params) => RestaurantAwardsWidget(),
+              builder: (context, params) => const RestaurantAwardsWidget(),
             ),
             FFRoute(
               name: 'OrderPickedItem',
               path: 'orderPickedItem',
-              builder: (context, params) => OrderPickedItemWidget(),
+              builder: (context, params) => const OrderPickedItemWidget(),
             ),
             FFRoute(
               name: 'OrderPickedDetails',
               path: 'orderPickedDetails',
-              builder: (context, params) => OrderPickedDetailsWidget(),
+              builder: (context, params) => const OrderPickedDetailsWidget(),
             ),
             FFRoute(
               name: 'UpdateTerms',
               path: 'updateTerms',
-              builder: (context, params) => UpdateTermsWidget(),
+              builder: (context, params) => const UpdateTermsWidget(),
             ),
             FFRoute(
               name: 'CourierProfile',
               path: 'courierProfile',
-              builder: (context, params) => CourierProfileWidget(),
+              builder: (context, params) => const CourierProfileWidget(),
             ),
             FFRoute(
               name: 'RateCourier',
               path: 'rateCourier',
-              builder: (context, params) => RateCourierWidget(),
+              builder: (context, params) => const RateCourierWidget(),
             ),
             FFRoute(
               name: 'ThanksForRate',
               path: 'thanksForRate',
-              builder: (context, params) => ThanksForRateWidget(),
+              builder: (context, params) => const ThanksForRateWidget(),
             ),
             FFRoute(
               name: 'Message',
               path: 'message',
-              builder: (context, params) => MessageWidget(),
+              builder: (context, params) => const MessageWidget(),
             ),
             FFRoute(
               name: 'OrderDetailItems',
               path: 'orderDetailItems',
-              builder: (context, params) => OrderDetailItemsWidget(),
+              builder: (context, params) => const OrderDetailItemsWidget(),
             ),
             FFRoute(
               name: 'OrderDetails',
               path: 'orderDetails',
-              builder: (context, params) => OrderDetailsWidget(),
+              builder: (context, params) => const OrderDetailsWidget(),
             ),
             FFRoute(
               name: 'Favorite',
               path: 'favorite',
-              builder: (context, params) => FavoriteWidget(),
+              builder: (context, params) => const FavoriteWidget(),
             ),
             FFRoute(
               name: 'CourierDetails1',
               path: 'courierDetails1',
-              builder: (context, params) => CourierDetails1Widget(),
+              builder: (context, params) => const CourierDetails1Widget(),
             ),
             FFRoute(
               name: 'CourierDetails',
               path: 'courierDetails',
-              builder: (context, params) => CourierDetailsWidget(),
+              builder: (context, params) => const CourierDetailsWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -573,7 +567,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/start';
+            return '/signUp';
           }
           return null;
         },
@@ -640,7 +634,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(
+  static TransitionInfo appDefault() => const TransitionInfo(
         hasTransition: true,
         transitionType: PageTransitionType.fade,
         duration: Duration(milliseconds: 250),
@@ -649,10 +643,9 @@ class TransitionInfo {
 
 class _RouteErrorBuilder extends StatefulWidget {
   const _RouteErrorBuilder({
-    Key? key,
     required this.state,
     required this.child,
-  }) : super(key: key);
+  });
 
   final GoRouterState state;
   final Widget child;

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
@@ -25,69 +24,69 @@ class FFAppState extends ChangeNotifier {
   }
 
   List<CountryStruct> _CountryCode = [
-    CountryStruct.fromSerializableMap(
-        jsonDecode('{\"Name\":\"Spain\",\"DialCode\":\"+34\",\"Image\":\"\"}'))
+    CountryStruct.fromSerializableMap(jsonDecode(
+        '{\"Name\":\"Spain\",\"DialCode\":\"+34\",\"Image\":\"https://en.wikipedia.org/wiki/Flag_of_Spain#/media/File:Flag_of_Spain.svg\"}'))
   ];
   List<CountryStruct> get CountryCode => _CountryCode;
-  set CountryCode(List<CountryStruct> _value) {
-    _CountryCode = _value;
+  set CountryCode(List<CountryStruct> value) {
+    _CountryCode = value;
   }
 
-  void addToCountryCode(CountryStruct _value) {
-    _CountryCode.add(_value);
+  void addToCountryCode(CountryStruct value) {
+    _CountryCode.add(value);
   }
 
-  void removeFromCountryCode(CountryStruct _value) {
-    _CountryCode.remove(_value);
+  void removeFromCountryCode(CountryStruct value) {
+    _CountryCode.remove(value);
   }
 
-  void removeAtIndexFromCountryCode(int _index) {
-    _CountryCode.removeAt(_index);
+  void removeAtIndexFromCountryCode(int index) {
+    _CountryCode.removeAt(index);
   }
 
   void updateCountryCodeAtIndex(
-    int _index,
+    int index,
     CountryStruct Function(CountryStruct) updateFn,
   ) {
-    _CountryCode[_index] = updateFn(_CountryCode[_index]);
+    _CountryCode[index] = updateFn(_CountryCode[index]);
   }
 
-  void insertAtIndexInCountryCode(int _index, CountryStruct _value) {
-    _CountryCode.insert(_index, _value);
+  void insertAtIndexInCountryCode(int index, CountryStruct value) {
+    _CountryCode.insert(index, value);
   }
 
   bool _Liked = false;
   bool get Liked => _Liked;
-  set Liked(bool _value) {
-    _Liked = _value;
+  set Liked(bool value) {
+    _Liked = value;
   }
 
   List<MessageStruct> _Chat = [];
   List<MessageStruct> get Chat => _Chat;
-  set Chat(List<MessageStruct> _value) {
-    _Chat = _value;
+  set Chat(List<MessageStruct> value) {
+    _Chat = value;
   }
 
-  void addToChat(MessageStruct _value) {
-    _Chat.add(_value);
+  void addToChat(MessageStruct value) {
+    _Chat.add(value);
   }
 
-  void removeFromChat(MessageStruct _value) {
-    _Chat.remove(_value);
+  void removeFromChat(MessageStruct value) {
+    _Chat.remove(value);
   }
 
-  void removeAtIndexFromChat(int _index) {
-    _Chat.removeAt(_index);
+  void removeAtIndexFromChat(int index) {
+    _Chat.removeAt(index);
   }
 
   void updateChatAtIndex(
-    int _index,
+    int index,
     MessageStruct Function(MessageStruct) updateFn,
   ) {
-    _Chat[_index] = updateFn(_Chat[_index]);
+    _Chat[index] = updateFn(_Chat[index]);
   }
 
-  void insertAtIndexInChat(int _index, MessageStruct _value) {
-    _Chat.insert(_index, _value);
+  void insertAtIndexInChat(int index, MessageStruct value) {
+    _Chat.insert(index, value);
   }
 }

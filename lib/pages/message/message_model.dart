@@ -2,19 +2,10 @@ import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
 import '/componnents/chat_items/chat_items_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
-import '/componnents/store_info4_modal/store_info4_modal_widget.dart';
-import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
-import '/flutter_flow/flutter_flow_choice_chips.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'message_widget.dart' show MessageWidget;
-import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class MessageModel extends FlutterFlowModel<MessageWidget> {
   ///  Local state fields for this page.

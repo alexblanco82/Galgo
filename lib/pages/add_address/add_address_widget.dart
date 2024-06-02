@@ -8,8 +8,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_address_model.dart';
 export 'add_address_model.dart';
 
@@ -70,16 +68,16 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(0.0),
                       bottomRight: Radius.circular(0.0),
@@ -93,7 +91,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Address info',
                           showBackIcon: true,
                         ),
@@ -105,7 +103,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Stack(
-                                alignment: AlignmentDirectional(0.0, 1.0),
+                                alignment: const AlignmentDirectional(0.0, 1.0),
                                 children: [
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(0.0),
@@ -117,7 +115,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 12.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -137,10 +135,10 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                           options: FFButtonOptions(
                                             height: 40.0,
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 10.0, 16.0, 10.0),
                                             iconPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryBackground,
@@ -152,7 +150,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                                       letterSpacing: 0.0,
                                                     ),
                                             elevation: 0.0,
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Colors.transparent,
                                               width: 1.0,
                                             ),
@@ -166,7 +164,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                 ],
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -188,7 +186,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: TextFormField(
                                   controller: _model
@@ -197,7 +195,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                       .businessorbuildingnameTextFieldFocusNode,
                                   onChanged: (_) => EasyDebounce.debounce(
                                     '_model.businessorbuildingnameTextFieldTextController',
-                                    Duration(milliseconds: 500),
+                                    const Duration(milliseconds: 500),
                                     () => setState(() {}),
                                   ),
                                   autofocus: false,
@@ -273,7 +271,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: TextFormField(
                                   controller: _model
@@ -282,7 +280,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                       .flatorhousenumberTextFieldFocusNode,
                                   onChanged: (_) => EasyDebounce.debounce(
                                     '_model.flatorhousenumberTextFieldTextController',
-                                    Duration(milliseconds: 500),
+                                    const Duration(milliseconds: 500),
                                     () => setState(() {}),
                                   ),
                                   autofocus: false,
@@ -358,7 +356,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: TextFormField(
                                   controller: _model
@@ -367,7 +365,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                       _model.streetaddressTextFieldFocusNode,
                                   onChanged: (_) => EasyDebounce.debounce(
                                     '_model.streetaddressTextFieldTextController',
-                                    Duration(milliseconds: 500),
+                                    const Duration(milliseconds: 500),
                                     () => setState(() {}),
                                   ),
                                   autofocus: false,
@@ -443,7 +441,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: TextFormField(
                                   controller:
@@ -451,7 +449,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                   focusNode: _model.postcodeTextFieldFocusNode,
                                   onChanged: (_) => EasyDebounce.debounce(
                                     '_model.postcodeTextFieldTextController',
-                                    Duration(milliseconds: 500),
+                                    const Duration(milliseconds: 500),
                                     () => setState(() {}),
                                   ),
                                   autofocus: false,
@@ -529,12 +527,12 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                               wrapWithModel(
                                 model: _model.dividerModel1,
                                 updateCallback: () => setState(() {}),
-                                child: DividerWidget(
+                                child: const DividerWidget(
                                   hasText: false,
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -601,7 +599,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                             .primaryBackground,
                                         iconSize: 18.0,
                                         labelPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 14.0, 0.0),
                                         elevation: 0.0,
                                         borderRadius:
@@ -636,10 +634,10 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                       wrapped: false,
                                     ),
                                   ),
-                                ].addToStart(SizedBox(width: 16.0)),
+                                ].addToStart(const SizedBox(width: 16.0)),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: TextFormField(
                                   controller: _model
@@ -648,7 +646,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                       _model.addinstructionsTextFieldFocusNode,
                                   onChanged: (_) => EasyDebounce.debounce(
                                     '_model.addinstructionsTextFieldTextController',
-                                    Duration(milliseconds: 500),
+                                    const Duration(milliseconds: 500),
                                     () => setState(() {}),
                                   ),
                                   autofocus: false,
@@ -726,12 +724,12 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                               wrapWithModel(
                                 model: _model.dividerModel2,
                                 updateCallback: () => setState(() {}),
-                                child: DividerWidget(
+                                child: const DividerWidget(
                                   hasText: false,
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -753,7 +751,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: TextFormField(
                                   controller: _model
@@ -762,7 +760,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                       _model.addressLabelTextFieldFocusNode,
                                   onChanged: (_) => EasyDebounce.debounce(
                                     '_model.addressLabelTextFieldTextController',
-                                    Duration(milliseconds: 500),
+                                    const Duration(milliseconds: 500),
                                     () => setState(() {}),
                                   ),
                                   autofocus: false,
@@ -837,7 +835,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                       .asValidator(context),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 14.0)),
+                            ].divide(const SizedBox(height: 14.0)),
                           ),
                         ),
                       ),
@@ -847,12 +845,12 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                           wrapWithModel(
                             model: _model.dividerModel3,
                             updateCallback: () => setState(() {}),
-                            child: DividerWidget(
+                            child: const DividerWidget(
                               hasText: false,
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 24.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -868,10 +866,10 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                     ),
                                     options: FFButtonOptions(
                                       height: 60.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color: FlutterFlowTheme.of(context)
                                           .secondary,
@@ -884,7 +882,7 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                       elevation: 0.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 1.0,
                                       ),
@@ -895,17 +893,17 @@ class _AddAddressWidgetState extends State<AddAddressWidget> {
                               ],
                             ),
                           ),
-                        ].divide(SizedBox(height: 16.0)),
+                        ].divide(const SizedBox(height: 16.0)),
                       ),
                     ],
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

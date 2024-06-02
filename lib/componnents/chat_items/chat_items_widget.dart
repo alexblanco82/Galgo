@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'chat_items_model.dart';
 export 'chat_items_model.dart';
 
@@ -12,7 +10,7 @@ class ChatItemsWidget extends StatefulWidget {
     this.chatText,
     this.status,
     bool? senderIsCurrentUser,
-  }) : this.senderIsCurrentUser = senderIsCurrentUser ?? false;
+  }) : senderIsCurrentUser = senderIsCurrentUser ?? false;
 
   final String? chatText;
   final String? status;
@@ -49,7 +47,7 @@ class _ChatItemsWidgetState extends State<ChatItemsWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -64,11 +62,11 @@ class _ChatItemsWidgetState extends State<ChatItemsWidget> {
                     Flexible(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 0.0, 0.0),
                         child: Container(
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context).secondary,
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(12.0),
                               bottomRight: Radius.circular(0.0),
                               topLeft: Radius.circular(12.0),
@@ -76,7 +74,7 @@ class _ChatItemsWidgetState extends State<ChatItemsWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 14.0, 16.0, 14.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
@@ -120,7 +118,7 @@ class _ChatItemsWidgetState extends State<ChatItemsWidget> {
                     ),
                   ],
                 ),
-              ].divide(SizedBox(height: 6.0)),
+              ].divide(const SizedBox(height: 6.0)),
             ),
           if (!widget.senderIsCurrentUser)
             Column(
@@ -133,11 +131,11 @@ class _ChatItemsWidgetState extends State<ChatItemsWidget> {
                     Flexible(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 60.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 60.0, 0.0),
                         child: Container(
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context).secondary,
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(0.0),
                               bottomRight: Radius.circular(12.0),
                               topLeft: Radius.circular(12.0),
@@ -145,7 +143,7 @@ class _ChatItemsWidgetState extends State<ChatItemsWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 14.0, 16.0, 14.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
@@ -189,9 +187,9 @@ class _ChatItemsWidgetState extends State<ChatItemsWidget> {
                     ),
                   ],
                 ),
-              ].divide(SizedBox(height: 6.0)),
+              ].divide(const SizedBox(height: 6.0)),
             ),
-        ].divide(SizedBox(height: 6.0)),
+        ].divide(const SizedBox(height: 6.0)),
       ),
     );
   }

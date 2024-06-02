@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'account_name_model.dart';
 export 'account_name_model.dart';
 
@@ -54,11 +52,11 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
@@ -75,7 +73,7 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -97,7 +95,7 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -122,13 +120,13 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                               key: _model.formKey,
                               autovalidateMode: AutovalidateMode.disabled,
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 20.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -142,7 +140,7 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                                               onChanged: (_) =>
                                                   EasyDebounce.debounce(
                                                 '_model.nameTextFieldTextController',
-                                                Duration(milliseconds: 500),
+                                                const Duration(milliseconds: 500),
                                                 () => setState(() {}),
                                               ),
                                               autofocus: false,
@@ -246,7 +244,7 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -260,7 +258,7 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                                               onChanged: (_) =>
                                                   EasyDebounce.debounce(
                                                 '_model.surnameTextFieldTextController',
-                                                Duration(milliseconds: 500),
+                                                const Duration(milliseconds: 500),
                                                 () => setState(() {}),
                                               ),
                                               autofocus: false,
@@ -363,15 +361,15 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -395,14 +393,8 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                             FFButtonWidget(
                               onPressed: ((_model.nameTextFieldTextController
                                                   .text ==
-                                              null ||
-                                          _model.nameTextFieldTextController
-                                                  .text ==
                                               '') ||
                                       (_model.surnameTextFieldTextController
-                                                  .text ==
-                                              null ||
-                                          _model.surnameTextFieldTextController
                                                   .text ==
                                               ''))
                                   ? null
@@ -416,14 +408,8 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                                 FFIcons.karrowRight,
                                 color: (_model.nameTextFieldTextController
                                                     .text ==
-                                                null ||
-                                            _model.nameTextFieldTextController
-                                                    .text ==
                                                 '') ||
                                         (_model.surnameTextFieldTextController
-                                                    .text ==
-                                                null ||
-                                            _model.surnameTextFieldTextController
                                                     .text ==
                                                 '')
                                     ? FlutterFlowTheme.of(context).inkLighter
@@ -433,9 +419,9 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                               ),
                               options: FFButtonOptions(
                                 height: 55.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 10.0, 16.0, 10.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).secondary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -447,7 +433,7 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                                       letterSpacing: 0.0,
                                     ),
                                 elevation: 0.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -462,16 +448,16 @@ class _AccountNameWidgetState extends State<AccountNameWidget> {
                         ),
                       ),
                     ]
-                        .addToStart(SizedBox(height: 20.0))
-                        .addToEnd(SizedBox(height: 24.0)),
+                        .addToStart(const SizedBox(height: 20.0))
+                        .addToEnd(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

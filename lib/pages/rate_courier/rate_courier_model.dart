@@ -1,16 +1,10 @@
-import '/componnents/add_tip_modal/add_tip_modal_widget.dart';
 import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/componnents/rate_courier_item/rate_courier_item_widget.dart';
 import '/componnents/service_rate_item/service_rate_item_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'rate_courier_widget.dart' show RateCourierWidget;
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class RateCourierModel extends FlutterFlowModel<RateCourierWidget> {
   ///  Local state fields for this page.

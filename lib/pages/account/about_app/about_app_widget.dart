@@ -3,10 +3,7 @@ import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'about_app_model.dart';
 export 'about_app_model.dart';
 
@@ -48,11 +45,11 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
@@ -67,7 +64,7 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
                         updateOnChange: true,
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'About',
                           showBackIcon: true,
                         ),
@@ -78,7 +75,7 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 43.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -86,7 +83,7 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
                                       CrossAxisAlignment.stretch,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: ListTile(
                                         title: Text(
@@ -129,23 +126,23 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
                                             .secondaryBackground,
                                         dense: false,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.dividerModel1,
                                         updateCallback: () => setState(() {}),
-                                        child: DividerWidget(
+                                        child: const DividerWidget(
                                           hasText: false,
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -183,24 +180,24 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
                                                   .secondaryBackground,
                                           dense: false,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.dividerModel2,
                                         updateCallback: () => setState(() {}),
-                                        child: DividerWidget(
+                                        child: const DividerWidget(
                                           hasText: false,
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: ListTile(
                                         title: Text(
@@ -228,23 +225,23 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
                                             .secondaryBackground,
                                         dense: false,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.dividerModel3,
                                         updateCallback: () => setState(() {}),
-                                        child: DividerWidget(
+                                        child: const DividerWidget(
                                           hasText: false,
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -282,28 +279,28 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
                                                   .secondaryBackground,
                                           dense: false,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.dividerModel4,
                                         updateCallback: () => setState(() {}),
-                                        child: DividerWidget(
+                                        child: const DividerWidget(
                                           hasText: false,
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                             ]
-                                .addToStart(SizedBox(height: 20.0))
-                                .addToEnd(SizedBox(height: 24.0)),
+                                .addToStart(const SizedBox(height: 20.0))
+                                .addToEnd(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
@@ -311,11 +308,11 @@ class _AboutAppWidgetState extends State<AboutAppWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

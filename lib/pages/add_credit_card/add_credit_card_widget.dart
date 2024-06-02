@@ -1,5 +1,3 @@
-import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
 import '/componnents/available_country/available_country_widget.dart';
 import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
@@ -11,7 +9,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'add_credit_card_model.dart';
 export 'add_credit_card_model.dart';
@@ -74,11 +71,11 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
@@ -93,7 +90,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
                         updateOnChange: true,
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Add card',
                           showBackIcon: true,
                         ),
@@ -114,7 +111,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                         CrossAxisAlignment.stretch,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -146,7 +143,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                               onChanged: (_) =>
                                                   EasyDebounce.debounce(
                                                 '_model.cardNumberTextFieldTextController',
-                                                Duration(milliseconds: 500),
+                                                const Duration(milliseconds: 500),
                                                 () => setState(() {}),
                                               ),
                                               autofocus: false,
@@ -264,11 +261,11 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                   .cardNumberTextFieldTextControllerValidator
                                                   .asValidator(context),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -302,7 +299,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                       ),
                                                     ],
                                                   ),
-                                                  Container(
+                                                  SizedBox(
                                                     width: 200.0,
                                                     child: TextFormField(
                                                       controller: _model
@@ -312,7 +309,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                       onChanged: (_) =>
                                                           EasyDebounce.debounce(
                                                         '_model.expDateTextFieldTextController',
-                                                        Duration(
+                                                        const Duration(
                                                             milliseconds: 500),
                                                         () => setState(() {}),
                                                       ),
@@ -457,7 +454,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                           .asValidator(context),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                             Flexible(
@@ -487,7 +484,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                       ),
                                                     ],
                                                   ),
-                                                  Container(
+                                                  SizedBox(
                                                     width: 200.0,
                                                     child: TextFormField(
                                                       controller: _model
@@ -497,7 +494,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                       onChanged: (_) =>
                                                           EasyDebounce.debounce(
                                                         '_model.cVVTextFieldTextController',
-                                                        Duration(
+                                                        const Duration(
                                                             milliseconds: 500),
                                                         () => setState(() {}),
                                                       ),
@@ -641,14 +638,14 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                           .asValidator(context),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 20.0)),
+                                          ].divide(const SizedBox(width: 20.0)),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -682,18 +679,18 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                 onTap: () async {
                                                   await showAlignedDialog(
                                                     barrierColor:
-                                                        Color(0x00FFFFFF),
+                                                        const Color(0x00FFFFFF),
                                                     context: context,
                                                     isGlobal: false,
                                                     avoidOverflow: false,
                                                     targetAnchor:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                                 -1.0, 1.0)
                                                             .resolve(
                                                                 Directionality.of(
                                                                     context)),
                                                     followerAnchor:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                                 -1.0, -1.0)
                                                             .resolve(
                                                                 Directionality.of(
@@ -741,7 +738,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     child: Row(
@@ -763,11 +760,11 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                               child:
                                                                   CachedNetworkImage(
                                                                 fadeInDuration:
-                                                                    Duration(
+                                                                    const Duration(
                                                                         milliseconds:
                                                                             500),
                                                                 fadeOutDuration:
-                                                                    Duration(
+                                                                    const Duration(
                                                                         milliseconds:
                                                                             500),
                                                                 imageUrl: _model
@@ -797,7 +794,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                                         0.0,
                                                                   ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 16.0)),
                                                         ),
                                                         Icon(
@@ -809,17 +806,17 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                           size: 24.0,
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                   ),
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -851,7 +848,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                               onChanged: (_) =>
                                                   EasyDebounce.debounce(
                                                 '_model.postcodeTextFieldTextController',
-                                                Duration(milliseconds: 500),
+                                                const Duration(milliseconds: 500),
                                                 () => setState(() {}),
                                               ),
                                               autofocus: false,
@@ -955,18 +952,18 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                   .postcodeTextFieldTextControllerValidator
                                                   .asValidator(context),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(height: 26.0))
-                                        .addToStart(SizedBox(height: 30.0))
-                                        .addToEnd(SizedBox(height: 24.0)),
+                                        .divide(const SizedBox(height: 26.0))
+                                        .addToStart(const SizedBox(height: 30.0))
+                                        .addToEnd(const SizedBox(height: 24.0)),
                                   ),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 24.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -974,30 +971,17 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                   children: [
                                     Expanded(
                                       child: FFButtonWidget(
-                                        onPressed: ((_model
-                                                            .cardNumberTextFieldTextController
-                                                            .text ==
-                                                        null ||
-                                                    _model.cardNumberTextFieldTextController
+                                        onPressed: ((_model.cardNumberTextFieldTextController
                                                             .text ==
                                                         '') ||
-                                                (_model.expDateTextFieldTextController
-                                                            .text ==
-                                                        null ||
-                                                    _model
+                                                (_model
                                                             .expDateTextFieldTextController
                                                             .text ==
                                                         '') ||
                                                 (_model.cVVTextFieldTextController
                                                             .text ==
-                                                        null ||
-                                                    _model.cVVTextFieldTextController
-                                                            .text ==
                                                         '') ||
                                                 (_model.postcodeTextFieldTextController
-                                                            .text ==
-                                                        null ||
-                                                    _model.postcodeTextFieldTextController
                                                             .text ==
                                                         ''))
                                             ? null
@@ -1012,10 +996,10 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                         options: FFButtonOptions(
                                           height: 60.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .secondary,
@@ -1030,7 +1014,7 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                                                 letterSpacing: 0.0,
                                               ),
                                           elevation: 0.0,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1.0,
                                           ),
@@ -1056,11 +1040,11 @@ class _AddCreditCardWidgetState extends State<AddCreditCardWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

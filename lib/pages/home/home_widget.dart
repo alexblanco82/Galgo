@@ -6,10 +6,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'home_model.dart';
 export 'home_model.dart';
@@ -54,16 +52,16 @@ class _HomeWidgetState extends State<HomeWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -117,7 +115,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       },
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                               InkWell(
                                 splashColor: Colors.transparent,
@@ -128,7 +126,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   context.pushNamed('Delivery');
                                 },
                                 child: Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -183,12 +181,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             .secondary,
                                         size: 16.0,
                                       ),
-                                    ].divide(SizedBox(width: 4.0)),
+                                    ].divide(const SizedBox(width: 4.0)),
                                   ),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -197,7 +195,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     borderRadius: BorderRadius.circular(100.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         14.0, 4.0, 14.0, 4.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -212,7 +210,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               context.pushNamed('Search');
                                             },
                                             child: Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -245,7 +243,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -272,13 +270,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             context.pushNamed('Filter');
                                           },
                                         ),
-                                      ].divide(SizedBox(width: 2.0)),
+                                      ].divide(const SizedBox(width: 2.0)),
                                     ),
                                   ),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -301,7 +299,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 8.0, 12.0, 8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.min,
@@ -320,11 +318,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -389,7 +387,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 8.0, 12.0, 8.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.min,
@@ -408,11 +406,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -459,11 +457,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 12.0)),
+                                  ].divide(const SizedBox(width: 12.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -471,7 +469,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   children: [
                                     Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -485,15 +483,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                               ),
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/gwflvjq6z6m5/Screenshot_2024-03-01_at_13.02.28.png',
@@ -531,13 +529,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                     ),
                                     Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -551,15 +549,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                               ),
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/213b1ki3u01t/Screenshot_2024-03-01_at_13.02.39.png',
@@ -597,13 +595,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                     ),
                                     Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -617,15 +615,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                               ),
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/lzxq375el4k4/Screenshot_2024-03-01_at_13.02.50.png',
@@ -663,7 +661,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                     ),
@@ -677,7 +675,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           context.pushNamed('SpecialityFoods');
                                         },
                                         child: Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -692,16 +690,16 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       BorderRadius.circular(
                                                           8.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: ClipRRect(
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           0.0),
                                                   child: CachedNetworkImage(
-                                                    fadeInDuration: Duration(
+                                                    fadeInDuration: const Duration(
                                                         milliseconds: 500),
-                                                    fadeOutDuration: Duration(
+                                                    fadeOutDuration: const Duration(
                                                         milliseconds: 500),
                                                     imageUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/8mz84gawpm68/Screenshot_2024-03-01_at_13.02.57.png',
@@ -743,12 +741,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 8.0)),
+                                            ].divide(const SizedBox(height: 8.0)),
                                           ),
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 14.0)),
+                                  ].divide(const SizedBox(width: 14.0)),
                                 ),
                               ),
                               ListView(
@@ -757,24 +755,24 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Stack(
                                             alignment:
-                                                AlignmentDirectional(1.0, -1.0),
+                                                const AlignmentDirectional(1.0, -1.0),
                                             children: [
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://images.unsplash.com/photo-1615996001375-c7ef13294436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MDkzNjA3ODN8MA&ixlib=rb-4.0.3&q=80&w=1080',
@@ -784,7 +782,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 16.0, 16.0, 0.0),
                                                 child: ToggleIcon(
@@ -951,39 +949,39 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 12.0)),
+                                        ].divide(const SizedBox(height: 12.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.orderItemModel1,
                                       updateCallback: () => setState(() {}),
                                       updateOnChange: true,
-                                      child: OrderItemWidget(),
+                                      child: const OrderItemWidget(),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.orderItemModel2,
                                       updateCallback: () => setState(() {}),
                                       updateOnChange: true,
-                                      child: OrderItemWidget(),
+                                      child: const OrderItemWidget(),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 24.0)),
+                                ].divide(const SizedBox(height: 24.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 24.0))
-                                .addToEnd(SizedBox(height: 24.0)),
+                                .divide(const SizedBox(height: 24.0))
+                                .addToEnd(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
@@ -991,7 +989,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                         model: _model.navBarModel,
                         updateCallback: () => setState(() {}),
                         updateOnChange: true,
-                        child: NavBarWidget(
+                        child: const NavBarWidget(
                           activePage: 'Home',
                         ),
                       ),
@@ -999,12 +997,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
                     updateOnChange: true,
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

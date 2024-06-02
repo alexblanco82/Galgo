@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_code_model.dart';
 export 'add_code_model.dart';
 
@@ -51,16 +49,16 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,7 +66,7 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: ' Add voucher code',
                           showBackIcon: true,
                         ),
@@ -82,7 +80,7 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: TextFormField(
                                       controller: _model
@@ -91,7 +89,7 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
                                           .addVoucherCodeTextFieldFocusNode,
                                       onChanged: (_) => EasyDebounce.debounce(
                                         '_model.addVoucherCodeTextFieldTextController',
-                                        Duration(milliseconds: 500),
+                                        const Duration(milliseconds: 500),
                                         () => setState(() {}),
                                       ),
                                       autofocus: false,
@@ -168,7 +166,7 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 20.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -194,32 +192,29 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 6.0))
-                                    .addToStart(SizedBox(height: 30.0)),
+                                    .divide(const SizedBox(height: 6.0))
+                                    .addToStart(const SizedBox(height: 30.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 30.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 30.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed:
                                       (_model.addVoucherCodeTextFieldTextController
-                                                      .text ==
-                                                  null ||
-                                              _model.addVoucherCodeTextFieldTextController
                                                       .text ==
                                                   '')
                                           ? null
@@ -232,9 +227,9 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
                                   ),
                                   options: FFButtonOptions(
                                     height: 60.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).secondary,
@@ -247,7 +242,7 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Colors.transparent,
                                       width: 1.0,
                                     ),
@@ -267,11 +262,11 @@ class _AddCodeWidgetState extends State<AddCodeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

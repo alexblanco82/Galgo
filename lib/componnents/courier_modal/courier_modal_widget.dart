@@ -4,8 +4,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'courier_modal_model.dart';
 export 'courier_modal_model.dart';
 
@@ -43,7 +41,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       children: [
         SingleChildScrollView(
           child: Column(
@@ -53,7 +51,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
               Container(
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).greyG75,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(12.0),
@@ -67,7 +65,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).greyG50,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(12.0),
@@ -78,7 +76,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 8.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -110,26 +108,26 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     height: 90.0,
                                     child: Stack(
-                                      alignment: AlignmentDirectional(0.0, 1.0),
+                                      alignment: const AlignmentDirectional(0.0, 1.0),
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: Container(
                                             width: 80.0,
                                             height: 80.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8cHJvZmlsZXxlbnwwfHx8fDE3MTIwNzg3MTl8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                               fit: BoxFit.cover,
@@ -140,7 +138,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryBackground,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 8.0,
                                                 color: Color(0x40000000),
@@ -155,7 +153,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     6.0, 3.0, 6.0, 3.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -191,7 +189,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                 ],
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -227,9 +225,9 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                   context.pushNamed('CourierProfile');
                                 },
                                 child: Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 4.0, 16.0, 4.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -260,7 +258,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -292,7 +290,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                             BorderRadius.circular(100.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 36.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -333,7 +331,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                             return Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: AddTipModalWidget(),
+                                              child: const AddTipModalWidget(),
                                             );
                                           },
                                         ).then((value) => safeSetState(() {}));
@@ -348,7 +346,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -378,7 +376,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                       letterSpacing: 0.0,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 10.0)),
+                                            ].divide(const SizedBox(width: 10.0)),
                                           ),
                                         ),
                                       ),
@@ -387,7 +385,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 20.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
@@ -429,7 +427,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                               fontWeight: FontWeight.normal,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                               ),
@@ -442,7 +440,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .greyG50,
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(0.0),
                                           bottomRight: Radius.circular(0.0),
                                           topLeft: Radius.circular(0.0),
@@ -450,7 +448,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 14.0, 16.0, 14.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -531,10 +529,10 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                       ),
                                                     ],
                                                   ),
-                                                ].divide(SizedBox(height: 4.0)),
+                                                ].divide(const SizedBox(height: 4.0)),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 14.0)),
+                                          ].divide(const SizedBox(width: 14.0)),
                                         ),
                                       ),
                                     ),
@@ -543,7 +541,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .greyG50,
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(0.0),
                                           bottomRight: Radius.circular(0.0),
                                           topLeft: Radius.circular(0.0),
@@ -555,7 +553,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -582,12 +580,12 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                           ),
                                           Container(
                                             width: double.infinity,
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -619,7 +617,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -660,17 +658,17 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                           context)
                                                       .greyG200,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                           Container(
                                             width: double.infinity,
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -702,7 +700,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -743,17 +741,17 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                           context)
                                                       .greyG200,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                           Container(
                                             width: double.infinity,
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -785,7 +783,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -826,12 +824,12 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                           context)
                                                       .greyG200,
                                                 ),
-                                              ].divide(SizedBox(height: 8.0)),
+                                              ].divide(const SizedBox(height: 8.0)),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -848,7 +846,7 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     child: Row(
@@ -879,22 +877,22 @@ class _CourierModalWidgetState extends State<CourierModalWidget> {
                                             ),
                                           ),
                                         ]
-                                            .divide(SizedBox(height: 14.0))
-                                            .addToStart(SizedBox(height: 24.0))
-                                            .addToEnd(SizedBox(height: 24.0)),
+                                            .divide(const SizedBox(height: 14.0))
+                                            .addToStart(const SizedBox(height: 24.0))
+                                            .addToEnd(const SizedBox(height: 24.0)),
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(height: 8.0))
-                                      .addToEnd(SizedBox(height: 24.0)),
+                                      .divide(const SizedBox(height: 8.0))
+                                      .addToEnd(const SizedBox(height: 24.0)),
                                 ),
                             ]
-                                .divide(SizedBox(height: 12.0))
-                                .addToStart(SizedBox(height: 16.0)),
+                                .divide(const SizedBox(height: 12.0))
+                                .addToStart(const SizedBox(height: 16.0)),
                           ),
                         ]
-                            .divide(SizedBox(height: 12.0))
-                            .addToStart(SizedBox(height: 8.0)),
+                            .divide(const SizedBox(height: 12.0))
+                            .addToStart(const SizedBox(height: 8.0)),
                       ),
                     ),
                   ],

@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'pick_how_to_pay_model.dart';
 export 'pick_how_to_pay_model.dart';
 
@@ -13,7 +11,7 @@ class PickHowToPayWidget extends StatefulWidget {
     this.action,
     required this.activeItem,
     this.icon,
-  }) : this.text = text ?? 'TITLE';
+  }) : text = text ?? 'TITLE';
 
   final String text;
   final Future Function(String? buttonName)? action;
@@ -84,7 +82,7 @@ class _PickHowToPayWidgetState extends State<PickHowToPayWidget> {
                         letterSpacing: 0.0,
                       ),
                 ),
-              ].divide(SizedBox(width: 16.0)),
+              ].divide(const SizedBox(width: 16.0)),
             ),
             Stack(
               children: [

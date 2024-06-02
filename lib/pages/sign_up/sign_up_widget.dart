@@ -1,19 +1,14 @@
-import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
-import '/componnents/available_country_code/available_country_code_widget.dart';
+import '/auth/firebase_auth/auth_util.dart';
 import '/componnents/divider/divider_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sign_up_model.dart';
 export 'sign_up_model.dart';
 
@@ -36,13 +31,14 @@ class _SignUpWidgetState extends State<SignUpWidget> {
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      _model.selectedCounty = FFAppState().CountryCode.first;
-      setState(() {});
+      context.pushNamed('PinCode');
     });
 
+    authManager.handlePhoneAuthStateChanges(context);
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
     _model.textFieldFocusNode!.addListener(() => setState(() {}));
+    authManager.handlePhoneAuthStateChanges(context);
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -55,8 +51,6 @@ class _SignUpWidgetState extends State<SignUpWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
-
     return GestureDetector(
       onTap: () => _model.unfocusNode.canRequestFocus
           ? FocusScope.of(context).requestFocus(_model.unfocusNode)
@@ -66,16 +60,16 @@ class _SignUpWidgetState extends State<SignUpWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -86,7 +80,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -118,111 +112,6 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
-                                          Builder(
-                                            builder: (context) => InkWell(
-                                              splashColor: Colors.transparent,
-                                              focusColor: Colors.transparent,
-                                              hoverColor: Colors.transparent,
-                                              highlightColor:
-                                                  Colors.transparent,
-                                              onTap: () async {
-                                                await showAlignedDialog(
-                                                  barrierColor:
-                                                      Color(0x00FFFFFF),
-                                                  context: context,
-                                                  isGlobal: false,
-                                                  avoidOverflow: false,
-                                                  targetAnchor:
-                                                      AlignmentDirectional(
-                                                              -1.0, 1.0)
-                                                          .resolve(
-                                                              Directionality.of(
-                                                                  context)),
-                                                  followerAnchor:
-                                                      AlignmentDirectional(
-                                                              -1.0, -1.0)
-                                                          .resolve(
-                                                              Directionality.of(
-                                                                  context)),
-                                                  builder: (dialogContext) {
-                                                    return Material(
-                                                      color: Colors.transparent,
-                                                      child: GestureDetector(
-                                                        onTap: () => _model
-                                                                .unfocusNode
-                                                                .canRequestFocus
-                                                            ? FocusScope.of(
-                                                                    context)
-                                                                .requestFocus(_model
-                                                                    .unfocusNode)
-                                                            : FocusScope.of(
-                                                                    context)
-                                                                .unfocus(),
-                                                        child:
-                                                            AvailableCountryCodeWidget(
-                                                          selectedAction:
-                                                              (selected) async {
-                                                            _model.selectedCounty =
-                                                                selected;
-                                                            setState(() {});
-                                                          },
-                                                        ),
-                                                      ),
-                                                    );
-                                                  },
-                                                ).then(
-                                                    (value) => setState(() {}));
-                                              },
-                                              child: Container(
-                                                width: 100.0,
-                                                height: 50.0,
-                                                decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .greyG200,
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
-                                                ),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          16.0, 0.0, 16.0, 0.0),
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      ClipRRect(
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(0.0),
-                                                        child: Image.network(
-                                                          _model.selectedCounty!
-                                                              .image,
-                                                          width: 32.0,
-                                                          height: 20.0,
-                                                          fit: BoxFit.cover,
-                                                        ),
-                                                      ),
-                                                      Icon(
-                                                        Icons
-                                                            .keyboard_arrow_down_outlined,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .secondaryText,
-                                                        size: 24.0,
-                                                      ),
-                                                    ].divide(
-                                                        SizedBox(width: 8.0)),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
                                           Expanded(
                                             flex: 2,
                                             child: Container(
@@ -244,11 +133,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                                         return FlutterFlowTheme
                                                                 .of(context)
                                                             .secondary;
-                                                      } else if (_model
-                                                                  .textController
-                                                                  .text !=
-                                                              null &&
-                                                          _model.textController
+                                                      } else if (_model.textController
                                                                   .text !=
                                                               '') {
                                                         return FlutterFlowTheme
@@ -267,7 +152,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         14.0, 0.0, 41.0, 0.0),
                                                 child: Row(
@@ -276,28 +161,72 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.start,
                                                   children: [
-                                                    Text(
-                                                      valueOrDefault<String>(
-                                                        _model.selectedCounty
-                                                            ?.dialCode,
-                                                        '-',
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
+                                                    InkWell(
+                                                      splashColor:
+                                                          Colors.transparent,
+                                                      focusColor:
+                                                          Colors.transparent,
+                                                      hoverColor:
+                                                          Colors.transparent,
+                                                      highlightColor:
+                                                          Colors.transparent,
+                                                      onTap: () async {
+                                                        final phoneNumberVal =
+                                                            currentPhoneNumber;
+                                                        if (phoneNumberVal
+                                                                .isEmpty ||
+                                                            !phoneNumberVal
+                                                                .startsWith(
+                                                                    '+')) {
+                                                          ScaffoldMessenger.of(
                                                                   context)
-                                                              .labelLarge
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Nunito Sans',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryText,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
+                                                              .showSnackBar(
+                                                            const SnackBar(
+                                                              content: Text(
+                                                                  'Phone Number is required and has to start with +.'),
+                                                            ),
+                                                          );
+                                                          return;
+                                                        }
+                                                        await authManager
+                                                            .beginPhoneAuth(
+                                                          context: context,
+                                                          phoneNumber:
+                                                              phoneNumberVal,
+                                                          onCodeSent:
+                                                              (context) async {
+                                                            context.goNamedAuth(
+                                                              'PinCode',
+                                                              context.mounted,
+                                                              ignoreRedirect:
+                                                                  true,
+                                                            );
+                                                          },
+                                                        );
+                                                      },
+                                                      child: Text(
+                                                        valueOrDefault<String>(
+                                                          _model.selectedCounty
+                                                              ?.dialCode,
+                                                          '-',
+                                                        ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Nunito Sans',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                      ),
                                                     ),
                                                     Expanded(
-                                                      child: Container(
+                                                      child: SizedBox(
                                                         width: double.infinity,
                                                         child: TextFormField(
                                                           controller: _model
@@ -308,7 +237,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                                               EasyDebounce
                                                                   .debounce(
                                                             '_model.textController',
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                             () =>
@@ -387,26 +316,48 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 4.0)),
+                                                      const SizedBox(width: 4.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: FFButtonWidget(
-                                        onPressed: (_model
-                                                        .textController.text ==
-                                                    null ||
-                                                _model.textController.text ==
+                                        onPressed: (_model.textController.text ==
                                                     '')
                                             ? null
                                             : () async {
-                                                context.pushNamed('PinCode');
+                                                final phoneNumberVal =
+                                                    currentPhoneNumber;
+                                                if (phoneNumberVal.isEmpty ||
+                                                    !phoneNumberVal
+                                                        .startsWith('+')) {
+                                                  ScaffoldMessenger.of(context)
+                                                      .showSnackBar(
+                                                    const SnackBar(
+                                                      content: Text(
+                                                          'Phone Number is required and has to start with +.'),
+                                                    ),
+                                                  );
+                                                  return;
+                                                }
+                                                await authManager
+                                                    .beginPhoneAuth(
+                                                  context: context,
+                                                  phoneNumber: phoneNumberVal,
+                                                  onCodeSent: (context) async {
+                                                    context.goNamedAuth(
+                                                      'PinCode',
+                                                      context.mounted,
+                                                      ignoreRedirect: true,
+                                                    );
+                                                  },
+                                                );
                                               },
                                         text:
                                             FFLocalizations.of(context).getText(
@@ -415,10 +366,10 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                         options: FFButtonOptions(
                                           height: 50.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .secondary,
@@ -433,7 +384,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                                 letterSpacing: 0.0,
                                               ),
                                           elevation: 0.0,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 0.0,
                                           ),
@@ -445,22 +396,22 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.dividerModel,
                                   updateCallback: () => setState(() {}),
-                                  child: DividerWidget(
+                                  child: const DividerWidget(
                                     hasText: true,
                                   ),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -557,11 +508,11 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -586,12 +537,12 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                   ],
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -715,21 +666,21 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 32.0)),
+                          ].divide(const SizedBox(height: 32.0)),
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 24.0))
-                        .addToStart(SizedBox(height: 20.0))
-                        .addToEnd(SizedBox(height: 24.0)),
+                        .divide(const SizedBox(height: 24.0))
+                        .addToStart(const SizedBox(height: 20.0))
+                        .addToEnd(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

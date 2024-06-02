@@ -6,8 +6,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'order_name_model.dart';
 export 'order_name_model.dart';
 
@@ -52,16 +50,16 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -69,7 +67,7 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           showBackIcon: true,
                         ),
                       ),
@@ -83,7 +81,7 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -104,10 +102,10 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Material(
                                   color: Colors.transparent,
@@ -123,14 +121,14 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                                       borderRadius: BorderRadius.circular(0.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 4.0, 16.0, 4.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Expanded(
                                             child: Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -143,7 +141,7 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                                                       onChanged: (_) =>
                                                           EasyDebounce.debounce(
                                                         '_model.searchTextFieldTextController',
-                                                        Duration(
+                                                        const Duration(
                                                             milliseconds: 200),
                                                         () => setState(() {}),
                                                       ),
@@ -213,9 +211,6 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                                                   ),
                                                   if (_model.searchTextFieldTextController
                                                               .text !=
-                                                          null &&
-                                                      _model.searchTextFieldTextController
-                                                              .text !=
                                                           '')
                                                     FlutterFlowIconButton(
                                                       borderColor:
@@ -242,39 +237,35 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                                                         });
                                                       },
                                                     ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 4.0)),
+                                        ].divide(const SizedBox(width: 4.0)),
                                       ),
                                     ),
                                   ),
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 30.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 30.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: FFButtonWidget(
-                                  onPressed: (_model
-                                                  .searchTextFieldTextController
-                                                  .text ==
-                                              null ||
-                                          _model.searchTextFieldTextController
+                                  onPressed: (_model.searchTextFieldTextController
                                                   .text ==
                                               '')
                                       ? null
@@ -286,9 +277,9 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                                   ),
                                   options: FFButtonOptions(
                                     height: 60.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).secondary,
@@ -301,7 +292,7 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Colors.transparent,
                                       width: 1.0,
                                     ),
@@ -321,11 +312,11 @@ class _OrderNameWidgetState extends State<OrderNameWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

@@ -10,8 +10,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'order_picked_item_model.dart';
 export 'order_picked_item_model.dart';
 
@@ -51,16 +49,16 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Container(
+        body: SizedBox(
           width: double.infinity,
           height: double.infinity,
           child: Stack(
-            alignment: AlignmentDirectional(1.0, -1.0),
+            alignment: const AlignmentDirectional(1.0, -1.0),
             children: [
               Container(
                 width: double.infinity,
                 height: double.infinity,
-                decoration: BoxDecoration(),
+                decoration: const BoxDecoration(),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -72,7 +70,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(0.0),
                                   bottomRight: Radius.circular(0.0),
@@ -83,7 +81,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                               child: Stack(
                                 children: [
                                   ClipRRect(
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                       bottomLeft: Radius.circular(0.0),
                                       bottomRight: Radius.circular(0.0),
                                       topLeft: Radius.circular(12.0),
@@ -91,9 +89,9 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                     ),
                                     child: CachedNetworkImage(
                                       fadeInDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       fadeOutDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       imageUrl:
                                           'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTA3NDI0MTB8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                       width: double.infinity,
@@ -102,7 +100,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 54.0, 8.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -167,7 +165,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                             .viewInsetsOf(
                                                                 context),
                                                         child:
-                                                            StoreInfo4ModalWidget(),
+                                                            const StoreInfo4ModalWidget(),
                                                       ),
                                                     );
                                                   },
@@ -175,7 +173,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                     safeSetState(() {}));
                                               },
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ],
                                     ),
@@ -188,7 +186,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -210,7 +208,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -233,7 +231,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -259,18 +257,18 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 4.0))
-                                  .addToStart(SizedBox(height: 16.0)),
+                                  .divide(const SizedBox(height: 4.0))
+                                  .addToStart(const SizedBox(height: 16.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -300,7 +298,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 4.0, 8.0, 4.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -330,7 +328,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -341,7 +339,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                       context.pushNamed('OrderPickedDetails');
                                     },
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -431,7 +429,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         .greyG400,
                                                 size: 14.0,
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                         ],
                                       ),
@@ -439,7 +437,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -450,7 +448,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                       context.pushNamed('OrderPickedDetails');
                                     },
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -540,7 +538,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         .greyG400,
                                                 size: 14.0,
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                         ],
                                       ),
@@ -548,7 +546,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
                                     decoration: BoxDecoration(
@@ -556,12 +554,12 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                           FlutterFlowTheme.of(context).greyG60,
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -600,7 +598,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         ],
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Icon(
@@ -617,12 +615,12 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                             model: _model.dividerModel,
                                             updateCallback: () =>
                                                 setState(() {}),
-                                            child: DividerWidget(
+                                            child: const DividerWidget(
                                               hasText: false,
                                             ),
                                           ),
                                           Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -687,7 +685,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         ],
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Text(
@@ -708,24 +706,24 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                               ],
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 16.0)),
+                                        ].divide(const SizedBox(height: 16.0)),
                                       ),
                                     ),
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 4.0))
-                                  .addToStart(SizedBox(height: 16.0)),
+                                  .divide(const SizedBox(height: 4.0))
+                                  .addToStart(const SizedBox(height: 16.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -755,7 +753,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 4.0, 8.0, 4.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -781,14 +779,14 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -855,10 +853,10 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -945,17 +943,17 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                       .greyG400,
                                               size: 14.0,
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ],
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -1035,25 +1033,25 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ],
                                     ),
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 4.0))
-                                  .addToStart(SizedBox(height: 16.0)),
+                                  .divide(const SizedBox(height: 4.0))
+                                  .addToStart(const SizedBox(height: 16.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1074,11 +1072,11 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1102,21 +1100,21 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Expanded(
                                           child: Theme(
                                             data: ThemeData(
-                                              checkboxTheme: CheckboxThemeData(
+                                              checkboxTheme: const CheckboxThemeData(
                                                 visualDensity:
                                                     VisualDensity.compact,
                                                 materialTapTargetSize:
@@ -1185,24 +1183,24 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ],
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Expanded(
                                           child: Theme(
                                             data: ThemeData(
-                                              checkboxTheme: CheckboxThemeData(
+                                              checkboxTheme: const CheckboxThemeData(
                                                 visualDensity:
                                                     VisualDensity.compact,
                                                 materialTapTargetSize:
@@ -1271,24 +1269,24 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ],
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Expanded(
                                           child: Theme(
                                             data: ThemeData(
-                                              checkboxTheme: CheckboxThemeData(
+                                              checkboxTheme: const CheckboxThemeData(
                                                 visualDensity:
                                                     VisualDensity.compact,
                                                 materialTapTargetSize:
@@ -1357,24 +1355,24 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ],
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Expanded(
                                           child: Theme(
                                             data: ThemeData(
-                                              checkboxTheme: CheckboxThemeData(
+                                              checkboxTheme: const CheckboxThemeData(
                                                 visualDensity:
                                                     VisualDensity.compact,
                                                 materialTapTargetSize:
@@ -1443,25 +1441,25 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ],
                                     ),
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 4.0))
-                                  .addToStart(SizedBox(height: 16.0)),
+                                  .divide(const SizedBox(height: 4.0))
+                                  .addToStart(const SizedBox(height: 16.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1482,11 +1480,11 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1510,16 +1508,16 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 8.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1554,7 +1552,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
-                                              ].divide(SizedBox(width: 20.0)),
+                                              ].divide(const SizedBox(width: 20.0)),
                                             ),
                                           ),
                                           Text(
@@ -1575,18 +1573,18 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 4.0))
-                                  .addToStart(SizedBox(height: 16.0)),
+                                  .divide(const SizedBox(height: 4.0))
+                                  .addToStart(const SizedBox(height: 16.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1607,11 +1605,11 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1635,16 +1633,16 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                               ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 8.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1670,18 +1668,18 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 20.0)),
+                                        ].divide(const SizedBox(width: 20.0)),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 8.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1707,18 +1705,18 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 20.0)),
+                                        ].divide(const SizedBox(width: 20.0)),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 8.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1744,23 +1742,23 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 20.0)),
+                                        ].divide(const SizedBox(width: 20.0)),
                                       ),
                                     ),
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 4.0))
-                                  .addToStart(SizedBox(height: 16.0)),
+                                  .divide(const SizedBox(height: 4.0))
+                                  .addToStart(const SizedBox(height: 16.0)),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 16.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Container(
                                       width: 160.0,
@@ -1822,7 +1820,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -1906,14 +1904,14 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: FFButtonWidget(
                                 onPressed: () {
@@ -1924,9 +1922,9 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                 ),
                                 options: FFButtonOptions(
                                   height: 60.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).secondary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -1938,7 +1936,7 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                                         letterSpacing: 0.0,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -1954,11 +1952,11 @@ class _OrderPickedItemWidgetState extends State<OrderPickedItemWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 98.0, 8.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 98.0, 8.0, 0.0),
                 child: wrapWithModel(
                   model: _model.navigatorModel,
                   updateCallback: () => setState(() {}),
-                  child: NavigatorWidget(
+                  child: const NavigatorWidget(
                     expanded: false,
                   ),
                 ),

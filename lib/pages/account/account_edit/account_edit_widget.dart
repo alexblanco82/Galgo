@@ -4,10 +4,7 @@ import '/componnents/navigator/navigator_widget.dart';
 import '/componnents/photo_upload_profile/photo_upload_profile_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'account_edit_model.dart';
 export 'account_edit_model.dart';
 
@@ -49,16 +46,16 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
         backgroundColor: FlutterFlowTheme.of(context).greyG60,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -67,7 +64,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Edit account',
                           showBackIcon: true,
                         ),
@@ -79,14 +76,14 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 0.0, 0.0),
                                   child: wrapWithModel(
                                     model: _model.photoUploadProfileModel,
                                     updateCallback: () => setState(() {}),
-                                    child: PhotoUploadProfileWidget(
+                                    child: const PhotoUploadProfileWidget(
                                       imageInitialValue:
                                           'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/shoppir-dashboard-kra943/assets/nww2n0r63001/avatar01.png',
                                     ),
@@ -110,7 +107,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                         context.pushNamed('UpdateFirstName');
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -162,7 +159,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                                       .secondaryBackground,
                                               dense: false,
                                               contentPadding:
-                                                  EdgeInsetsDirectional
+                                                  const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                             ),
@@ -170,7 +167,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                               model: _model.dividerModel1,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: DividerWidget(
+                                              child: const DividerWidget(
                                                 hasText: false,
                                               ),
                                             ),
@@ -179,7 +176,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -229,14 +226,14 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                                     .secondaryBackground,
                                             dense: false,
                                             contentPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                           ),
                                           wrapWithModel(
                                             model: _model.dividerModel2,
                                             updateCallback: () =>
                                                 setState(() {}),
-                                            child: DividerWidget(
+                                            child: const DividerWidget(
                                               hasText: false,
                                             ),
                                           ),
@@ -244,7 +241,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -263,7 +260,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 8.0, 0.0, 8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -333,7 +330,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                                         ],
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 6.0)),
+                                                        const SizedBox(height: 6.0)),
                                                   ),
                                                 ),
                                                 Row(
@@ -369,7 +366,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                                       size: 12.0,
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 12.0)),
+                                                      const SizedBox(width: 12.0)),
                                                 ),
                                               ],
                                             ),
@@ -380,12 +377,12 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                     wrapWithModel(
                                       model: _model.dividerModel3,
                                       updateCallback: () => setState(() {}),
-                                      child: DividerWidget(
+                                      child: const DividerWidget(
                                         hasText: false,
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -403,7 +400,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 8.0, 0.0, 8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -473,7 +470,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                                         ],
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 6.0)),
+                                                        const SizedBox(height: 6.0)),
                                                   ),
                                                 ),
                                                 Row(
@@ -509,7 +506,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                                       size: 12.0,
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 12.0)),
+                                                      const SizedBox(width: 12.0)),
                                                 ),
                                               ],
                                             ),
@@ -520,12 +517,12 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                     wrapWithModel(
                                       model: _model.dividerModel4,
                                       updateCallback: () => setState(() {}),
-                                      child: DividerWidget(
+                                      child: const DividerWidget(
                                         hasText: false,
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -543,7 +540,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 8.0, 0.0, 8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -613,7 +610,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                                         ],
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 6.0)),
+                                                        const SizedBox(height: 6.0)),
                                                   ),
                                                 ),
                                                 Row(
@@ -629,7 +626,7 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                                       size: 12.0,
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 12.0)),
+                                                      const SizedBox(width: 12.0)),
                                                 ),
                                               ],
                                             ),
@@ -641,22 +638,22 @@ class _AccountEditWidgetState extends State<AccountEditWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 30.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 30.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 12.0))
-                        .addToEnd(SizedBox(height: 34.0)),
+                        .divide(const SizedBox(height: 12.0))
+                        .addToEnd(const SizedBox(height: 34.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

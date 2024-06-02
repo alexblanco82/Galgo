@@ -2,12 +2,9 @@ import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'search1_model.dart';
 export 'search1_model.dart';
 
@@ -52,7 +49,7 @@ class _Search1WidgetState extends State<Search1Widget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
@@ -60,12 +57,12 @@ class _Search1WidgetState extends State<Search1Widget> {
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Material(
                           color: Colors.transparent,
@@ -80,14 +77,14 @@ class _Search1WidgetState extends State<Search1Widget> {
                               borderRadius: BorderRadius.circular(100.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 4.0, 16.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -117,7 +114,7 @@ class _Search1WidgetState extends State<Search1Widget> {
                                               onChanged: (_) =>
                                                   EasyDebounce.debounce(
                                                 '_model.searchTextFieldTextController',
-                                                Duration(milliseconds: 200),
+                                                const Duration(milliseconds: 200),
                                                 () => setState(() {}),
                                               ),
                                               autofocus: false,
@@ -173,9 +170,6 @@ class _Search1WidgetState extends State<Search1Widget> {
                                           ),
                                           if (_model.searchTextFieldTextController
                                                       .text !=
-                                                  null &&
-                                              _model.searchTextFieldTextController
-                                                      .text !=
                                                   '')
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
@@ -200,11 +194,11 @@ class _Search1WidgetState extends State<Search1Widget> {
                                                 });
                                               },
                                             ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 4.0)),
+                                ].divide(const SizedBox(width: 4.0)),
                               ),
                             ),
                           ),
@@ -271,7 +265,7 @@ class _Search1WidgetState extends State<Search1Widget> {
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Container(
+                            SizedBox(
                               width: double.infinity,
                               child: Stack(
                                 children: [
@@ -378,8 +372,8 @@ class _Search1WidgetState extends State<Search1Widget> {
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 16.0))
-                        .addToStart(SizedBox(height: 24.0)),
+                        .divide(const SizedBox(height: 16.0))
+                        .addToStart(const SizedBox(height: 24.0)),
                   ),
                 ),
               ],

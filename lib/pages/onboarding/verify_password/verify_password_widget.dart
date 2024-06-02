@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'verify_password_model.dart';
 export 'verify_password_model.dart';
 
@@ -51,16 +49,16 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,7 +66,7 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: ' ',
                           showBackIcon: true,
                         ),
@@ -82,7 +80,7 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -108,7 +106,7 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: TextFormField(
                                       controller: _model
@@ -117,7 +115,7 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                                           _model.passwordTextFieldFocusNode,
                                       onChanged: (_) => EasyDebounce.debounce(
                                         '_model.passwordTextFieldTextController',
-                                        Duration(milliseconds: 500),
+                                        const Duration(milliseconds: 500),
                                         () => setState(() {}),
                                       ),
                                       autofocus: false,
@@ -209,7 +207,7 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 20.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -235,32 +233,28 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 6.0))
-                                    .addToStart(SizedBox(height: 30.0)),
+                                    .divide(const SizedBox(height: 6.0))
+                                    .addToStart(const SizedBox(height: 30.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 30.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 30.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: FFButtonWidget(
-                                  onPressed: (_model
-                                                  .passwordTextFieldTextController
-                                                  .text ==
-                                              null ||
-                                          _model.passwordTextFieldTextController
+                                  onPressed: (_model.passwordTextFieldTextController
                                                   .text ==
                                               '')
                                       ? null
@@ -272,9 +266,9 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                                   ),
                                   options: FFButtonOptions(
                                     height: 60.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).secondary,
@@ -287,7 +281,7 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Colors.transparent,
                                       width: 1.0,
                                     ),
@@ -307,11 +301,11 @@ class _VerifyPasswordWidgetState extends State<VerifyPasswordWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

@@ -3,10 +3,7 @@ import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'payment_method_model.dart';
 export 'payment_method_model.dart';
 
@@ -48,11 +45,11 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
@@ -67,7 +64,7 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
                         updateOnChange: true,
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           showBackIcon: true,
                         ),
                       ),
@@ -77,7 +74,7 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -99,7 +96,7 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 43.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -107,7 +104,7 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
                                       CrossAxisAlignment.stretch,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: ListTile(
                                         leading: Icon(
@@ -139,18 +136,18 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           70.0, 0.0, 0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.dividerModel1,
                                         updateCallback: () => setState(() {}),
-                                        child: DividerWidget(
+                                        child: const DividerWidget(
                                           hasText: false,
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: ListTile(
                                         leading: Icon(
@@ -182,18 +179,18 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           70.0, 0.0, 0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.dividerModel2,
                                         updateCallback: () => setState(() {}),
-                                        child: DividerWidget(
+                                        child: const DividerWidget(
                                           hasText: false,
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -234,12 +231,12 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                             ]
-                                .addToStart(SizedBox(height: 20.0))
-                                .addToEnd(SizedBox(height: 24.0)),
+                                .addToStart(const SizedBox(height: 20.0))
+                                .addToEnd(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
@@ -247,11 +244,11 @@ class _PaymentMethodWidgetState extends State<PaymentMethodWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

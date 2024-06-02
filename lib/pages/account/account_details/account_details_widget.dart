@@ -3,11 +3,8 @@ import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'account_details_model.dart';
 export 'account_details_model.dart';
 
@@ -49,23 +46,23 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
         backgroundColor: FlutterFlowTheme.of(context).greyG60,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           showBackIcon: true,
                         ),
                       ),
@@ -95,14 +92,14 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                                           width: 84.0,
                                           height: 84.0,
                                           clipBehavior: Clip.antiAlias,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             shape: BoxShape.circle,
                                           ),
                                           child: CachedNetworkImage(
                                             fadeInDuration:
-                                                Duration(milliseconds: 500),
+                                                const Duration(milliseconds: 500),
                                             fadeOutDuration:
-                                                Duration(milliseconds: 500),
+                                                const Duration(milliseconds: 500),
                                             imageUrl:
                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/shoppir-dashboard-kra943/assets/nww2n0r63001/avatar01.png',
                                             fit: BoxFit.cover,
@@ -136,7 +133,7 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                                             ),
                                           ],
                                         ),
-                                      ].divide(SizedBox(height: 12.0)),
+                                      ].divide(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                   Row(
@@ -153,9 +150,9 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                                             context.pushNamed('AccountEdit');
                                           },
                                           child: Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
@@ -180,8 +177,8 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                                     ],
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 12.0))
-                                    .addToEnd(SizedBox(height: 24.0)),
+                                    .divide(const SizedBox(height: 12.0))
+                                    .addToEnd(const SizedBox(height: 24.0)),
                               ),
                             ),
                             Column(
@@ -189,9 +186,9 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 20.0, 16.0, 20.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -272,18 +269,18 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                                                     .secondaryBackground,
                                             dense: false,
                                             contentPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: wrapWithModel(
                                               model: _model.dividerModel,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: DividerWidget(
+                                              child: const DividerWidget(
                                                 hasText: false,
                                               ),
                                             ),
@@ -297,7 +294,7 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                                             .primaryBackground,
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 10.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -349,7 +346,7 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                                                       .secondaryBackground,
                                               dense: false,
                                               contentPadding:
-                                                  EdgeInsetsDirectional
+                                                  const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                             ),
@@ -362,7 +359,7 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
@@ -370,7 +367,7 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                                       .primaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 20.0, 16.0, 20.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -401,11 +398,11 @@ class _AccountDetailsWidgetState extends State<AccountDetailsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

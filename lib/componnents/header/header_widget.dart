@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'header_model.dart';
 export 'header_model.dart';
 
@@ -12,7 +10,7 @@ class HeaderWidget extends StatefulWidget {
     super.key,
     this.title,
     bool? showBackIcon,
-  }) : this.showBackIcon = showBackIcon ?? false;
+  }) : showBackIcon = showBackIcon ?? false;
 
   final String? title;
   final bool showBackIcon;
@@ -49,9 +47,9 @@ class _HeaderWidgetState extends State<HeaderWidget> {
   Widget build(BuildContext context) {
     return Container(
       height: 42.0,
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -79,7 +77,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
             ),
             Container(
               width: 40.0,
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
             ),
           ],
         ),

@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'account_email_model.dart';
 export 'account_email_model.dart';
 
@@ -51,11 +49,11 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
@@ -72,7 +70,7 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -97,13 +95,13 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                               key: _model.formKey,
                               autovalidateMode: AutovalidateMode.disabled,
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Expanded(
-                                      child: Container(
+                                      child: SizedBox(
                                         width: 300.0,
                                         child: TextFormField(
                                           controller: _model
@@ -113,7 +111,7 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                                           onChanged: (_) =>
                                               EasyDebounce.debounce(
                                             '_model.emailTextFieldTextController',
-                                            Duration(milliseconds: 500),
+                                            const Duration(milliseconds: 500),
                                             () => setState(() {}),
                                           ),
                                           autofocus: false,
@@ -212,11 +210,11 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 27.0)),
+                          ].divide(const SizedBox(height: 27.0)),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -238,9 +236,7 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                             ),
                             FFButtonWidget(
                               onPressed:
-                                  (_model.emailTextFieldTextController.text ==
-                                              null ||
-                                          _model.emailTextFieldTextController
+                                  (_model.emailTextFieldTextController
                                                   .text ==
                                               '')
                                       ? null
@@ -254,9 +250,6 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                                 FFIcons.karrowRight,
                                 color: _model.emailTextFieldTextController
                                                 .text ==
-                                            null ||
-                                        _model.emailTextFieldTextController
-                                                .text ==
                                             ''
                                     ? FlutterFlowTheme.of(context).inkLighter
                                     : FlutterFlowTheme.of(context)
@@ -265,9 +258,9 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                               ),
                               options: FFButtonOptions(
                                 height: 55.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 10.0, 16.0, 10.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).secondary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -279,7 +272,7 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                                       letterSpacing: 0.0,
                                     ),
                                 elevation: 0.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -294,16 +287,16 @@ class _AccountEmailWidgetState extends State<AccountEmailWidget> {
                         ),
                       ),
                     ]
-                        .addToStart(SizedBox(height: 20.0))
-                        .addToEnd(SizedBox(height: 24.0)),
+                        .addToStart(const SizedBox(height: 20.0))
+                        .addToEnd(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

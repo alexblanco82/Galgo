@@ -3,11 +3,8 @@ import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'store_model.dart';
 export 'store_model.dart';
 
@@ -47,11 +44,11 @@ class _StoreWidgetState extends State<StoreWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Container(
+        body: SizedBox(
           width: double.infinity,
           height: double.infinity,
           child: Stack(
-            alignment: AlignmentDirectional(1.0, -1.0),
+            alignment: const AlignmentDirectional(1.0, -1.0),
             children: [
               Container(
                 width: double.infinity,
@@ -67,8 +64,8 @@ class _StoreWidgetState extends State<StoreWidget> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(0.0),
                           child: CachedNetworkImage(
-                            fadeInDuration: Duration(milliseconds: 500),
-                            fadeOutDuration: Duration(milliseconds: 500),
+                            fadeInDuration: const Duration(milliseconds: 500),
+                            fadeOutDuration: const Duration(milliseconds: 500),
                             imageUrl:
                                 'https://images.unsplash.com/photo-1478860409698-8707f313ee8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyfHxtYXB8ZW58MHx8fHwxNzA5ODI3MzcxfDA&ixlib=rb-4.0.3&q=80&w=1080',
                             width: double.infinity,
@@ -77,13 +74,13 @@ class _StoreWidgetState extends State<StoreWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 54.0, 0.0, 0.0),
                           child: wrapWithModel(
                             model: _model.headerModel,
                             updateCallback: () => setState(() {}),
                             updateOnChange: true,
-                            child: HeaderWidget(
+                            child: const HeaderWidget(
                               showBackIcon: true,
                             ),
                           ),
@@ -97,7 +94,7 @@ class _StoreWidgetState extends State<StoreWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -119,7 +116,7 @@ class _StoreWidgetState extends State<StoreWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -190,17 +187,17 @@ class _StoreWidgetState extends State<StoreWidget> {
                                           ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 4.0)),
+                                ].divide(const SizedBox(width: 4.0)),
                               ),
                             ),
-                          ].divide(SizedBox(height: 4.0)),
+                          ].divide(const SizedBox(height: 4.0)),
                         ),
                         Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: ListTile(
                                 leading: Icon(
@@ -230,23 +227,23 @@ class _StoreWidgetState extends State<StoreWidget> {
                                 tileColor: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                                 dense: false,
-                                contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   70.0, 0.0, 0.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.dividerModel1,
                                 updateCallback: () => setState(() {}),
-                                child: DividerWidget(
+                                child: const DividerWidget(
                                   hasText: false,
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: ListTile(
                                 leading: Icon(
@@ -276,23 +273,23 @@ class _StoreWidgetState extends State<StoreWidget> {
                                 tileColor: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                                 dense: false,
-                                contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   70.0, 0.0, 0.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.dividerModel2,
                                 updateCallback: () => setState(() {}),
-                                child: DividerWidget(
+                                child: const DividerWidget(
                                   hasText: false,
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: ListTile(
                                 leading: Icon(
@@ -322,23 +319,23 @@ class _StoreWidgetState extends State<StoreWidget> {
                                 tileColor: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                                 dense: false,
-                                contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   70.0, 0.0, 0.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.dividerModel3,
                                 updateCallback: () => setState(() {}),
-                                child: DividerWidget(
+                                child: const DividerWidget(
                                   hasText: false,
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: ListTile(
                                 leading: Icon(
@@ -374,37 +371,37 @@ class _StoreWidgetState extends State<StoreWidget> {
                                 tileColor: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                                 dense: false,
-                                contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   70.0, 0.0, 0.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.dividerModel4,
                                 updateCallback: () => setState(() {}),
-                                child: DividerWidget(
+                                child: const DividerWidget(
                                   hasText: false,
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                       ]
-                          .divide(SizedBox(height: 16.0))
-                          .addToStart(SizedBox(height: 20.0))
-                          .addToEnd(SizedBox(height: 24.0)),
+                          .divide(const SizedBox(height: 16.0))
+                          .addToStart(const SizedBox(height: 20.0))
+                          .addToEnd(const SizedBox(height: 24.0)),
                     ),
-                  ].divide(SizedBox(height: 24.0)),
+                  ].divide(const SizedBox(height: 24.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                 child: wrapWithModel(
                   model: _model.navigatorModel,
                   updateCallback: () => setState(() {}),
-                  child: NavigatorWidget(
+                  child: const NavigatorWidget(
                     expanded: false,
                   ),
                 ),

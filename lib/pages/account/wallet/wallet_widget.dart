@@ -6,8 +6,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'wallet_model.dart';
 export 'wallet_model.dart';
 
@@ -49,16 +47,16 @@ class _WalletWidgetState extends State<WalletWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -66,7 +64,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Wallet',
                           showBackIcon: true,
                         ),
@@ -78,11 +76,11 @@ class _WalletWidgetState extends State<WalletWidget> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0x14000000),
@@ -98,9 +96,9 @@ class _WalletWidgetState extends State<WalletWidget> {
                                         FlutterFlowTheme.of(context).greyG400,
                                         FlutterFlowTheme.of(context).greyG60
                                       ],
-                                      stops: [0.0, 1.0],
-                                      begin: AlignmentDirectional(1.0, 0.34),
-                                      end: AlignmentDirectional(-1.0, -0.34),
+                                      stops: const [0.0, 1.0],
+                                      begin: const AlignmentDirectional(1.0, 0.34),
+                                      end: const AlignmentDirectional(-1.0, -0.34),
                                     ),
                                     borderRadius: BorderRadius.circular(24.0),
                                     border: Border.all(
@@ -109,7 +107,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(26.0),
+                                    padding: const EdgeInsets.all(26.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -173,7 +171,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                     ],
                                                   ),
                                                 ].divide(
-                                                    SizedBox(height: 10.0)),
+                                                    const SizedBox(height: 10.0)),
                                               ),
                                             ),
                                             Icon(
@@ -202,10 +200,10 @@ class _WalletWidgetState extends State<WalletWidget> {
                                           options: FFButtonOptions(
                                             height: 52.0,
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 0.0, 20.0, 0.0),
                                             iconPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -221,7 +219,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                       letterSpacing: 0.0,
                                                     ),
                                             elevation: 0.0,
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Colors.transparent,
                                               width: 0.0,
                                             ),
@@ -229,18 +227,18 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                 BorderRadius.circular(100.0),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 50.0)),
+                                      ].divide(const SizedBox(height: 50.0)),
                                     ),
                                   ),
                                 ),
                               ),
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 8.0, 16.0, 8.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -254,9 +252,9 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                       BorderRadius.circular(
                                                           0.0),
                                                   child: CachedNetworkImage(
-                                                    fadeInDuration: Duration(
+                                                    fadeInDuration: const Duration(
                                                         milliseconds: 500),
-                                                    fadeOutDuration: Duration(
+                                                    fadeOutDuration: const Duration(
                                                         milliseconds: 500),
                                                     imageUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/u5szqvm8iry3/mastercard_logo.jpg',
@@ -284,7 +282,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
-                                              ].divide(SizedBox(width: 16.0)),
+                                              ].divide(const SizedBox(width: 16.0)),
                                             ),
                                           ),
                                           Icon(
@@ -297,17 +295,17 @@ class _WalletWidgetState extends State<WalletWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           70.0, 0.0, 0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.dividerModel1,
                                         updateCallback: () => setState(() {}),
-                                        child: DividerWidget(
+                                        child: const DividerWidget(
                                           hasText: false,
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Container(
@@ -316,7 +314,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -342,13 +340,13 @@ class _WalletWidgetState extends State<WalletWidget> {
                                               letterSpacing: 0.0,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 40.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 40.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
@@ -356,7 +354,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -379,12 +377,12 @@ class _WalletWidgetState extends State<WalletWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 70.0, 0.0, 0.0, 0.0),
                             child: wrapWithModel(
                               model: _model.dividerModel2,
                               updateCallback: () => setState(() {}),
-                              child: DividerWidget(
+                              child: const DividerWidget(
                                 hasText: false,
                               ),
                             ),
@@ -398,12 +396,12 @@ class _WalletWidgetState extends State<WalletWidget> {
                               context.pushNamed('Vouchers');
                             },
                             child: Container(
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 8.0, 16.0, 8.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -437,7 +435,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                       letterSpacing: 0.0,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 16.0)),
+                                            ].divide(const SizedBox(width: 16.0)),
                                           ),
                                         ),
                                         Text(
@@ -460,21 +458,21 @@ class _WalletWidgetState extends State<WalletWidget> {
                                               .greyG400,
                                           size: 16.0,
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         70.0, 0.0, 0.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.dividerModel3,
                                       updateCallback: () => setState(() {}),
-                                      child: DividerWidget(
+                                      child: const DividerWidget(
                                         hasText: false,
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                             ),
                           ),
@@ -487,9 +485,9 @@ class _WalletWidgetState extends State<WalletWidget> {
                               context.pushNamed('AddCode');
                             },
                             child: Container(
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 8.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -514,23 +512,23 @@ class _WalletWidgetState extends State<WalletWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 16.0)),
+                                  ].divide(const SizedBox(width: 16.0)),
                                 ),
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
-                    ].addToEnd(SizedBox(height: 24.0)),
+                    ].addToEnd(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
                     updateOnChange: true,
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'nav_bar_item_model.dart';
 export 'nav_bar_item_model.dart';
 
@@ -15,8 +13,8 @@ class NavBarItemWidget extends StatefulWidget {
     this.action,
     required this.currentItemName,
     String? title,
-  })  : this.activePage = activePage ?? 'Home',
-        this.title = title ?? 'TITLE';
+  })  : activePage = activePage ?? 'Home',
+        title = title ?? 'TITLE';
 
   final String activePage;
   final Widget? unselectedIcon;
@@ -69,7 +67,7 @@ class _NavBarItemWidgetState extends State<NavBarItemWidget> {
         width: 48.0,
         height: 48.0,
         decoration: BoxDecoration(
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 35.0,
               color: Color(0x15676E76),

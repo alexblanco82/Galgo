@@ -3,12 +3,9 @@ import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'browse_model.dart';
 export 'browse_model.dart';
 
@@ -53,21 +50,21 @@ class _BrowseWidgetState extends State<BrowseWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Material(
                           color: Colors.transparent,
@@ -82,14 +79,14 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                               borderRadius: BorderRadius.circular(100.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 4.0, 16.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -119,7 +116,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               onChanged: (_) =>
                                                   EasyDebounce.debounce(
                                                 '_model.searchTextFieldTextController',
-                                                Duration(milliseconds: 200),
+                                                const Duration(milliseconds: 200),
                                                 () => setState(() {}),
                                               ),
                                               autofocus: false,
@@ -175,9 +172,6 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                           ),
                                           if (_model.searchTextFieldTextController
                                                       .text !=
-                                                  null &&
-                                              _model.searchTextFieldTextController
-                                                      .text !=
                                                   '')
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
@@ -202,11 +196,11 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                                 });
                                               },
                                             ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 4.0)),
+                                ].divide(const SizedBox(width: 4.0)),
                               ),
                             ),
                           ),
@@ -218,7 +212,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -244,14 +238,14 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                             ),
                             Expanded(
                               child: GridView(
-                                padding: EdgeInsets.fromLTRB(
+                                padding: const EdgeInsets.fromLTRB(
                                   0,
                                   24.0,
                                   0,
                                   0,
                                 ),
                                 gridDelegate:
-                                    SliverGridDelegateWithFixedCrossAxisCount(
+                                    const SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 2,
                                   crossAxisSpacing: 12.0,
                                   mainAxisSpacing: 14.0,
@@ -261,7 +255,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Container(
                                       height: 140.0,
@@ -277,7 +271,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(6.0),
@@ -285,9 +279,9 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1624855600799-ac8e8bddd1da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MTAwNTQwNjd8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                               width: double.infinity,
@@ -320,12 +314,12 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       height: 140.0,
@@ -341,7 +335,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(6.0),
@@ -349,9 +343,9 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxwaXp6YXxlbnwwfHx8fDE3MTAwMTgyNDd8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                               width: double.infinity,
@@ -384,12 +378,12 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -404,7 +398,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(6.0),
@@ -412,9 +406,9 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1632203171982-cc0df6e9ceb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw0fHxmYXN0Zm9vZHxlbnwwfHx8fDE3MTIzMDc0NTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                               width: double.infinity,
@@ -447,12 +441,12 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -467,7 +461,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(6.0),
@@ -475,9 +469,9 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1620646146961-fb8c077b6b61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw5fHxmYXN0Zm9vZHxlbnwwfHx8fDE3MTIzMDc0NTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                               width: double.infinity,
@@ -510,12 +504,12 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -530,7 +524,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(6.0),
@@ -538,9 +532,9 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1609167830220-7164aa360951?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMXx8ZmFzdGZvb2R8ZW58MHx8fHwxNzEyMzA3NDUxfDA&ixlib=rb-4.0.3&q=80&w=1080',
                                               width: double.infinity,
@@ -573,12 +567,12 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -593,7 +587,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(6.0),
@@ -601,9 +595,9 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1601369791117-e473fc0da14d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxNXx8ZmFzdGZvb2R8ZW58MHx8fHwxNzEyMzA3NDUxfDA&ixlib=rb-4.0.3&q=80&w=1080',
                                               width: double.infinity,
@@ -636,12 +630,12 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -656,7 +650,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(6.0),
@@ -664,9 +658,9 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MTIzMDc0NTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                               width: double.infinity,
@@ -699,12 +693,12 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -719,7 +713,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(6.0),
@@ -727,9 +721,9 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                             ),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1615996001375-c7ef13294436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MTIzMDc0NTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                               width: double.infinity,
@@ -762,7 +756,7 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
@@ -775,21 +769,21 @@ class _BrowseWidgetState extends State<BrowseWidget> {
                       wrapWithModel(
                         model: _model.navBarModel,
                         updateCallback: () => setState(() {}),
-                        child: NavBarWidget(
+                        child: const NavBarWidget(
                           activePage: 'Browse',
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 16.0))
-                        .addToStart(SizedBox(height: 24.0)),
+                        .divide(const SizedBox(height: 16.0))
+                        .addToStart(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 78.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 78.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

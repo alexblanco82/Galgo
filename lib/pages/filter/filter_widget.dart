@@ -6,8 +6,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'filter_model.dart';
 export 'filter_model.dart';
 
@@ -49,25 +47,25 @@ class _FilterWidgetState extends State<FilterWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Container(
                           height: 42.0,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -100,7 +98,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                               ),
                               Container(
                                 width: 60.0,
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Visibility(
                                   visible:
                                       _model.checkboxListTileValue1 ?? true,
@@ -138,7 +136,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -162,7 +160,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ],
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -176,7 +174,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -228,7 +226,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -238,7 +236,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -252,7 +250,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -304,7 +302,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -314,7 +312,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -328,7 +326,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -380,7 +378,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -390,7 +388,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -404,7 +402,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -456,7 +454,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -465,11 +463,11 @@ class _FilterWidgetState extends State<FilterWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -493,7 +491,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ],
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -511,7 +509,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                               onChanged: (newValue) async {
                                                 setState(() => _model
                                                         .switchListTileValue1 =
-                                                    newValue!);
+                                                    newValue);
                                               },
                                               title: Text(
                                                 FFLocalizations.of(context)
@@ -544,7 +542,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   ListTileControlAffinity
                                                       .trailing,
                                               contentPadding:
-                                                  EdgeInsetsDirectional
+                                                  const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           8.0, 0.0, 0.0, 0.0),
                                             ),
@@ -553,7 +551,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -571,7 +569,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                               onChanged: (newValue) async {
                                                 setState(() => _model
                                                         .switchListTileValue2 =
-                                                    newValue!);
+                                                    newValue);
                                               },
                                               title: Text(
                                                 FFLocalizations.of(context)
@@ -604,7 +602,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   ListTileControlAffinity
                                                       .trailing,
                                               contentPadding:
-                                                  EdgeInsetsDirectional
+                                                  const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           8.0, 0.0, 0.0, 0.0),
                                             ),
@@ -612,11 +610,11 @@ class _FilterWidgetState extends State<FilterWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -696,13 +694,13 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             },
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -732,7 +730,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       children: [
                                         Expanded(
                                           child: SliderTheme(
-                                            data: SliderThemeData(
+                                            data: const SliderThemeData(
                                               showValueIndicator:
                                                   ShowValueIndicator.always,
                                             ),
@@ -757,13 +755,13 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -787,7 +785,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ],
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -801,7 +799,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -853,7 +851,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -863,7 +861,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -877,7 +875,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -929,7 +927,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -939,7 +937,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -953,7 +951,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -1005,7 +1003,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -1015,7 +1013,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -1029,7 +1027,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -1081,7 +1079,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -1091,7 +1089,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -1105,7 +1103,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             child: Theme(
                                               data: ThemeData(
                                                 checkboxTheme:
-                                                    CheckboxThemeData(
+                                                    const CheckboxThemeData(
                                                   visualDensity:
                                                       VisualDensity.compact,
                                                   materialTapTargetSize:
@@ -1157,7 +1155,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                     ListTileControlAffinity
                                                         .trailing,
                                                 contentPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
                                               ),
@@ -1166,12 +1164,12 @@ class _FilterWidgetState extends State<FilterWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12.0)),
+                                  ].divide(const SizedBox(height: 12.0)),
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 24.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 24.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
@@ -1181,12 +1179,12 @@ class _FilterWidgetState extends State<FilterWidget> {
                           wrapWithModel(
                             model: _model.dividerModel,
                             updateCallback: () => setState(() {}),
-                            child: DividerWidget(
+                            child: const DividerWidget(
                               hasText: false,
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 24.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1202,10 +1200,10 @@ class _FilterWidgetState extends State<FilterWidget> {
                                     ),
                                     options: FFButtonOptions(
                                       height: 60.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color: FlutterFlowTheme.of(context)
                                           .secondary,
@@ -1218,7 +1216,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                       elevation: 0.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 1.0,
                                       ),
@@ -1229,19 +1227,19 @@ class _FilterWidgetState extends State<FilterWidget> {
                               ],
                             ),
                           ),
-                        ].divide(SizedBox(height: 16.0)),
+                        ].divide(const SizedBox(height: 16.0)),
                       ),
                     ],
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.98, -0.88),
+                  alignment: const AlignmentDirectional(0.98, -0.88),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
                     child: wrapWithModel(
                       model: _model.navigatorModel,
                       updateCallback: () => setState(() {}),
-                      child: NavigatorWidget(
+                      child: const NavigatorWidget(
                         expanded: false,
                       ),
                     ),

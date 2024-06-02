@@ -6,8 +6,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'courier_profile_model.dart';
 export 'courier_profile_model.dart';
 
@@ -49,23 +47,23 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           showBackIcon: true,
                         ),
                       ),
@@ -83,14 +81,14 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                     width: 252.0,
                                     height: 252.0,
                                     clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: CachedNetworkImage(
                                       fadeInDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       fadeOutDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       imageUrl:
                                           'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8cHJvZmlsZXxlbnwwfHx8fDE3MTA4Mjk0MDl8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                       fit: BoxFit.cover,
@@ -143,7 +141,7 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                       ),
                                     ],
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                               Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -201,7 +199,7 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                             ),
                                           ],
                                         ),
-                                      ].divide(SizedBox(height: 4.0)),
+                                      ].divide(const SizedBox(height: 4.0)),
                                     ),
                                   ),
                                   SizedBox(
@@ -246,7 +244,7 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                                       .secondary,
                                               size: 18.0,
                                             ),
-                                          ].divide(SizedBox(width: 4.0)),
+                                          ].divide(const SizedBox(width: 4.0)),
                                         ),
                                         Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -272,7 +270,7 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                             ),
                                           ],
                                         ),
-                                      ].divide(SizedBox(height: 4.0)),
+                                      ].divide(const SizedBox(height: 4.0)),
                                     ),
                                   ),
                                 ],
@@ -281,7 +279,7 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -318,17 +316,17 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              Container(
+                                              SizedBox(
                                                 width: 100.0,
                                                 height: 100.0,
                                                 child: Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           1.0, -1.0),
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Container(
                                                         width: 94.0,
@@ -358,7 +356,7 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: Text(
                                                           FFLocalizations.of(
                                                                   context)
@@ -406,7 +404,7 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 5.0)),
+                                            ].divide(const SizedBox(height: 5.0)),
                                           ),
                                         ),
                                         Container(
@@ -417,23 +415,23 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              Container(
+                                              SizedBox(
                                                 width: 100.0,
                                                 height: 100.0,
                                                 child: Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           1.0, -1.0),
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Container(
                                                         width: 94.0,
                                                         height: 94.0,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           color:
                                                               Color(0xFF628FF2),
                                                           shape:
@@ -456,7 +454,7 @@ class _CourierProfileWidgetState extends State<CourierProfileWidget> {
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: Text(
                                                           FFLocalizations.of(
                                                                   context)
@@ -506,7 +504,7 @@ efficient */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 5.0)),
+                                            ].divide(const SizedBox(height: 5.0)),
                                           ),
                                         ),
                                         Container(
@@ -517,23 +515,23 @@ efficient */
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              Container(
+                                              SizedBox(
                                                 width: 100.0,
                                                 height: 100.0,
                                                 child: Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           1.0, -1.0),
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Container(
                                                         width: 94.0,
                                                         height: 94.0,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           color:
                                                               Color(0xFFD0E1E7),
                                                           shape:
@@ -556,7 +554,7 @@ efficient */
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: Text(
                                                           FFLocalizations.of(
                                                                   context)
@@ -606,7 +604,7 @@ hand-off */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 5.0)),
+                                            ].divide(const SizedBox(height: 5.0)),
                                           ),
                                         ),
                                         Container(
@@ -617,17 +615,17 @@ hand-off */
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              Container(
+                                              SizedBox(
                                                 width: 100.0,
                                                 height: 100.0,
                                                 child: Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           1.0, -1.0),
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Container(
                                                         width: 94.0,
@@ -657,7 +655,7 @@ hand-off */
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: Text(
                                                           FFLocalizations.of(
                                                                   context)
@@ -705,22 +703,22 @@ hand-off */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 5.0)),
+                                            ].divide(const SizedBox(height: 5.0)),
                                           ),
                                         ),
                                       ]
-                                          .divide(SizedBox(width: 14.0))
-                                          .addToStart(SizedBox(width: 16.0)),
+                                          .divide(const SizedBox(width: 14.0))
+                                          .addToStart(const SizedBox(width: 16.0)),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 40.0))
-                                    .addToEnd(SizedBox(height: 50.0)),
+                                    .divide(const SizedBox(height: 40.0))
+                                    .addToEnd(const SizedBox(height: 50.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 16.0))
-                                .addToStart(SizedBox(height: 30.0))
-                                .addToEnd(SizedBox(height: 24.0)),
+                                .divide(const SizedBox(height: 16.0))
+                                .addToStart(const SizedBox(height: 30.0))
+                                .addToEnd(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
@@ -728,10 +726,10 @@ hand-off */
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 1.0),
+                  alignment: const AlignmentDirectional(0.0, 1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -752,7 +750,7 @@ hand-off */
                                           : FocusScope.of(context).unfocus(),
                                   child: Padding(
                                     padding: MediaQuery.viewInsetsOf(context),
-                                    child: AddTipModalWidget(),
+                                    child: const AddTipModalWidget(),
                                   ),
                                 );
                               },
@@ -761,15 +759,15 @@ hand-off */
                           text: FFLocalizations.of(context).getText(
                             'mr2ttc5h' /* Update your tip */,
                           ),
-                          icon: Icon(
+                          icon: const Icon(
                             FFIcons.kstarAdd,
                             size: 15.0,
                           ),
                           options: FFButtonOptions(
                             height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 8.0, 24.0, 8.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).secondary,
                             textStyle: FlutterFlowTheme.of(context)
@@ -782,7 +780,7 @@ hand-off */
                                   letterSpacing: 0.0,
                                 ),
                             elevation: 0.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
@@ -794,11 +792,11 @@ hand-off */
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

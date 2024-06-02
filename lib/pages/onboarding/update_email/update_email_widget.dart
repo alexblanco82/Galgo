@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -6,8 +7,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'update_email_model.dart';
 export 'update_email_model.dart';
 
@@ -52,16 +51,16 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -69,7 +68,7 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: ' ',
                           showBackIcon: true,
                         ),
@@ -83,7 +82,7 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -109,7 +108,7 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Material(
                                       color: Colors.transparent,
@@ -132,14 +131,14 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 4.0, 16.0, 4.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Expanded(
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -154,12 +153,39 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                                                               EasyDebounce
                                                                   .debounce(
                                                             '_model.emailaddressTextFieldTextController',
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     200),
                                                             () =>
                                                                 setState(() {}),
                                                           ),
+                                                          onFieldSubmitted:
+                                                              (_) async {
+                                                            if (_model
+                                                                .emailaddressTextFieldTextController
+                                                                .text
+                                                                .isEmpty) {
+                                                              ScaffoldMessenger
+                                                                      .of(context)
+                                                                  .showSnackBar(
+                                                                const SnackBar(
+                                                                  content: Text(
+                                                                    'Email required!',
+                                                                  ),
+                                                                ),
+                                                              );
+                                                              return;
+                                                            }
+
+                                                            await authManager
+                                                                .updateEmail(
+                                                              email: _model
+                                                                  .emailaddressTextFieldTextController
+                                                                  .text,
+                                                              context: context,
+                                                            );
+                                                            setState(() {});
+                                                          },
                                                           autofocus: false,
                                                           obscureText: false,
                                                           decoration:
@@ -227,9 +253,6 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                                                       ),
                                                       if (_model.emailaddressTextFieldTextController
                                                                   .text !=
-                                                              null &&
-                                                          _model.emailaddressTextFieldTextController
-                                                                  .text !=
                                                               '')
                                                         FlutterFlowIconButton(
                                                           borderColor:
@@ -255,57 +278,55 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                                                           },
                                                         ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 6.0))
-                                    .addToStart(SizedBox(height: 30.0)),
+                                    .divide(const SizedBox(height: 6.0))
+                                    .addToStart(const SizedBox(height: 30.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 30.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 30.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed:
                                       (_model.emailaddressTextFieldTextController
                                                       .text ==
-                                                  null ||
-                                              _model.emailaddressTextFieldTextController
-                                                      .text ==
                                                   '')
                                           ? null
-                                          : () {
-                                              print('NextButton pressed ...');
+                                          : () async {
+                                              await authManager
+                                                  .sendEmailVerification();
                                             },
                                   text: FFLocalizations.of(context).getText(
                                     'xje11a6o' /* Verify email */,
                                   ),
                                   options: FFButtonOptions(
                                     height: 60.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).secondary,
@@ -318,7 +339,7 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Colors.transparent,
                                       width: 1.0,
                                     ),
@@ -338,11 +359,11 @@ class _UpdateEmailWidgetState extends State<UpdateEmailWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

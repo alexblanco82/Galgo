@@ -1,5 +1,3 @@
-import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
 import '/componnents/available_country/available_country_widget.dart';
 import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
@@ -11,7 +9,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'update_phone_number_model.dart';
 export 'update_phone_number_model.dart';
@@ -66,16 +63,16 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -83,7 +80,7 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: ' ',
                           showBackIcon: true,
                         ),
@@ -97,7 +94,7 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -124,7 +121,7 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                   ),
                                   Builder(
                                     builder: (context) => Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -133,16 +130,16 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                         highlightColor: Colors.transparent,
                                         onTap: () async {
                                           await showAlignedDialog(
-                                            barrierColor: Color(0x00FFFFFF),
+                                            barrierColor: const Color(0x00FFFFFF),
                                             context: context,
                                             isGlobal: false,
                                             avoidOverflow: false,
-                                            targetAnchor: AlignmentDirectional(
+                                            targetAnchor: const AlignmentDirectional(
                                                     -1.0, 1.0)
                                                 .resolve(
                                                     Directionality.of(context)),
                                             followerAnchor:
-                                                AlignmentDirectional(-1.0, -1.0)
+                                                const AlignmentDirectional(-1.0, -1.0)
                                                     .resolve(Directionality.of(
                                                         context)),
                                             builder: (dialogContext) {
@@ -185,7 +182,7 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -202,11 +199,11 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl: _model
@@ -242,11 +239,11 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 8.0)),
+                                                      const SizedBox(width: 8.0)),
                                                 ),
                                                 Container(
                                                   width: 180.0,
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: TextFormField(
                                                     controller: _model
                                                         .phoneNumberTextFieldTextController,
@@ -255,7 +252,7 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                                     onChanged: (_) =>
                                                         EasyDebounce.debounce(
                                                       '_model.phoneNumberTextFieldTextController',
-                                                      Duration(
+                                                      const Duration(
                                                           milliseconds: 500),
                                                       () => setState(() {}),
                                                     ),
@@ -323,7 +320,7 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                                         .asValidator(context),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 8.0)),
+                                              ].divide(const SizedBox(width: 8.0)),
                                             ),
                                           ),
                                         ),
@@ -331,7 +328,7 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 20.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -357,32 +354,29 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 6.0))
-                                    .addToStart(SizedBox(height: 30.0)),
+                                    .divide(const SizedBox(height: 6.0))
+                                    .addToStart(const SizedBox(height: 30.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 30.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 30.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed:
                                       (_model.phoneNumberTextFieldTextController
-                                                      .text ==
-                                                  null ||
-                                              _model.phoneNumberTextFieldTextController
                                                       .text ==
                                                   '')
                                           ? null
@@ -394,9 +388,9 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                   ),
                                   options: FFButtonOptions(
                                     height: 60.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).secondary,
@@ -409,7 +403,7 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Colors.transparent,
                                       width: 1.0,
                                     ),
@@ -429,11 +423,11 @@ class _UpdatePhoneNumberWidgetState extends State<UpdatePhoneNumberWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

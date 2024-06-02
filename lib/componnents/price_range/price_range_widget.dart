@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'price_range_model.dart';
 export 'price_range_model.dart';
 
@@ -12,7 +10,7 @@ class PriceRangeWidget extends StatefulWidget {
     String? text,
     this.action,
     required this.activeItem,
-  }) : this.text = text ?? 'TITLE';
+  }) : text = text ?? 'TITLE';
 
   final String text;
   final Future Function(String? buttonName)? action;

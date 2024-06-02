@@ -133,18 +133,18 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color error = const Color(0xFFC30006);
   late Color info = const Color(0xFF1C51CB);
 
-  late Color greyG50 = Color(0xFFF7F7F7);
-  late Color greyG60 = Color(0xFFF7F4F8);
-  late Color greyG75 = Color(0xFFEFECF0);
-  late Color greyG100 = Color(0xFFEFEFEF);
-  late Color greyG200 = Color(0xFFEFECF0);
-  late Color greyG300 = Color(0xFFCCCCCC);
-  late Color greyG400 = Color(0xFFB1B1B1);
-  late Color greyG500 = Color(0xFF727272);
-  late Color inkStandard = Color(0xFF434044);
-  late Color inkLight = Color(0xFF656266);
-  late Color inkLighter = Color(0xFFAEABAF);
-  late Color cellSeperator = Color(0xFFF7F4F8);
+  late Color greyG50 = const Color(0xFFF7F7F7);
+  late Color greyG60 = const Color(0xFFF7F4F8);
+  late Color greyG75 = const Color(0xFFEFECF0);
+  late Color greyG100 = const Color(0xFFEFEFEF);
+  late Color greyG200 = const Color(0xFFEFECF0);
+  late Color greyG300 = const Color(0xFFCCCCCC);
+  late Color greyG400 = const Color(0xFFB1B1B1);
+  late Color greyG500 = const Color(0xFF727272);
+  late Color inkStandard = const Color(0xFF434044);
+  late Color inkLight = const Color(0xFF656266);
+  late Color inkLighter = const Color(0xFFAEABAF);
+  late Color cellSeperator = const Color(0xFFF7F4F8);
 }
 
 abstract class Typography {

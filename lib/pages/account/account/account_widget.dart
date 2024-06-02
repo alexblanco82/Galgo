@@ -2,11 +2,8 @@ import '/componnents/nav_bar/nav_bar_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'account_model.dart';
 export 'account_model.dart';
 
@@ -49,17 +46,17 @@ class _AccountWidgetState extends State<AccountWidget> {
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
-            child: Container(
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+            child: SizedBox(
               width: double.infinity,
               height: double.infinity,
               child: Stack(
-                alignment: AlignmentDirectional(1.0, -1.0),
+                alignment: const AlignmentDirectional(1.0, -1.0),
                 children: [
                   Container(
                     width: double.infinity,
                     height: double.infinity,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -78,9 +75,9 @@ class _AccountWidgetState extends State<AccountWidget> {
                                     context.pushNamed('AccountDetails');
                                   },
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -160,18 +157,18 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(3.0),
+                                                padding: const EdgeInsets.all(3.0),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: double.infinity,
                                                   clipBehavior: Clip.antiAlias,
-                                                  decoration: BoxDecoration(
+                                                  decoration: const BoxDecoration(
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: CachedNetworkImage(
-                                                    fadeInDuration: Duration(
+                                                    fadeInDuration: const Duration(
                                                         milliseconds: 500),
-                                                    fadeOutDuration: Duration(
+                                                    fadeOutDuration: const Duration(
                                                         milliseconds: 500),
                                                     imageUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/shoppir-dashboard-kra943/assets/nww2n0r63001/avatar01.png',
@@ -190,7 +187,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -215,7 +212,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                           12.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(12.0),
+                                                  padding: const EdgeInsets.all(12.0),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -229,11 +226,11 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                         child:
                                                             CachedNetworkImage(
                                                           fadeInDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           fadeOutDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           imageUrl:
@@ -276,7 +273,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                         ],
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                               ),
@@ -302,7 +299,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                           12.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(12.0),
+                                                  padding: const EdgeInsets.all(12.0),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -316,11 +313,11 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                         child:
                                                             CachedNetworkImage(
                                                           fadeInDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           fadeOutDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           imageUrl:
@@ -363,7 +360,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                         ],
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                               ),
@@ -390,7 +387,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                           12.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(12.0),
+                                                  padding: const EdgeInsets.all(12.0),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -404,11 +401,11 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                         child:
                                                             CachedNetworkImage(
                                                           fadeInDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           fadeOutDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           imageUrl:
@@ -451,17 +448,17 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                         ],
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 16.0)),
+                                        ].divide(const SizedBox(width: 16.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -476,7 +473,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                     BorderRadius.circular(12.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(12.0),
+                                                padding: const EdgeInsets.all(12.0),
                                                 child: Row(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -559,7 +556,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                               ),
                                                             ],
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 8.0)),
                                                       ),
                                                     ),
@@ -568,16 +565,16 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                       height: 50.0,
                                                       clipBehavior:
                                                           Clip.antiAlias,
-                                                      decoration: BoxDecoration(
+                                                      decoration: const BoxDecoration(
                                                         shape: BoxShape.circle,
                                                       ),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -590,10 +587,10 @@ class _AccountWidgetState extends State<AccountWidget> {
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 16.0)),
+                                        ].divide(const SizedBox(width: 16.0)),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 20.0)),
+                                  ].divide(const SizedBox(height: 20.0)),
                                 ),
                                 SingleChildScrollView(
                                   child: Column(
@@ -602,7 +599,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                         CrossAxisAlignment.stretch,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -643,13 +640,13 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                     .secondaryBackground,
                                             dense: false,
                                             contentPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: ListTile(
                                           leading: Icon(
@@ -678,12 +675,12 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                   .secondaryBackground,
                                           dense: false,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -724,13 +721,13 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                     .secondaryBackground,
                                             dense: false,
                                             contentPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: ListTile(
                                           leading: Icon(
@@ -773,12 +770,12 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                   .secondaryBackground,
                                           dense: false,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: ListTile(
                                           leading: Icon(
@@ -821,12 +818,12 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                   .secondaryBackground,
                                           dense: false,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -866,13 +863,13 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                     .secondaryBackground,
                                             dense: false,
                                             contentPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: ListTile(
                                           leading: Icon(
@@ -901,12 +898,12 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                   .secondaryBackground,
                                           dense: false,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: ListTile(
                                           leading: Icon(
@@ -935,12 +932,12 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                   .secondaryBackground,
                                           dense: false,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -980,13 +977,13 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                     .secondaryBackground,
                                             dense: false,
                                             contentPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 10.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1012,14 +1009,14 @@ class _AccountWidgetState extends State<AccountWidget> {
                                         ),
                                       ),
                                     ]
-                                        .divide(SizedBox(height: 8.0))
-                                        .addToEnd(SizedBox(height: 24.0)),
+                                        .divide(const SizedBox(height: 8.0))
+                                        .addToEnd(const SizedBox(height: 24.0)),
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 30.0))
-                                  .addToStart(SizedBox(height: 24.0))
-                                  .addToEnd(SizedBox(height: 24.0)),
+                                  .divide(const SizedBox(height: 30.0))
+                                  .addToStart(const SizedBox(height: 24.0))
+                                  .addToEnd(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
@@ -1027,7 +1024,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                           model: _model.navBarModel,
                           updateCallback: () => setState(() {}),
                           updateOnChange: true,
-                          child: NavBarWidget(
+                          child: const NavBarWidget(
                             activePage: 'Account',
                           ),
                         ),
@@ -1035,12 +1032,12 @@ class _AccountWidgetState extends State<AccountWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.5, -0.94),
+                    alignment: const AlignmentDirectional(0.5, -0.94),
                     child: wrapWithModel(
                       model: _model.navigatorModel,
                       updateCallback: () => setState(() {}),
                       updateOnChange: true,
-                      child: NavigatorWidget(
+                      child: const NavigatorWidget(
                         expanded: false,
                       ),
                     ),

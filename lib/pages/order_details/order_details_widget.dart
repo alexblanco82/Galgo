@@ -8,8 +8,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'order_details_model.dart';
 export 'order_details_model.dart';
 
@@ -51,23 +49,23 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Your Orders',
                           showBackIcon: true,
                         ),
@@ -80,10 +78,10 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
@@ -97,9 +95,9 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                 BorderRadius.circular(0.0),
                                             child: CachedNetworkImage(
                                               fadeInDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               fadeOutDuration:
-                                                  Duration(milliseconds: 500),
+                                                  const Duration(milliseconds: 500),
                                               imageUrl:
                                                   'https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=400',
                                               width: 80.0,
@@ -188,7 +186,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -240,11 +238,11 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
+                                            ].divide(const SizedBox(height: 4.0)),
                                           ),
-                                        ].divide(SizedBox(width: 14.0)),
+                                        ].divide(const SizedBox(width: 14.0)),
                                       ),
                                       Flexible(
                                         child: Container(
@@ -256,7 +254,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     14.0, 10.0, 14.0, 10.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -278,25 +276,25 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 10.0)),
+                                              ].divide(const SizedBox(width: 10.0)),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 14.0)),
+                                    ].divide(const SizedBox(width: 14.0)),
                                   ),
                                 ),
                               ),
                               Stack(
-                                alignment: AlignmentDirectional(1.0, 1.0),
+                                alignment: const AlignmentDirectional(1.0, 1.0),
                                 children: [
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(0.0),
                                     child: CachedNetworkImage(
                                       fadeInDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       fadeOutDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       imageUrl:
                                           'https://images.unsplash.com/photo-1621135177072-57c9b6242e7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw4fHxsYXR0ZXxlbnwwfHx8fDE3MTE2NDMxMzV8MA&ixlib=rb-4.0.3&q=80&w=1080',
                                       width: double.infinity,
@@ -305,7 +303,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 16.0, 16.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -315,7 +313,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                             BorderRadius.circular(100.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             14.0, 10.0, 14.0, 10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
@@ -337,7 +335,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                         ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
@@ -345,7 +343,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                 ],
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -367,7 +365,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -415,14 +413,14 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 4.0)),
+                                  ].divide(const SizedBox(width: 4.0)),
                                 ),
                               ),
                               Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -453,7 +451,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                   BorderRadius.circular(100.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       14.0, 10.0, 14.0, 10.0),
                                               child: Row(
@@ -477,7 +475,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                           ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 10.0)),
+                                                ].divide(const SizedBox(width: 10.0)),
                                               ),
                                             ),
                                           ),
@@ -494,7 +492,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                         model: _model.orderItemsModel1,
                                         updateCallback: () => setState(() {}),
                                         updateOnChange: true,
-                                        child: OrderItemsWidget(
+                                        child: const OrderItemsWidget(
                                           title: 'Latte',
                                         ),
                                       ),
@@ -502,11 +500,11 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                         model: _model.orderItemsModel2,
                                         updateCallback: () => setState(() {}),
                                         updateOnChange: true,
-                                        child: OrderItemsWidget(
+                                        child: const OrderItemsWidget(
                                           title: 'White Hot Chocolate',
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 24.0)),
+                                    ].divide(const SizedBox(height: 24.0)),
                                   ),
                                   Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -515,12 +513,12 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                     children: [
                                       Container(
                                         width: double.infinity,
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -587,11 +585,11 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                                   ),
                                                   Flexible(
                                                     child: Container(
@@ -607,7 +605,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     14.0,
                                                                     10.0,
@@ -637,7 +635,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 10.0)),
                                                         ),
                                                       ),
@@ -653,7 +651,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .greyG75,
                                             ),
-                                          ].divide(SizedBox(height: 16.0)),
+                                          ].divide(const SizedBox(height: 16.0)),
                                         ),
                                       ),
                                       wrapWithModel(
@@ -702,12 +700,12 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                       ),
                                       Container(
                                         width: double.infinity,
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -774,11 +772,11 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 16.0)),
+                                                        const SizedBox(width: 16.0)),
                                                   ),
                                                 ],
                                               ),
@@ -790,7 +788,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .greyG75,
                                             ),
-                                          ].divide(SizedBox(height: 16.0)),
+                                          ].divide(const SizedBox(height: 16.0)),
                                         ),
                                       ),
                                     ],
@@ -799,7 +797,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -817,11 +815,11 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 60.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -837,7 +835,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                             letterSpacing: 0.0,
                                                           ),
                                                   elevation: 0.0,
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,
                                                   ),
@@ -851,7 +849,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -869,11 +867,11 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 60.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -889,7 +887,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                                             letterSpacing: 0.0,
                                                           ),
                                                   elevation: 0.0,
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,
                                                   ),
@@ -902,13 +900,13 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                                           ],
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 10.0)),
+                                    ].divide(const SizedBox(height: 10.0)),
                                   ),
-                                ].divide(SizedBox(height: 24.0)),
+                                ].divide(const SizedBox(height: 24.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 16.0))
-                                .addToStart(SizedBox(height: 24.0)),
+                                .divide(const SizedBox(height: 16.0))
+                                .addToStart(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
@@ -916,7 +914,7 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                         model: _model.navBarModel,
                         updateCallback: () => setState(() {}),
                         updateOnChange: true,
-                        child: NavBarWidget(
+                        child: const NavBarWidget(
                           activePage: 'OrderDetails',
                         ),
                       ),
@@ -924,11 +922,11 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

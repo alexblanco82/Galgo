@@ -1,11 +1,7 @@
 import '/componnents/tip_item/tip_item_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'add_tip_modal_widget.dart' show AddTipModalWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class AddTipModalModel extends FlutterFlowModel<AddTipModalWidget> {
   ///  Local state fields for this component.

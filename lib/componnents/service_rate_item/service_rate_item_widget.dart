@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'service_rate_item_model.dart';
 export 'service_rate_item_model.dart';
 
@@ -69,7 +67,7 @@ class _ServiceRateItemWidgetState extends State<ServiceRateItemWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Container(
                 width: widget.text == widget.activeItem ? 84.0 : 68.0,
                 height: widget.text == widget.activeItem ? 84.0 : 68.0,
@@ -103,7 +101,7 @@ class _ServiceRateItemWidgetState extends State<ServiceRateItemWidget> {
                 ),
               ],
             ),
-          ].divide(SizedBox(height: 5.0)),
+          ].divide(const SizedBox(height: 5.0)),
         ),
       ),
     );

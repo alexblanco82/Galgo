@@ -4,10 +4,8 @@ import '/componnents/restaurant_card/restaurant_card_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'popular_restaurants_model.dart';
 export 'popular_restaurants_model.dart';
@@ -53,16 +51,16 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -70,7 +68,7 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
                         updateOnChange: true,
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Restaurants',
                           showBackIcon: true,
                         ),
@@ -81,7 +79,7 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -118,34 +116,34 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.restaurantCardModel1,
                                       updateCallback: () => setState(() {}),
-                                      child: RestaurantCardWidget(
+                                      child: const RestaurantCardWidget(
                                         labelText: '5 orders until £15 reward',
                                         rate: 4.9,
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.restaurantCardModel2,
                                       updateCallback: () => setState(() {}),
-                                      child: RestaurantCardWidget(),
+                                      child: const RestaurantCardWidget(),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                               Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -172,7 +170,7 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                 .secondaryBackground,
                                           ),
                                           child: Padding(
-                                            padding: EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -209,12 +207,12 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                       children: [
                                         Container(
                                           width: 273.0,
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Stack(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     1.0, -1.0),
                                                 children: [
                                                   ClipRRect(
@@ -222,9 +220,9 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                         BorderRadius.circular(
                                                             0.0),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1615996001375-c7ef13294436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MDkzNjA3ODN8MA&ixlib=rb-4.0.3&q=80&w=1080',
@@ -235,7 +233,7 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 16.0,
                                                                 16.0, 0.0),
                                                     child: ToggleIcon(
@@ -382,10 +380,10 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
@@ -432,19 +430,19 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                       ],
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(height: 12.0)),
+                                            ].divide(const SizedBox(height: 12.0)),
                                           ),
                                         ),
                                         Container(
                                           width: 273.0,
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Stack(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     1.0, -1.0),
                                                 children: [
                                                   ClipRRect(
@@ -452,9 +450,9 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                         BorderRadius.circular(
                                                             0.0),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1615996001375-c7ef13294436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MDkzNjA3ODN8MA&ixlib=rb-4.0.3&q=80&w=1080',
@@ -465,7 +463,7 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 16.0,
                                                                 16.0, 0.0),
                                                     child: ToggleIcon(
@@ -612,10 +610,10 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
@@ -662,19 +660,19 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                       ],
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(height: 12.0)),
+                                            ].divide(const SizedBox(height: 12.0)),
                                           ),
                                         ),
                                         Container(
                                           width: 273.0,
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Stack(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     1.0, -1.0),
                                                 children: [
                                                   ClipRRect(
@@ -682,9 +680,9 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                         BorderRadius.circular(
                                                             0.0),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1615996001375-c7ef13294436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MDkzNjA3ODN8MA&ixlib=rb-4.0.3&q=80&w=1080',
@@ -695,7 +693,7 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 16.0,
                                                                 16.0, 0.0),
                                                     child: ToggleIcon(
@@ -842,10 +840,10 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
@@ -892,21 +890,21 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                                                       ],
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
-                                            ].divide(SizedBox(height: 12.0)),
+                                            ].divide(const SizedBox(height: 12.0)),
                                           ),
                                         ),
                                       ]
-                                          .divide(SizedBox(width: 16.0))
-                                          .addToStart(SizedBox(width: 16.0)),
+                                          .divide(const SizedBox(width: 16.0))
+                                          .addToStart(const SizedBox(width: 16.0)),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 16.0))
-                                .addToStart(SizedBox(height: 16.0)),
+                                .divide(const SizedBox(height: 16.0))
+                                .addToStart(const SizedBox(height: 16.0)),
                           ),
                         ),
                       ),
@@ -914,11 +912,11 @@ class _PopularRestaurantsWidgetState extends State<PopularRestaurantsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

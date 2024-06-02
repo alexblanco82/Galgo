@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_tip_modal_model.dart';
 export 'add_tip_modal_model.dart';
 
@@ -42,7 +40,7 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       children: [
         SingleChildScrollView(
           child: Column(
@@ -68,7 +66,7 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -92,16 +90,16 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(height: 12.0))
-                            .addToStart(SizedBox(height: 16.0))
-                            .addToEnd(SizedBox(height: 24.0)),
+                            .divide(const SizedBox(height: 12.0))
+                            .addToStart(const SizedBox(height: 16.0))
+                            .addToEnd(const SizedBox(height: 24.0)),
                       ),
                     ),
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).greyG50,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(0.0),
@@ -112,7 +110,7 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 14.0, 16.0, 14.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -134,7 +132,7 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 14.0)),
+                              ].divide(const SizedBox(width: 14.0)),
                             ),
                           ),
                           SingleChildScrollView(
@@ -208,13 +206,13 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(width: 8.0))
-                                  .addToStart(SizedBox(width: 16.0))
-                                  .addToEnd(SizedBox(width: 16.0)),
+                                  .divide(const SizedBox(width: 8.0))
+                                  .addToStart(const SizedBox(width: 16.0))
+                                  .addToEnd(const SizedBox(width: 16.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -229,10 +227,10 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                                     ),
                                     options: FFButtonOptions(
                                       height: 60.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color: FlutterFlowTheme.of(context)
                                           .secondary,
@@ -245,7 +243,7 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                       elevation: 0.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 0.0,
                                       ),
@@ -257,7 +255,7 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -272,10 +270,10 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                                     ),
                                     options: FFButtonOptions(
                                       height: 60.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color:
                                           FlutterFlowTheme.of(context).greyG50,
@@ -288,7 +286,7 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                       elevation: 0.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 0.0,
                                       ),
@@ -299,14 +297,14 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                               ],
                             ),
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).greyG50,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(0.0),
@@ -314,7 +312,7 @@ class _AddTipModalWidgetState extends State<AddTipModalWidget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
               ),
             ],

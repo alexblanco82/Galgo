@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'store_info4_modal_model.dart';
 export 'store_info4_modal_model.dart';
 
@@ -55,7 +53,7 @@ class _StoreInfo4ModalWidgetState extends State<StoreInfo4ModalWidget> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -77,7 +75,7 @@ class _StoreInfo4ModalWidgetState extends State<StoreInfo4ModalWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: ListTile(
                   leading: Icon(
                     FFIcons.ksearchDefault,
@@ -98,21 +96,21 @@ class _StoreInfo4ModalWidgetState extends State<StoreInfo4ModalWidget> {
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
                   dense: false,
                   contentPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
                 child: wrapWithModel(
                   model: _model.dividerModel1,
                   updateCallback: () => setState(() {}),
-                  child: DividerWidget(
+                  child: const DividerWidget(
                     hasText: false,
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: ListTile(
                   leading: Icon(
                     FFIcons.kheartDefault,
@@ -133,21 +131,21 @@ class _StoreInfo4ModalWidgetState extends State<StoreInfo4ModalWidget> {
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
                   dense: false,
                   contentPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
                 child: wrapWithModel(
                   model: _model.dividerModel2,
                   updateCallback: () => setState(() {}),
-                  child: DividerWidget(
+                  child: const DividerWidget(
                     hasText: false,
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: ListTile(
                   leading: Icon(
                     FFIcons.kaddUser,
@@ -168,21 +166,21 @@ class _StoreInfo4ModalWidgetState extends State<StoreInfo4ModalWidget> {
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
                   dense: false,
                   contentPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
                 child: wrapWithModel(
                   model: _model.dividerModel3,
                   updateCallback: () => setState(() {}),
-                  child: DividerWidget(
+                  child: const DividerWidget(
                     hasText: false,
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: ListTile(
                   leading: Icon(
                     FFIcons.kshareIOS,
@@ -203,21 +201,21 @@ class _StoreInfo4ModalWidgetState extends State<StoreInfo4ModalWidget> {
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
                   dense: false,
                   contentPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
                 child: wrapWithModel(
                   model: _model.dividerModel4,
                   updateCallback: () => setState(() {}),
-                  child: DividerWidget(
+                  child: const DividerWidget(
                     hasText: false,
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: ListTile(
                   leading: Icon(
                     FFIcons.kinfoDefault,
@@ -247,23 +245,23 @@ class _StoreInfo4ModalWidgetState extends State<StoreInfo4ModalWidget> {
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
                   dense: false,
                   contentPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
                 child: wrapWithModel(
                   model: _model.dividerModel5,
                   updateCallback: () => setState(() {}),
-                  child: DividerWidget(
+                  child: const DividerWidget(
                     hasText: false,
                   ),
                 ),
               ),
             ]
-                .divide(SizedBox(height: 8.0))
-                .addToStart(SizedBox(height: 16.0))
-                .addToEnd(SizedBox(height: 16.0)),
+                .divide(const SizedBox(height: 8.0))
+                .addToStart(const SizedBox(height: 16.0))
+                .addToEnd(const SizedBox(height: 16.0)),
           ),
         ),
       ],

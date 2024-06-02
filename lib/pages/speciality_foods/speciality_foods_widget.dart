@@ -3,12 +3,9 @@ import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'speciality_foods_model.dart';
 export 'speciality_foods_model.dart';
 
@@ -50,28 +47,28 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFF8EFEB),
                         ),
                         child: wrapWithModel(
                           model: _model.headerModel,
                           updateCallback: () => setState(() {}),
                           updateOnChange: true,
-                          child: HeaderWidget(
+                          child: const HeaderWidget(
                             showBackIcon: true,
                           ),
                         ),
@@ -82,11 +79,11 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Color(0xFFF8EFEB),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 10.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -110,9 +107,9 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                       borderRadius: BorderRadius.circular(0.0),
                                       child: CachedNetworkImage(
                                         fadeInDuration:
-                                            Duration(milliseconds: 500),
+                                            const Duration(milliseconds: 500),
                                         fadeOutDuration:
-                                            Duration(milliseconds: 500),
+                                            const Duration(milliseconds: 500),
                                         imageUrl:
                                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/srpj41ygkaq1/Screenshot_2024-03-07_at_09.28.15.png',
                                         width: 55.0,
@@ -129,7 +126,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                               children: [
                                 Expanded(
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: FlutterFlowChoiceChips(
                                       options: [
                                         ChipData(
@@ -192,7 +189,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                             .primaryText,
                                         iconSize: 18.0,
                                         labelPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 4.0, 0.0, 4.0, 0.0),
                                         elevation: 0.0,
                                         borderRadius:
@@ -217,7 +214,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                     ),
                                   ),
                                 ),
-                              ].addToStart(SizedBox(width: 16.0)),
+                              ].addToStart(const SizedBox(width: 16.0)),
                             ),
                             Expanded(
                               child: SingleChildScrollView(
@@ -227,7 +224,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                       CrossAxisAlignment.stretch,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -257,7 +254,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -266,7 +263,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                               children: [
                                                 Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     ClipRRect(
@@ -275,11 +272,11 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -356,12 +353,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                   ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     12.0,
@@ -394,12 +391,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Container(
@@ -443,10 +440,10 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 14.0)),
+                                              ].divide(const SizedBox(width: 14.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 20.0)),
+                                        ].divide(const SizedBox(height: 20.0)),
                                       ),
                                     ),
                                     Container(
@@ -459,7 +456,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -468,7 +465,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                               children: [
                                                 Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     ClipRRect(
@@ -477,11 +474,11 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -558,12 +555,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                   ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     12.0,
@@ -596,12 +593,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Container(
@@ -645,10 +642,10 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 14.0)),
+                                              ].divide(const SizedBox(width: 14.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 20.0)),
+                                        ].divide(const SizedBox(height: 20.0)),
                                       ),
                                     ),
                                     Container(
@@ -661,7 +658,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -670,7 +667,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                               children: [
                                                 Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     ClipRRect(
@@ -679,11 +676,11 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -760,12 +757,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                   ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     12.0,
@@ -798,12 +795,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Container(
@@ -847,10 +844,10 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 14.0)),
+                                              ].divide(const SizedBox(width: 14.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 20.0)),
+                                        ].divide(const SizedBox(height: 20.0)),
                                       ),
                                     ),
                                     Container(
@@ -863,7 +860,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -872,7 +869,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                               children: [
                                                 Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     ClipRRect(
@@ -881,11 +878,11 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -962,12 +959,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                   ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     12.0,
@@ -1000,12 +997,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Container(
@@ -1049,10 +1046,10 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 14.0)),
+                                              ].divide(const SizedBox(width: 14.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 20.0)),
+                                        ].divide(const SizedBox(height: 20.0)),
                                       ),
                                     ),
                                     Container(
@@ -1065,7 +1062,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -1074,7 +1071,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                               children: [
                                                 Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     ClipRRect(
@@ -1083,11 +1080,11 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -1164,12 +1161,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                   ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     12.0,
@@ -1202,12 +1199,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Container(
@@ -1251,10 +1248,10 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 14.0)),
+                                              ].divide(const SizedBox(width: 14.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 20.0)),
+                                        ].divide(const SizedBox(height: 20.0)),
                                       ),
                                     ),
                                     Container(
@@ -1267,7 +1264,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -1276,7 +1273,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                               children: [
                                                 Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     ClipRRect(
@@ -1285,11 +1282,11 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -1366,12 +1363,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                   ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     12.0,
@@ -1404,12 +1401,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Container(
@@ -1453,10 +1450,10 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 14.0)),
+                                              ].divide(const SizedBox(width: 14.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 20.0)),
+                                        ].divide(const SizedBox(height: 20.0)),
                                       ),
                                     ),
                                     Container(
@@ -1469,7 +1466,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -1478,7 +1475,7 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                               children: [
                                                 Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     ClipRRect(
@@ -1487,11 +1484,11 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -1568,12 +1565,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                   ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     12.0,
@@ -1606,12 +1603,12 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 4.0)),
+                                                        const SizedBox(height: 4.0)),
                                                   ),
                                                 ),
                                                 Container(
@@ -1655,30 +1652,30 @@ class _SpecialityFoodsWidgetState extends State<SpecialityFoodsWidget> {
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 14.0)),
+                                              ].divide(const SizedBox(width: 14.0)),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 20.0)),
+                                        ].divide(const SizedBox(height: 20.0)),
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(height: 16.0))
-                                      .addToStart(SizedBox(height: 16.0)),
+                                      .divide(const SizedBox(height: 16.0))
+                                      .addToStart(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ],
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

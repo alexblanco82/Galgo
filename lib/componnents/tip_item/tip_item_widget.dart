@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tip_item_model.dart';
 export 'tip_item_model.dart';
 
@@ -13,7 +11,7 @@ class TipItemWidget extends StatefulWidget {
     this.action,
     required this.activeItem,
     this.tip,
-  }) : this.text = text ?? 'TITLE';
+  }) : text = text ?? 'TITLE';
 
   final String text;
   final Future Function(String? buttonName)? action;
@@ -81,7 +79,7 @@ class _TipItemWidgetState extends State<TipItemWidget> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -123,7 +121,7 @@ class _TipItemWidgetState extends State<TipItemWidget> {
                   ),
                 ],
               ),
-            ].divide(SizedBox(height: 2.0)),
+            ].divide(const SizedBox(height: 2.0)),
           ),
         ),
       ),

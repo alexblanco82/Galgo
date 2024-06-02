@@ -3,10 +3,7 @@ import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'basket_your_orders_model.dart';
 export 'basket_your_orders_model.dart';
 
@@ -48,11 +45,11 @@ class _BasketYourOrdersWidgetState extends State<BasketYourOrdersWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
@@ -67,7 +64,7 @@ class _BasketYourOrdersWidgetState extends State<BasketYourOrdersWidget> {
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
                         updateOnChange: true,
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Your orderes',
                           showBackIcon: true,
                         ),
@@ -97,8 +94,8 @@ class _BasketYourOrdersWidgetState extends State<BasketYourOrdersWidget> {
                                     ),
                                   ),
                                 ]
-                                    .addToStart(SizedBox(height: 20.0))
-                                    .addToEnd(SizedBox(height: 24.0)),
+                                    .addToStart(const SizedBox(height: 20.0))
+                                    .addToEnd(const SizedBox(height: 24.0)),
                               ),
                             ),
                           ],
@@ -108,11 +105,11 @@ class _BasketYourOrdersWidgetState extends State<BasketYourOrdersWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

@@ -8,12 +8,9 @@ import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'message_model.dart';
 export 'message_model.dart';
 
@@ -57,24 +54,24 @@ class _MessageWidgetState extends State<MessageWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -131,20 +128,20 @@ class _MessageWidgetState extends State<MessageWidget> {
                                         child: Padding(
                                           padding:
                                               MediaQuery.viewInsetsOf(context),
-                                          child: StoreInfo4ModalWidget(),
+                                          child: const StoreInfo4ModalWidget(),
                                         ),
                                       );
                                     },
                                   ).then((value) => safeSetState(() {}));
                                 },
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                         ),
                       ),
                       Expanded(
                         child: Stack(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           children: [
                             SingleChildScrollView(
                               child: Column(
@@ -152,13 +149,13 @@ class _MessageWidgetState extends State<MessageWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.chatItemsModel1,
                                       updateCallback: () => setState(() {}),
                                       updateOnChange: true,
-                                      child: ChatItemsWidget(
+                                      child: const ChatItemsWidget(
                                         chatText:
                                             'Can you message when you’re here please, as i can’t always hear the door?',
                                         status: 'Delivered',
@@ -167,13 +164,13 @@ class _MessageWidgetState extends State<MessageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.chatItemsModel2,
                                       updateCallback: () => setState(() {}),
                                       updateOnChange: true,
-                                      child: ChatItemsWidget(
+                                      child: const ChatItemsWidget(
                                         chatText:
                                             'Can you message when you’re here please, as i can’t always hear the door?',
                                         status: 'Sending',
@@ -191,7 +188,7 @@ class _MessageWidgetState extends State<MessageWidget> {
                                         scrollDirection: Axis.vertical,
                                         itemCount: chatsPageState.length,
                                         separatorBuilder: (_, __) =>
-                                            SizedBox(height: 16.0),
+                                            const SizedBox(height: 16.0),
                                         itemBuilder:
                                             (context, chatsPageStateIndex) {
                                           final chatsPageStateItem =
@@ -199,7 +196,7 @@ class _MessageWidgetState extends State<MessageWidget> {
                                                   chatsPageStateIndex];
                                           return Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: ChatItemsWidget(
                                               key: Key(
@@ -214,13 +211,13 @@ class _MessageWidgetState extends State<MessageWidget> {
                                     },
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 16.0))
-                                    .addToStart(SizedBox(height: 30.0))
-                                    .addToEnd(SizedBox(height: 24.0)),
+                                    .divide(const SizedBox(height: 16.0))
+                                    .addToStart(const SizedBox(height: 30.0))
+                                    .addToEnd(const SizedBox(height: 24.0)),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 14.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -263,7 +260,7 @@ h... */
                                             .primaryText,
                                         iconSize: 18.0,
                                         labelPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 8.0, 0.0, 8.0),
                                         elevation: 3.0,
                                         borderRadius:
@@ -287,7 +284,7 @@ h... */
                                             .secondaryText,
                                         iconSize: 18.0,
                                         labelPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 8.0, 0.0, 8.0),
                                         elevation: 3.0,
                                         borderRadius:
@@ -305,21 +302,21 @@ h... */
                                       wrapped: false,
                                     ),
                                   ),
-                                ].addToStart(SizedBox(width: 24.0)),
+                                ].addToStart(const SizedBox(width: 24.0)),
                               ),
                             ),
                           ],
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
                               child: Autocomplete<String>(
-                                initialValue: TextEditingValue(),
+                                initialValue: const TextEditingValue(),
                                 optionsBuilder: (textEditingValue) {
                                   if (textEditingValue.text == '') {
                                     return const Iterable<String>.empty();
@@ -349,7 +346,7 @@ h... */
                                           fontFamily: 'Nunito Sans',
                                           letterSpacing: 0.0,
                                         ),
-                                    textHighlightStyle: TextStyle(),
+                                    textHighlightStyle: const TextStyle(),
                                     elevation: 4.0,
                                     optionBackgroundColor:
                                         FlutterFlowTheme.of(context)
@@ -382,7 +379,7 @@ h... */
                                     onEditingComplete: onEditingComplete,
                                     onChanged: (_) => EasyDebounce.debounce(
                                       '_model.chatTextFieldTextController',
-                                      Duration(milliseconds: 500),
+                                      const Duration(milliseconds: 500),
                                       () => setState(() {}),
                                     ),
                                     autofocus: false,
@@ -419,7 +416,7 @@ h... */
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 0.0,
                                         ),
@@ -427,7 +424,7 @@ h... */
                                             BorderRadius.circular(12.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 0.0,
                                         ),
@@ -435,7 +432,7 @@ h... */
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 0.0,
                                         ),
@@ -477,10 +474,7 @@ h... */
                                     .primaryBackground,
                                 size: 24.0,
                               ),
-                              onPressed: (_model.chatTextFieldTextController
-                                              .text ==
-                                          null ||
-                                      _model.chatTextFieldTextController.text ==
+                              onPressed: (_model.chatTextFieldTextController.text ==
                                           '')
                                   ? null
                                   : () async {
@@ -497,18 +491,18 @@ h... */
                                       });
                                     },
                             ),
-                          ].divide(SizedBox(width: 16.0)),
+                          ].divide(const SizedBox(width: 16.0)),
                         ),
                       ),
-                    ].addToEnd(SizedBox(height: 24.0)),
+                    ].addToEnd(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

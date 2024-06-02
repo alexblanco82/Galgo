@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'delivery_items_model.dart';
 export 'delivery_items_model.dart';
 
@@ -13,8 +11,8 @@ class DeliveryItemsWidget extends StatefulWidget {
     this.action,
     required this.activeItem,
     bool? showBadge,
-  })  : this.text = text ?? 'TITLE',
-        this.showBadge = showBadge ?? false;
+  })  : text = text ?? 'TITLE',
+        showBadge = showBadge ?? false;
 
   final String text;
   final Future Function(String? buttonName)? action;
@@ -71,7 +69,7 @@ class _DeliveryItemsWidgetState extends State<DeliveryItemsWidget> {
         child: Stack(
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(14.0, 8.0, 14.0, 8.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(14.0, 8.0, 14.0, 8.0),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -91,7 +89,7 @@ class _DeliveryItemsWidgetState extends State<DeliveryItemsWidget> {
             ),
             if (widget.showBadge && (widget.text == widget.activeItem))
               Align(
-                alignment: AlignmentDirectional(1.0, -1.0),
+                alignment: const AlignmentDirectional(1.0, -1.0),
                 child: Container(
                   width: 12.0,
                   height: 12.0,

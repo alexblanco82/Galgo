@@ -1,13 +1,8 @@
 import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:provider/provider.dart';
 import 'loading_animation_model.dart';
 export 'loading_animation_model.dart';
 
@@ -17,9 +12,9 @@ class LoadingAnimationWidget extends StatefulWidget {
     double? width,
     double? height,
     int? loadingAnimationNumner1to20,
-  })  : this.width = width ?? 54.0,
-        this.height = height ?? 54.0,
-        this.loadingAnimationNumner1to20 = loadingAnimationNumner1to20 ?? 20;
+  })  : width = width ?? 54.0,
+        height = height ?? 54.0,
+        loadingAnimationNumner1to20 = loadingAnimationNumner1to20 ?? 20;
 
   final double width;
   final double height;
@@ -83,13 +78,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
           children: [
             if (widget.loadingAnimationNumner1to20 == 20)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-20-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -103,13 +98,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 19)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-19-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -123,13 +118,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 18)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-18-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -143,13 +138,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 17)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-17-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -163,13 +158,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 16)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-16-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -183,13 +178,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 15)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-15-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -203,13 +198,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 14)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-14-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -223,13 +218,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 13)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-13-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -243,13 +238,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 12)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-12-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -263,13 +258,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 11)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-11-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -283,13 +278,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 10)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-10-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -303,13 +298,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 9)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-9-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -323,13 +318,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 8)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-8-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -343,13 +338,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 7)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-7-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -363,13 +358,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 6)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-6-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -383,13 +378,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 5)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-5-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -403,13 +398,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 4)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-4-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -423,13 +418,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 3)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-3-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -443,13 +438,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 2)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-2-dark.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,
@@ -463,13 +458,13 @@ class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget>
               ),
             if (widget.loadingAnimationNumner1to20 == 1)
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Container(
                       width: widget.width,
                       height: widget.height,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Lottie.asset(
                         'assets/lottie_animations/loader-1-dark.json.json',
                         width: MediaQuery.sizeOf(context).width * 1.0,

@@ -3,11 +3,9 @@ import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'grocery_model.dart';
 export 'grocery_model.dart';
@@ -55,16 +53,16 @@ class _GroceryWidgetState extends State<GroceryWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -72,7 +70,7 @@ class _GroceryWidgetState extends State<GroceryWidget> {
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
                         updateOnChange: true,
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           showBackIcon: true,
                         ),
                       ),
@@ -83,7 +81,7 @@ class _GroceryWidgetState extends State<GroceryWidget> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -105,14 +103,14 @@ class _GroceryWidgetState extends State<GroceryWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: TextFormField(
                                   controller: _model.textController,
                                   focusNode: _model.textFieldFocusNode,
                                   onChanged: (_) => EasyDebounce.debounce(
                                     '_model.textController',
-                                    Duration(milliseconds: 500),
+                                    const Duration(milliseconds: 500),
                                     () => setState(() {}),
                                   ),
                                   autofocus: false,
@@ -218,9 +216,9 @@ class _GroceryWidgetState extends State<GroceryWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/mnqex836k808/Screenshot_2024-03-06_at_11.24.58.png',
@@ -251,7 +249,7 @@ class _GroceryWidgetState extends State<GroceryWidget> {
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
+                                            ].divide(const SizedBox(height: 4.0)),
                                           ),
                                         ),
                                         Container(
@@ -266,9 +264,9 @@ class _GroceryWidgetState extends State<GroceryWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/m41roixzes8s/Screenshot_2024-03-06_at_11.25.10.png',
@@ -301,7 +299,7 @@ Foods */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
+                                            ].divide(const SizedBox(height: 4.0)),
                                           ),
                                         ),
                                         Container(
@@ -316,9 +314,9 @@ Foods */
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/4d69o4lxezlt/Screenshot_2024-03-06_at_11.31.02.png',
@@ -349,7 +347,7 @@ Foods */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
+                                            ].divide(const SizedBox(height: 4.0)),
                                           ),
                                         ),
                                         Container(
@@ -364,9 +362,9 @@ Foods */
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/rc1e4jen7vaf/Screenshot_2024-03-06_at_11.25.33.png',
@@ -399,7 +397,7 @@ Sweets */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
+                                            ].divide(const SizedBox(height: 4.0)),
                                           ),
                                         ),
                                         Container(
@@ -414,9 +412,9 @@ Sweets */
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/qewphrrgi6th/Screenshot_2024-03-06_at_11.32.25.png',
@@ -449,7 +447,7 @@ Sea */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
+                                            ].divide(const SizedBox(height: 4.0)),
                                           ),
                                         ),
                                         Container(
@@ -464,9 +462,9 @@ Sea */
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/mnqex836k808/Screenshot_2024-03-06_at_11.24.58.png',
@@ -497,7 +495,7 @@ Sea */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
+                                            ].divide(const SizedBox(height: 4.0)),
                                           ),
                                         ),
                                         Container(
@@ -512,9 +510,9 @@ Sea */
                                                 borderRadius:
                                                     BorderRadius.circular(0.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/mnqex836k808/Screenshot_2024-03-06_at_11.24.58.png',
@@ -545,12 +543,12 @@ Sea */
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
+                                            ].divide(const SizedBox(height: 4.0)),
                                           ),
                                         ),
                                       ]
-                                          .divide(SizedBox(width: 16.0))
-                                          .addToStart(SizedBox(width: 16.0)),
+                                          .divide(const SizedBox(width: 16.0))
+                                          .addToStart(const SizedBox(width: 16.0)),
                                     ),
                                   ),
                                   Column(
@@ -559,7 +557,7 @@ Sea */
                                         CrossAxisAlignment.stretch,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -592,12 +590,12 @@ Sea */
                                               width: 165.0,
                                               height: 173.0,
                                               decoration: BoxDecoration(
-                                                color: Color(0xFFF0F2FF),
+                                                color: const Color(0xFFF0F2FF),
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 14.0, 20.0, 14.0),
                                                 child: Column(
@@ -610,11 +608,11 @@ Sea */
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -684,7 +682,7 @@ Sea */
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 6.0)),
+                                                      const SizedBox(height: 6.0)),
                                                 ),
                                               ),
                                             ),
@@ -692,12 +690,12 @@ Sea */
                                               width: 165.0,
                                               height: 173.0,
                                               decoration: BoxDecoration(
-                                                color: Color(0xFFFFEDEF),
+                                                color: const Color(0xFFFFEDEF),
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 14.0, 20.0, 14.0),
                                                 child: Column(
@@ -710,11 +708,11 @@ Sea */
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -784,7 +782,7 @@ Sea */
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 6.0)),
+                                                      const SizedBox(height: 6.0)),
                                                 ),
                                               ),
                                             ),
@@ -792,12 +790,12 @@ Sea */
                                               width: 165.0,
                                               height: 173.0,
                                               decoration: BoxDecoration(
-                                                color: Color(0xFFF0F2FF),
+                                                color: const Color(0xFFF0F2FF),
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 14.0, 20.0, 14.0),
                                                 child: Column(
@@ -810,11 +808,11 @@ Sea */
                                                               0.0),
                                                       child: CachedNetworkImage(
                                                         fadeInDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         fadeOutDuration:
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     500),
                                                         imageUrl:
@@ -884,17 +882,17 @@ Sea */
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 6.0)),
+                                                      const SizedBox(height: 6.0)),
                                                 ),
                                               ),
                                             ),
                                           ]
-                                              .divide(SizedBox(width: 14.0))
+                                              .divide(const SizedBox(width: 14.0))
                                               .addToStart(
-                                                  SizedBox(width: 16.0)),
+                                                  const SizedBox(width: 16.0)),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 16.0)),
+                                    ].divide(const SizedBox(height: 16.0)),
                                   ),
                                   Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -902,7 +900,7 @@ Sea */
                                         CrossAxisAlignment.stretch,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -934,7 +932,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -947,13 +945,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1018,16 +1016,16 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: ToggleIcon(
@@ -1056,7 +1054,7 @@ Sea */
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -1066,7 +1064,7 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
                                       Container(
@@ -1078,7 +1076,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -1091,13 +1089,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1162,16 +1160,16 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: ToggleIcon(
@@ -1200,7 +1198,7 @@ Sea */
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -1210,7 +1208,7 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
                                       Container(
@@ -1222,7 +1220,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -1235,13 +1233,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1306,16 +1304,16 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: ToggleIcon(
@@ -1344,7 +1342,7 @@ Sea */
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -1354,7 +1352,7 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
                                       Container(
@@ -1366,7 +1364,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -1379,13 +1377,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1450,16 +1448,16 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: ToggleIcon(
@@ -1488,7 +1486,7 @@ Sea */
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -1498,7 +1496,7 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
                                       Container(
@@ -1510,7 +1508,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -1523,13 +1521,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1594,10 +1592,10 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
@@ -1644,7 +1642,7 @@ Sea */
                                                       ],
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -1654,7 +1652,7 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
                                       Container(
@@ -1666,7 +1664,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -1679,13 +1677,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1750,10 +1748,10 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
@@ -1800,7 +1798,7 @@ Sea */
                                                       ],
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -1810,7 +1808,7 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
                                       Container(
@@ -1822,7 +1820,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -1835,13 +1833,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -1906,7 +1904,7 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Row(
@@ -1933,10 +1931,10 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
@@ -1983,7 +1981,7 @@ Sea */
                                                       ],
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -1993,7 +1991,7 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
                                       Container(
@@ -2005,7 +2003,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -2018,13 +2016,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -2089,7 +2087,7 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Row(
@@ -2116,10 +2114,10 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
@@ -2166,7 +2164,7 @@ Sea */
                                                       ],
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -2176,7 +2174,7 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
                                       Container(
@@ -2188,7 +2186,7 @@ Sea */
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -2201,13 +2199,13 @@ Sea */
                                                     height: 66.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -2272,7 +2270,7 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Row(
@@ -2299,10 +2297,10 @@ Sea */
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
@@ -2349,7 +2347,7 @@ Sea */
                                                       ],
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                             Divider(
@@ -2359,16 +2357,16 @@ Sea */
                                                   FlutterFlowTheme.of(context)
                                                       .greyG200,
                                             ),
-                                          ].divide(SizedBox(height: 20.0)),
+                                          ].divide(const SizedBox(height: 20.0)),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 16.0)),
+                                    ].divide(const SizedBox(height: 16.0)),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ]
-                                .divide(SizedBox(height: 16.0))
-                                .addToStart(SizedBox(height: 30.0)),
+                                .divide(const SizedBox(height: 16.0))
+                                .addToStart(const SizedBox(height: 30.0)),
                           ),
                         ),
                       ),
@@ -2376,11 +2374,11 @@ Sea */
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

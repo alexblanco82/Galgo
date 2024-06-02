@@ -4,8 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'updates_model.dart';
 export 'updates_model.dart';
 
@@ -45,11 +43,11 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Container(
+        body: SizedBox(
           width: double.infinity,
           height: double.infinity,
           child: Stack(
-            alignment: AlignmentDirectional(1.0, -1.0),
+            alignment: const AlignmentDirectional(1.0, -1.0),
             children: [
               Container(
                 width: double.infinity,
@@ -68,8 +66,8 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: CachedNetworkImage(
-                              fadeInDuration: Duration(milliseconds: 500),
-                              fadeOutDuration: Duration(milliseconds: 500),
+                              fadeInDuration: const Duration(milliseconds: 500),
+                              fadeOutDuration: const Duration(milliseconds: 500),
                               imageUrl:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/ja2k282ixoxn/Screenshot_2024-02-26_at_10.08.04.png',
                               width: double.infinity,
@@ -78,7 +76,7 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -96,11 +94,11 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 14.0)),
+                              ].divide(const SizedBox(width: 14.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -118,11 +116,11 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 14.0)),
+                              ].divide(const SizedBox(width: 14.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -140,13 +138,13 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 14.0)),
+                              ].divide(const SizedBox(width: 14.0)),
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 8.0, 16.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -171,18 +169,18 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                                     color: FlutterFlowTheme.of(context).primary,
                                     size: 16.0,
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 16.0)),
+                        ].divide(const SizedBox(height: 16.0)),
                       ),
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -203,9 +201,9 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                                 ),
                                 options: FFButtonOptions(
                                   height: 55.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 10.0, 16.0, 10.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).secondary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -217,7 +215,7 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                                         letterSpacing: 0.0,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -229,15 +227,15 @@ class _UpdatesWidgetState extends State<UpdatesWidget> {
                         ),
                       ],
                     ),
-                  ].addToEnd(SizedBox(height: 24.0)),
+                  ].addToEnd(const SizedBox(height: 24.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                 child: wrapWithModel(
                   model: _model.navigatorModel,
                   updateCallback: () => setState(() {}),
-                  child: NavigatorWidget(
+                  child: const NavigatorWidget(
                     expanded: false,
                   ),
                 ),

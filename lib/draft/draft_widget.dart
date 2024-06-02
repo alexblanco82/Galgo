@@ -1,10 +1,8 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'draft_model.dart';
 export 'draft_model.dart';
@@ -53,21 +51,21 @@ class _DraftWidgetState extends State<DraftWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Container(
                   width: 400.0,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Stack(
-                        alignment: AlignmentDirectional(1.0, -1.0),
+                        alignment: const AlignmentDirectional(1.0, -1.0),
                         children: [
                           ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: CachedNetworkImage(
-                              fadeInDuration: Duration(milliseconds: 500),
-                              fadeOutDuration: Duration(milliseconds: 500),
+                              fadeInDuration: const Duration(milliseconds: 500),
+                              fadeOutDuration: const Duration(milliseconds: 500),
                               imageUrl:
                                   'https://images.unsplash.com/photo-1615996001375-c7ef13294436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MDkzNjA3ODN8MA&ixlib=rb-4.0.3&q=80&w=1080',
                               width: double.infinity,
@@ -76,7 +74,7 @@ class _DraftWidgetState extends State<DraftWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 16.0, 16.0, 0.0),
                             child: ToggleIcon(
                               onPressed: () async {
@@ -211,9 +209,9 @@ class _DraftWidgetState extends State<DraftWidget> {
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
-                              ].divide(SizedBox(height: 4.0)),
+                              ].divide(const SizedBox(height: 4.0)),
                             ),
                           ),
                           Container(
@@ -245,9 +243,9 @@ class _DraftWidgetState extends State<DraftWidget> {
                               ],
                             ),
                           ),
-                        ].divide(SizedBox(width: 4.0)),
+                        ].divide(const SizedBox(width: 4.0)),
                       ),
-                    ].divide(SizedBox(height: 12.0)),
+                    ].divide(const SizedBox(height: 12.0)),
                   ),
                 ),
               ),
@@ -257,7 +255,7 @@ class _DraftWidgetState extends State<DraftWidget> {
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -315,14 +313,14 @@ class _DraftWidgetState extends State<DraftWidget> {
                                   ],
                                 ),
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       if (_model.showMore)
                                         Container(
                                           width: double.infinity,
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -387,7 +385,7 @@ class _DraftWidgetState extends State<DraftWidget> {
                                                       ),
                                                     ],
                                                   ),
-                                                ].divide(SizedBox(height: 2.0)),
+                                                ].divide(const SizedBox(height: 2.0)),
                                               ),
                                               Column(
                                                 mainAxisSize: MainAxisSize.max,
@@ -448,7 +446,7 @@ class _DraftWidgetState extends State<DraftWidget> {
                                                       ),
                                                     ],
                                                   ),
-                                                ].divide(SizedBox(height: 2.0)),
+                                                ].divide(const SizedBox(height: 2.0)),
                                               ),
                                               Column(
                                                 mainAxisSize: MainAxisSize.max,
@@ -509,7 +507,7 @@ class _DraftWidgetState extends State<DraftWidget> {
                                                       ),
                                                     ],
                                                   ),
-                                                ].divide(SizedBox(height: 2.0)),
+                                                ].divide(const SizedBox(height: 2.0)),
                                               ),
                                               Column(
                                                 mainAxisSize: MainAxisSize.max,
@@ -570,7 +568,7 @@ class _DraftWidgetState extends State<DraftWidget> {
                                                       ),
                                                     ],
                                                   ),
-                                                ].divide(SizedBox(height: 2.0)),
+                                                ].divide(const SizedBox(height: 2.0)),
                                               ),
                                             ],
                                           ),
@@ -585,10 +583,10 @@ class _DraftWidgetState extends State<DraftWidget> {
                                           setState(() {});
                                         },
                                         child: Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -614,7 +612,7 @@ class _DraftWidgetState extends State<DraftWidget> {
                                                       .primaryText,
                                                   size: 16.0,
                                                 ),
-                                              ].divide(SizedBox(width: 10.0)),
+                                              ].divide(const SizedBox(width: 10.0)),
                                             ),
                                           ),
                                         ),
@@ -622,16 +620,16 @@ class _DraftWidgetState extends State<DraftWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 4.0)),
+                              ].divide(const SizedBox(height: 4.0)),
                             ),
                           ),
-                        ].divide(SizedBox(width: 14.0)),
+                        ].divide(const SizedBox(width: 14.0)),
                       ),
                     ],
                   ),
                 ),
               ),
-            ].divide(SizedBox(height: 24.0)),
+            ].divide(const SizedBox(height: 24.0)),
           ),
         ),
       ),

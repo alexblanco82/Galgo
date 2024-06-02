@@ -5,11 +5,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'order_options_model.dart';
 export 'order_options_model.dart';
 
@@ -55,22 +52,22 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: wrapWithModel(
                           model: _model.headerIconPlusModel,
@@ -101,7 +98,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -124,7 +121,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -147,7 +144,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -172,13 +169,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                               Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -208,7 +205,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 4.0, 8.0, 4.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -238,10 +235,10 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
                                           checkboxTheme: CheckboxThemeData(
@@ -295,10 +292,10 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
                                           checkboxTheme: CheckboxThemeData(
@@ -352,10 +349,10 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
                                           checkboxTheme: CheckboxThemeData(
@@ -408,7 +405,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                               Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -417,7 +414,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -445,7 +442,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -472,16 +469,16 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                           ],
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 4.0)),
+                                    ].divide(const SizedBox(height: 4.0)),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -540,13 +537,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -593,13 +590,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -646,13 +643,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -699,13 +696,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -752,13 +749,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -804,13 +801,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                               Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -835,7 +832,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: TextFormField(
                                       controller: _model
@@ -844,7 +841,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                           .specialInstructionTextFieldFocusNode,
                                       onChanged: (_) => EasyDebounce.debounce(
                                         '_model.specialInstructionTextFieldTextController',
-                                        Duration(milliseconds: 500),
+                                        const Duration(milliseconds: 500),
                                         () => setState(() {}),
                                       ),
                                       autofocus: false,
@@ -871,7 +868,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 2.0,
                                           ),
@@ -879,7 +876,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                               BorderRadius.circular(0.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 2.0,
                                           ),
@@ -887,7 +884,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                               BorderRadius.circular(0.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 2.0,
                                           ),
@@ -895,7 +892,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                               BorderRadius.circular(0.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 2.0,
                                           ),
@@ -920,7 +917,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -944,10 +941,10 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -1017,7 +1014,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1042,13 +1039,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -1108,13 +1105,13 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -1173,10 +1170,10 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -1247,22 +1244,22 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 30.0))
-                                .addToStart(SizedBox(height: 30.0))
-                                .addToEnd(SizedBox(height: 24.0)),
+                                .divide(const SizedBox(height: 30.0))
+                                .addToStart(const SizedBox(height: 30.0))
+                                .addToEnd(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: ((_model.checkboxListTileValue1 ==
@@ -1279,9 +1276,9 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                   ),
                                   options: FFButtonOptions(
                                     height: 60.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).secondary,
@@ -1294,7 +1291,7 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Colors.transparent,
                                       width: 1.0,
                                     ),
@@ -1310,15 +1307,15 @@ class _OrderOptionsWidgetState extends State<OrderOptionsWidget> {
                           ],
                         ),
                       ),
-                    ].divide(SizedBox(height: 0.0)),
+                    ].divide(const SizedBox(height: 0.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

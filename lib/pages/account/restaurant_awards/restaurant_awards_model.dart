@@ -1,14 +1,9 @@
 import '/componnents/header/header_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
 import '/componnents/restaurant_card/restaurant_card_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'restaurant_awards_widget.dart' show RestaurantAwardsWidget;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class RestaurantAwardsModel extends FlutterFlowModel<RestaurantAwardsWidget> {
   ///  State fields for stateful widgets in this page.

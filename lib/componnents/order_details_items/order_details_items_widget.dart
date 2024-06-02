@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'order_details_items_model.dart';
 export 'order_details_items_model.dart';
 
@@ -13,7 +11,7 @@ class OrderDetailsItemsWidget extends StatefulWidget {
     this.title,
     this.details,
     bool? isEditable,
-  }) : this.isEditable = isEditable ?? false;
+  }) : isEditable = isEditable ?? false;
 
   final Widget? icon;
   final String? title;
@@ -53,12 +51,12 @@ class _OrderDetailsItemsWidgetState extends State<OrderDetailsItemsWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -92,9 +90,9 @@ class _OrderDetailsItemsWidgetState extends State<OrderDetailsItemsWidget> {
                                 letterSpacing: 0.0,
                               ),
                         ),
-                      ].divide(SizedBox(width: 4.0)),
+                      ].divide(const SizedBox(width: 4.0)),
                     ),
-                  ].divide(SizedBox(width: 16.0)),
+                  ].divide(const SizedBox(width: 16.0)),
                 ),
                 if (widget.isEditable)
                   Flexible(
@@ -104,7 +102,7 @@ class _OrderDetailsItemsWidgetState extends State<OrderDetailsItemsWidget> {
                         borderRadius: BorderRadius.circular(100.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             14.0, 10.0, 14.0, 10.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
@@ -123,7 +121,7 @@ class _OrderDetailsItemsWidgetState extends State<OrderDetailsItemsWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 10.0)),
+                          ].divide(const SizedBox(width: 10.0)),
                         ),
                       ),
                     ),
@@ -136,7 +134,7 @@ class _OrderDetailsItemsWidgetState extends State<OrderDetailsItemsWidget> {
             indent: 64.0,
             color: FlutterFlowTheme.of(context).greyG75,
           ),
-        ].divide(SizedBox(height: 16.0)),
+        ].divide(const SizedBox(height: 16.0)),
       ),
     );
   }

@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'select_choice_model.dart';
 export 'select_choice_model.dart';
 
@@ -12,7 +10,7 @@ class SelectChoiceWidget extends StatefulWidget {
     String? text,
     this.action,
     required this.activeItem,
-  }) : this.text = text ?? 'TITLE';
+  }) : text = text ?? 'TITLE';
 
   final String text;
   final Future Function(String? buttonName)? action;
@@ -66,7 +64,7 @@ class _SelectChoiceWidgetState extends State<SelectChoiceWidget> {
           borderRadius: BorderRadius.circular(100.0),
         ),
         child: Padding(
-          padding: EdgeInsets.all(4.0),
+          padding: const EdgeInsets.all(4.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -124,9 +122,9 @@ class _SelectChoiceWidgetState extends State<SelectChoiceWidget> {
                           ),
                     ),
                   ),
-                ].divide(SizedBox(width: 4.0)),
+                ].divide(const SizedBox(width: 4.0)),
               ),
-            ].divide(SizedBox(height: 4.0)),
+            ].divide(const SizedBox(height: 4.0)),
           ),
         ),
       ),

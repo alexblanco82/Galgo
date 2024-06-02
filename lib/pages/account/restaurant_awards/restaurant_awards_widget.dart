@@ -3,11 +3,8 @@ import '/componnents/navigator/navigator_widget.dart';
 import '/componnents/restaurant_card/restaurant_card_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'restaurant_awards_model.dart';
 export 'restaurant_awards_model.dart';
 
@@ -55,16 +52,16 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -73,7 +70,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           title: 'Restaurants',
                           showBackIcon: true,
                         ),
@@ -88,7 +85,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                               child: Column(
                                 children: [
                                   Align(
-                                    alignment: Alignment(0.0, 0),
+                                    alignment: const Alignment(0.0, 0),
                                     child: TabBar(
                                       labelColor: FlutterFlowTheme.of(context)
                                           .primaryText,
@@ -100,12 +97,12 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                             fontFamily: 'Nunito Sans',
                                             letterSpacing: 0.0,
                                           ),
-                                      unselectedLabelStyle: TextStyle(),
+                                      unselectedLabelStyle: const TextStyle(),
                                       indicatorColor:
                                           FlutterFlowTheme.of(context)
                                               .secondary,
                                       indicatorWeight: 3.0,
-                                      padding: EdgeInsets.all(4.0),
+                                      padding: const EdgeInsets.all(4.0),
                                       tabs: [
                                         Tab(
                                           text: FFLocalizations.of(context)
@@ -135,7 +132,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Row(
@@ -171,7 +168,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     child: wrapWithModel(
@@ -180,7 +177,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                       updateCallback: () =>
                                                           setState(() {}),
                                                       child:
-                                                          RestaurantCardWidget(
+                                                          const RestaurantCardWidget(
                                                         labelText:
                                                             '5 orders until 15 reward',
                                                         rate: 4.9,
@@ -189,7 +186,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     child: wrapWithModel(
@@ -198,7 +195,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                       updateCallback: () =>
                                                           setState(() {}),
                                                       child:
-                                                          RestaurantCardWidget(
+                                                          const RestaurantCardWidget(
                                                         labelText:
                                                             '5 orders until £15 reward',
                                                         rate: 4.3,
@@ -206,7 +203,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                     ),
                                                   ),
                                                 ].divide(
-                                                    SizedBox(height: 16.0)),
+                                                    const SizedBox(height: 16.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -214,7 +211,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
@@ -299,9 +296,9 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                 ],
                                               ),
                                             ]
-                                                .divide(SizedBox(height: 16.0))
+                                                .divide(const SizedBox(height: 16.0))
                                                 .addToStart(
-                                                    SizedBox(height: 24.0)),
+                                                    const SizedBox(height: 24.0)),
                                           ),
                                         ),
                                         SingleChildScrollView(
@@ -309,7 +306,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Row(
@@ -345,7 +342,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     child: wrapWithModel(
@@ -354,7 +351,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                       updateCallback: () =>
                                                           setState(() {}),
                                                       child:
-                                                          RestaurantCardWidget(
+                                                          const RestaurantCardWidget(
                                                         labelText:
                                                             '5 orders until £15 reward',
                                                         rate: 4.9,
@@ -363,7 +360,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     child: wrapWithModel(
@@ -372,7 +369,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                       updateCallback: () =>
                                                           setState(() {}),
                                                       child:
-                                                          RestaurantCardWidget(
+                                                          const RestaurantCardWidget(
                                                         labelText:
                                                             '5 orders until £15 reward',
                                                         rate: 4.3,
@@ -380,7 +377,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                     ),
                                                   ),
                                                 ].divide(
-                                                    SizedBox(height: 16.0)),
+                                                    const SizedBox(height: 16.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -388,7 +385,7 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
@@ -473,9 +470,9 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                                                 ],
                                               ),
                                             ]
-                                                .divide(SizedBox(height: 16.0))
+                                                .divide(const SizedBox(height: 16.0))
                                                 .addToStart(
-                                                    SizedBox(height: 24.0)),
+                                                    const SizedBox(height: 24.0)),
                                           ),
                                         ),
                                       ],
@@ -485,19 +482,19 @@ class _RestaurantAwardsWidgetState extends State<RestaurantAwardsWidget>
                               ),
                             ),
                           ]
-                              .divide(SizedBox(height: 30.0))
-                              .addToStart(SizedBox(height: 30.0)),
+                              .divide(const SizedBox(height: 30.0))
+                              .addToStart(const SizedBox(height: 30.0)),
                         ),
                       ),
                     ],
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

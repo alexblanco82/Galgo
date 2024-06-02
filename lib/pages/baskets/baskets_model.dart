@@ -1,13 +1,9 @@
 import '/componnents/empty_card/empty_card_widget.dart';
 import '/componnents/nav_bar/nav_bar_widget.dart';
 import '/componnents/navigator/navigator_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'baskets_widget.dart' show BasketsWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class BasketsModel extends FlutterFlowModel<BasketsWidget> {
   ///  Local state fields for this page.

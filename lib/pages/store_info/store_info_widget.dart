@@ -5,11 +5,8 @@ import '/componnents/store_info4_modal/store_info4_modal_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'store_info_model.dart';
 export 'store_info_model.dart';
 
@@ -49,16 +46,16 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Container(
+        body: SizedBox(
           width: double.infinity,
           height: double.infinity,
           child: Stack(
-            alignment: AlignmentDirectional(1.0, -1.0),
+            alignment: const AlignmentDirectional(1.0, -1.0),
             children: [
               Container(
                 width: double.infinity,
                 height: double.infinity,
-                decoration: BoxDecoration(),
+                decoration: const BoxDecoration(),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -66,14 +63,14 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                     Container(
                       width: 100.0,
                       height: 223.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(
                         children: [
                           ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: CachedNetworkImage(
-                              fadeInDuration: Duration(milliseconds: 500),
-                              fadeOutDuration: Duration(milliseconds: 500),
+                              fadeInDuration: const Duration(milliseconds: 500),
+                              fadeOutDuration: const Duration(milliseconds: 500),
                               imageUrl:
                                   'https://images.unsplash.com/photo-1615996001375-c7ef13294436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxmYXN0Zm9vZHxlbnwwfHx8fDE3MDk4ODc0MjN8MA&ixlib=rb-4.0.3&q=80&w=1080',
                               width: double.infinity,
@@ -82,7 +79,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 54.0, 8.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -155,14 +152,14 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                 padding:
                                                     MediaQuery.viewInsetsOf(
                                                         context),
-                                                child: StoreInfo4ModalWidget(),
+                                                child: const StoreInfo4ModalWidget(),
                                               ),
                                             );
                                           },
                                         ).then((value) => safeSetState(() {}));
                                       },
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
                               ],
                             ),
@@ -177,7 +174,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -200,7 +197,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -211,7 +208,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                   context.pushNamed('Store');
                                 },
                                 child: Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
@@ -278,7 +275,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 4.0)),
+                                              ].divide(const SizedBox(width: 4.0)),
                                             ),
                                             Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -300,7 +297,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 4.0)),
+                                              ].divide(const SizedBox(width: 4.0)),
                                             ),
                                             Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -322,9 +319,9 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 4.0)),
+                                              ].divide(const SizedBox(width: 4.0)),
                                             ),
-                                          ].divide(SizedBox(height: 4.0)),
+                                          ].divide(const SizedBox(height: 4.0)),
                                         ),
                                       ),
                                       Icon(
@@ -339,7 +336,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
@@ -347,7 +344,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                   borderRadius: BorderRadius.circular(100.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       4.0, 4.0, 4.0, 4.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -366,7 +363,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                   ?.animateToPage(
                                                 0,
                                                 duration:
-                                                    Duration(milliseconds: 500),
+                                                    const Duration(milliseconds: 500),
                                                 curve: Curves.ease,
                                               );
                                             },
@@ -387,22 +384,22 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                   ?.animateToPage(
                                                 1,
                                                 duration:
-                                                    Duration(milliseconds: 500),
+                                                    const Duration(milliseconds: 500),
                                                 curve: Curves.ease,
                                               );
                                             },
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ),
                             ),
                             Container(
                               height: 1500.0,
-                              decoration: BoxDecoration(),
-                              child: Container(
+                              decoration: const BoxDecoration(),
+                              child: SizedBox(
                                 width: double.infinity,
                                 child: PageView(
                                   physics: const NeverScrollableScrollPhysics(),
@@ -420,7 +417,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
@@ -433,7 +430,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                           100.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(16.0, 10.0,
                                                           16.0, 10.0),
                                                   child: Row(
@@ -471,7 +468,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 10.0)),
+                                                        const SizedBox(width: 10.0)),
                                                   ),
                                                 ),
                                               ),
@@ -480,7 +477,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -510,11 +507,11 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                               CrossAxisAlignment.stretch,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -604,16 +601,16 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -703,16 +700,16 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -802,16 +799,16 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -901,15 +898,15 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 16.0)),
+                                          ].divide(const SizedBox(height: 16.0)),
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 24.0))
-                                          .addToStart(SizedBox(height: 16.0)),
+                                          .divide(const SizedBox(height: 24.0))
+                                          .addToStart(const SizedBox(height: 16.0)),
                                     ),
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -920,7 +917,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
@@ -933,7 +930,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                           100.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(16.0, 10.0,
                                                           16.0, 10.0),
                                                   child: Row(
@@ -971,7 +968,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 10.0)),
+                                                        const SizedBox(width: 10.0)),
                                                   ),
                                                 ),
                                               ),
@@ -980,7 +977,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1010,7 +1007,7 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                           scrollDirection: Axis.vertical,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: InkWell(
@@ -1028,12 +1025,12 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       _model.pickedItedmModel1,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: PickedItedmWidget(),
+                                                  child: const PickedItedmWidget(),
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: InkWell(
@@ -1051,12 +1048,12 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       _model.pickedItedmModel2,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: PickedItedmWidget(),
+                                                  child: const PickedItedmWidget(),
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: InkWell(
@@ -1074,11 +1071,11 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       _model.pickedItedmModel3,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: PickedItedmWidget(),
+                                                  child: const PickedItedmWidget(),
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 24.0)),
+                                          ].divide(const SizedBox(height: 24.0)),
                                         ),
                                         Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -1086,11 +1083,11 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                               CrossAxisAlignment.stretch,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1180,16 +1177,16 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1279,16 +1276,16 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1378,16 +1375,16 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1477,23 +1474,23 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      SizedBox(height: 8.0)),
+                                                      const SizedBox(height: 8.0)),
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 16.0)),
+                                          ].divide(const SizedBox(height: 16.0)),
                                         ),
                                       ]
-                                          .divide(SizedBox(height: 24.0))
-                                          .addToStart(SizedBox(height: 16.0)),
+                                          .divide(const SizedBox(height: 24.0))
+                                          .addToStart(const SizedBox(height: 16.0)),
                                     ),
                                   ],
                                 ),
                               ),
                             ),
                           ]
-                              .divide(SizedBox(height: 16.0))
-                              .addToStart(SizedBox(height: 16.0)),
+                              .divide(const SizedBox(height: 16.0))
+                              .addToStart(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -1501,11 +1498,11 @@ class _StoreInfoWidgetState extends State<StoreInfoWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                 child: wrapWithModel(
                   model: _model.navigatorModel,
                   updateCallback: () => setState(() {}),
-                  child: NavigatorWidget(
+                  child: const NavigatorWidget(
                     expanded: false,
                   ),
                 ),

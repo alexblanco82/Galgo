@@ -4,12 +4,10 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'search_model.dart';
 export 'search_model.dart';
@@ -57,21 +55,21 @@ class _SearchWidgetState extends State<SearchWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Material(
                           color: Colors.transparent,
@@ -86,14 +84,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                               borderRadius: BorderRadius.circular(100.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 4.0, 16.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -123,7 +121,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               onChanged: (_) =>
                                                   EasyDebounce.debounce(
                                                 '_model.searchTextFieldTextController',
-                                                Duration(milliseconds: 200),
+                                                const Duration(milliseconds: 200),
                                                 () => setState(() {}),
                                               ),
                                               autofocus: false,
@@ -179,9 +177,6 @@ class _SearchWidgetState extends State<SearchWidget> {
                                           ),
                                           if (_model.searchTextFieldTextController
                                                       .text !=
-                                                  null &&
-                                              _model.searchTextFieldTextController
-                                                      .text !=
                                                   '')
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
@@ -206,11 +201,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                 });
                                               },
                                             ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 4.0)),
+                                ].divide(const SizedBox(width: 4.0)),
                               ),
                             ),
                           ),
@@ -301,7 +296,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -329,9 +324,9 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -380,14 +375,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -436,14 +431,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -492,14 +487,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -548,14 +543,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -604,14 +599,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -660,14 +655,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -716,14 +711,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -772,14 +767,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 8.0, 16.0, 8.0),
                                                 child: Row(
@@ -828,11 +823,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 16.0)),
+                                                      const SizedBox(width: 16.0)),
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 16.0)),
+                                          ].divide(const SizedBox(height: 16.0)),
                                         ),
                                       ),
                                     );
@@ -849,7 +844,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -878,18 +873,18 @@ class _SearchWidgetState extends State<SearchWidget> {
                                             scrollDirection: Axis.vertical,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
                                                       Stack(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         children: [
                                                           ClipRRect(
@@ -900,11 +895,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                             child:
                                                                 CachedNetworkImage(
                                                               fadeInDuration:
-                                                                  Duration(
+                                                                  const Duration(
                                                                       milliseconds:
                                                                           500),
                                                               fadeOutDuration:
-                                                                  Duration(
+                                                                  const Duration(
                                                                       milliseconds:
                                                                           500),
                                                               imageUrl:
@@ -917,7 +912,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         16.0,
@@ -1096,11 +1091,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                             ),
                                                                       ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           8.0)),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 4.0)),
                                                             ),
                                                           ),
@@ -1149,27 +1144,27 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                               ],
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 12.0)),
+                                                        const SizedBox(height: 12.0)),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
                                                       Stack(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         children: [
                                                           ClipRRect(
@@ -1180,11 +1175,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                             child:
                                                                 CachedNetworkImage(
                                                               fadeInDuration:
-                                                                  Duration(
+                                                                  const Duration(
                                                                       milliseconds:
                                                                           500),
                                                               fadeOutDuration:
-                                                                  Duration(
+                                                                  const Duration(
                                                                       milliseconds:
                                                                           500),
                                                               imageUrl:
@@ -1197,7 +1192,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         16.0,
@@ -1376,11 +1371,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                             ),
                                                                       ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           8.0)),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 4.0)),
                                                             ),
                                                           ),
@@ -1429,27 +1424,27 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                               ],
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 12.0)),
+                                                        const SizedBox(height: 12.0)),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
                                                       Stack(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         children: [
                                                           ClipRRect(
@@ -1460,11 +1455,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                             child:
                                                                 CachedNetworkImage(
                                                               fadeInDuration:
-                                                                  Duration(
+                                                                  const Duration(
                                                                       milliseconds:
                                                                           500),
                                                               fadeOutDuration:
-                                                                  Duration(
+                                                                  const Duration(
                                                                       milliseconds:
                                                                           500),
                                                               imageUrl:
@@ -1477,7 +1472,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         16.0,
@@ -1656,11 +1651,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                             ),
                                                                       ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           8.0)),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 4.0)),
                                                             ),
                                                           ),
@@ -1709,27 +1704,27 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                               ],
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 12.0)),
+                                                        const SizedBox(height: 12.0)),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
                                                       Stack(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, -1.0),
                                                         children: [
                                                           ClipRRect(
@@ -1740,11 +1735,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                             child:
                                                                 CachedNetworkImage(
                                                               fadeInDuration:
-                                                                  Duration(
+                                                                  const Duration(
                                                                       milliseconds:
                                                                           500),
                                                               fadeOutDuration:
-                                                                  Duration(
+                                                                  const Duration(
                                                                       milliseconds:
                                                                           500),
                                                               imageUrl:
@@ -1757,7 +1752,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         16.0,
@@ -1936,11 +1931,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                             ),
                                                                       ),
                                                                     ),
-                                                                  ].divide(SizedBox(
+                                                                  ].divide(const SizedBox(
                                                                       width:
                                                                           8.0)),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 4.0)),
                                                             ),
                                                           ),
@@ -1989,17 +1984,17 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                               ],
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 4.0)),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 12.0)),
+                                                        const SizedBox(height: 12.0)),
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 16.0)),
+                                            ].divide(const SizedBox(height: 16.0)),
                                           ),
-                                        ].divide(SizedBox(height: 16.0)),
+                                        ].divide(const SizedBox(height: 16.0)),
                                       ),
                                     );
                                   } else if (_model.choiceChipsValue ==
@@ -2017,7 +2012,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -2042,7 +2037,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Container(
                                               decoration: BoxDecoration(
@@ -2058,13 +2053,13 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                     height: 40.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -2193,7 +2188,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Divider(
@@ -2203,17 +2198,17 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                   .of(context)
                                                               .greyG200,
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Container(
                                               decoration: BoxDecoration(
@@ -2229,13 +2224,13 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                     height: 40.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -2364,7 +2359,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Divider(
@@ -2374,17 +2369,17 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                   .of(context)
                                                               .greyG200,
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Container(
                                               decoration: BoxDecoration(
@@ -2400,13 +2395,13 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                     height: 40.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -2535,7 +2530,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Divider(
@@ -2545,17 +2540,17 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                   .of(context)
                                                               .greyG200,
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Container(
                                               decoration: BoxDecoration(
@@ -2571,13 +2566,13 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                     height: 40.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -2706,7 +2701,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Divider(
@@ -2716,17 +2711,17 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                   .of(context)
                                                               .greyG200,
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Container(
                                               decoration: BoxDecoration(
@@ -2742,13 +2737,13 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                     height: 40.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -2877,7 +2872,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Divider(
@@ -2887,17 +2882,17 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                   .of(context)
                                                               .greyG200,
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Container(
                                               decoration: BoxDecoration(
@@ -2913,13 +2908,13 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                     height: 40.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -3048,7 +3043,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Divider(
@@ -3058,17 +3053,17 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                   .of(context)
                                                               .greyG200,
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Container(
                                               decoration: BoxDecoration(
@@ -3084,13 +3079,13 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                     height: 40.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: CachedNetworkImage(
-                                                      fadeInDuration: Duration(
+                                                      fadeInDuration: const Duration(
                                                           milliseconds: 500),
-                                                      fadeOutDuration: Duration(
+                                                      fadeOutDuration: const Duration(
                                                           milliseconds: 500),
                                                       imageUrl:
                                                           'https://images.unsplash.com/photo-1609167921178-e295a98f808f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8ZmFzdGZvb2R8ZW58MHx8fHwxNzA5NzA5MDA2fDA&ixlib=rb-4.0.3&q=80&w=400',
@@ -3219,7 +3214,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                     ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 4.0)),
                                                         ),
                                                         Divider(
@@ -3229,11 +3224,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                   .of(context)
                                                               .greyG200,
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 4.0)),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 14.0)),
+                                                ].divide(const SizedBox(width: 14.0)),
                                               ),
                                             ),
                                           ),
@@ -3241,14 +3236,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 8.0),
                                                     child: Row(
@@ -3278,14 +3273,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 8.0),
                                                     child: Row(
@@ -3315,14 +3310,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 8.0),
                                                     child: Row(
@@ -3352,14 +3347,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 8.0),
                                                     child: Row(
@@ -3391,16 +3386,16 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 20.0)),
+                                            ].divide(const SizedBox(height: 20.0)),
                                           ),
-                                        ].divide(SizedBox(height: 16.0)),
+                                        ].divide(const SizedBox(height: 16.0)),
                                       ),
                                     );
                                   } else if (_model.choiceChipsValue ==
                                       'Grocery') {
                                     return Container(
                                       width: double.infinity,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -3408,7 +3403,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -3441,7 +3436,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -3457,18 +3452,18 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         clipBehavior:
                                                             Clip.antiAlias,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
                                                         ),
                                                         child:
                                                             CachedNetworkImage(
                                                           fadeInDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           fadeOutDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           imageUrl:
@@ -3535,7 +3530,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
                                                             Row(
@@ -3563,10 +3558,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 4.0)),
                                                         ),
                                                       ),
@@ -3615,7 +3610,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 14.0)),
+                                                        const SizedBox(width: 14.0)),
                                                   ),
                                                 ),
                                                 Divider(
@@ -3625,7 +3620,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           context)
                                                       .greyG200,
                                                 ),
-                                              ].divide(SizedBox(height: 20.0)),
+                                              ].divide(const SizedBox(height: 20.0)),
                                             ),
                                           ),
                                           Container(
@@ -3638,7 +3633,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -3654,18 +3649,18 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         clipBehavior:
                                                             Clip.antiAlias,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
                                                         ),
                                                         child:
                                                             CachedNetworkImage(
                                                           fadeInDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           fadeOutDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           imageUrl:
@@ -3732,7 +3727,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
                                                             Row(
@@ -3760,10 +3755,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 4.0)),
                                                         ),
                                                       ),
@@ -3812,7 +3807,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 14.0)),
+                                                        const SizedBox(width: 14.0)),
                                                   ),
                                                 ),
                                                 Divider(
@@ -3822,7 +3817,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           context)
                                                       .greyG200,
                                                 ),
-                                              ].divide(SizedBox(height: 20.0)),
+                                              ].divide(const SizedBox(height: 20.0)),
                                             ),
                                           ),
                                           Container(
@@ -3835,7 +3830,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -3851,18 +3846,18 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         clipBehavior:
                                                             Clip.antiAlias,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
                                                         ),
                                                         child:
                                                             CachedNetworkImage(
                                                           fadeInDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           fadeOutDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           imageUrl:
@@ -3929,7 +3924,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
                                                             Row(
@@ -3957,10 +3952,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 4.0)),
                                                         ),
                                                       ),
@@ -4009,7 +4004,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 14.0)),
+                                                        const SizedBox(width: 14.0)),
                                                   ),
                                                 ),
                                                 Divider(
@@ -4019,7 +4014,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           context)
                                                       .greyG200,
                                                 ),
-                                              ].divide(SizedBox(height: 20.0)),
+                                              ].divide(const SizedBox(height: 20.0)),
                                             ),
                                           ),
                                           Container(
@@ -4032,7 +4027,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -4048,18 +4043,18 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         clipBehavior:
                                                             Clip.antiAlias,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
                                                         ),
                                                         child:
                                                             CachedNetworkImage(
                                                           fadeInDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           fadeOutDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           imageUrl:
@@ -4126,7 +4121,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
                                                             Row(
@@ -4154,10 +4149,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 4.0)),
                                                         ),
                                                       ),
@@ -4206,7 +4201,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 14.0)),
+                                                        const SizedBox(width: 14.0)),
                                                   ),
                                                 ),
                                                 Divider(
@@ -4216,7 +4211,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           context)
                                                       .greyG200,
                                                 ),
-                                              ].divide(SizedBox(height: 20.0)),
+                                              ].divide(const SizedBox(height: 20.0)),
                                             ),
                                           ),
                                           Container(
@@ -4229,7 +4224,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   child: Row(
@@ -4245,18 +4240,18 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         clipBehavior:
                                                             Clip.antiAlias,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
                                                         ),
                                                         child:
                                                             CachedNetworkImage(
                                                           fadeInDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           fadeOutDuration:
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       500),
                                                           imageUrl:
@@ -4323,7 +4318,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
                                                             Row(
@@ -4351,10 +4346,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4.0)),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               height: 4.0)),
                                                         ),
                                                       ),
@@ -4403,7 +4398,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 14.0)),
+                                                        const SizedBox(width: 14.0)),
                                                   ),
                                                 ),
                                                 Divider(
@@ -4413,21 +4408,21 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                           context)
                                                       .greyG200,
                                                 ),
-                                              ].divide(SizedBox(height: 20.0)),
+                                              ].divide(const SizedBox(height: 20.0)),
                                             ),
                                           ),
                                           Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 8.0),
                                                     child: Row(
@@ -4457,14 +4452,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 8.0),
                                                     child: Row(
@@ -4494,14 +4489,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 8.0),
                                                     child: Row(
@@ -4531,14 +4526,14 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
                                                                 0.0, 8.0),
                                                     child: Row(
@@ -4570,11 +4565,11 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 20.0)),
+                                            ].divide(const SizedBox(height: 20.0)),
                                           ),
                                         ]
-                                            .divide(SizedBox(height: 16.0))
-                                            .addToStart(SizedBox(height: 16.0)),
+                                            .divide(const SizedBox(height: 16.0))
+                                            .addToStart(const SizedBox(height: 16.0)),
                                       ),
                                     );
                                   } else {
@@ -4594,18 +4589,18 @@ class _SearchWidgetState extends State<SearchWidget> {
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 16.0))
-                        .addToStart(SizedBox(height: 24.0)),
+                        .divide(const SizedBox(height: 16.0))
+                        .addToStart(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.97, -0.67),
+                  alignment: const AlignmentDirectional(0.97, -0.67),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
                     child: wrapWithModel(
                       model: _model.navigatorModel,
                       updateCallback: () => setState(() {}),
-                      child: NavigatorWidget(
+                      child: const NavigatorWidget(
                         expanded: false,
                       ),
                     ),

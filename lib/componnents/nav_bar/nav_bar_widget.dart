@@ -2,8 +2,6 @@ import '/componnents/nav_bar_item/nav_bar_item_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'nav_bar_model.dart';
 export 'nav_bar_model.dart';
 
@@ -11,7 +9,7 @@ class NavBarWidget extends StatefulWidget {
   const NavBarWidget({
     super.key,
     String? activePage,
-  }) : this.activePage = activePage ?? 'Home';
+  }) : activePage = activePage ?? 'Home';
 
   final String activePage;
 
@@ -49,13 +47,13 @@ class _NavBarWidgetState extends State<NavBarWidget> {
       mainAxisSize: MainAxisSize.min,
       children: [
         Align(
-          alignment: AlignmentDirectional(0.0, 1.0),
+          alignment: const AlignmentDirectional(0.0, 1.0),
           child: Container(
             width: double.infinity,
             height: 65.0,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).primaryBackground,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   blurRadius: 12.0,
                   color: Color(0x13000000),
@@ -93,7 +91,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                       context.goNamed(
                         'Home',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                             duration: Duration(milliseconds: 0),
@@ -125,7 +123,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                       context.goNamed(
                         'Browse',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                             duration: Duration(milliseconds: 0),
@@ -157,7 +155,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                       context.goNamed(
                         'Baskets',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                             duration: Duration(milliseconds: 0),
@@ -189,7 +187,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                       context.goNamed(
                         'Account',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                             duration: Duration(milliseconds: 0),

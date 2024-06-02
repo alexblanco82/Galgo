@@ -8,8 +8,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'rate_courier_model.dart';
 export 'rate_courier_model.dart';
 
@@ -51,23 +49,23 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       wrapWithModel(
                         model: _model.headerModel,
                         updateCallback: () => setState(() {}),
-                        child: HeaderWidget(
+                        child: const HeaderWidget(
                           showBackIcon: true,
                         ),
                       ),
@@ -93,14 +91,14 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                       width: 84.0,
                                       height: 84.0,
                                       clipBehavior: Clip.antiAlias,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
                                       ),
                                       child: CachedNetworkImage(
                                         fadeInDuration:
-                                            Duration(milliseconds: 500),
+                                            const Duration(milliseconds: 500),
                                         fadeOutDuration:
-                                            Duration(milliseconds: 500),
+                                            const Duration(milliseconds: 500),
                                         imageUrl:
                                             'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyMHx8cHJvZmlsZXxlbnwwfHx8fDE3MTA4Mjk0MDl8MA&ixlib=rb-4.0.3&q=80&w=400',
                                         fit: BoxFit.cover,
@@ -119,7 +117,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                       Flexible(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   30.0, 0.0, 30.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
@@ -159,10 +157,10 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                       ),
                                     ],
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 24.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -212,7 +210,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                             },
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     SingleChildScrollView(
                                       scrollDirection: Axis.horizontal,
@@ -247,7 +245,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                             child: ServiceRateItemWidget(
                                               text: 'Quick and efficient',
                                               activeItem: _model.selectedRate,
-                                              color: Color(0xFF628FF2),
+                                              color: const Color(0xFF628FF2),
                                               action: (buttonName) async {
                                                 _model.selectedRate =
                                                     buttonName;
@@ -263,7 +261,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                             child: ServiceRateItemWidget(
                                               text: 'Perfect hand-off',
                                               activeItem: _model.selectedRate,
-                                              color: Color(0xFFD0E1E7),
+                                              color: const Color(0xFFD0E1E7),
                                               action: (buttonName) async {
                                                 _model.selectedRate =
                                                     buttonName;
@@ -290,8 +288,8 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                             ),
                                           ),
                                         ]
-                                            .divide(SizedBox(width: 14.0))
-                                            .addToStart(SizedBox(width: 16.0)),
+                                            .divide(const SizedBox(width: 14.0))
+                                            .addToStart(const SizedBox(width: 16.0)),
                                       ),
                                     ),
                                     Row(
@@ -301,9 +299,9 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                       children: [
                                         Flexible(
                                           child: Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Padding(
-                                              padding: EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
@@ -327,11 +325,11 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                         ),
                                       ],
                                     ),
-                                  ].divide(SizedBox(height: 24.0)),
+                                  ].divide(const SizedBox(height: 24.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 40.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -409,7 +407,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                                     padding:
                                                         MediaQuery.viewInsetsOf(
                                                             context),
-                                                    child: AddTipModalWidget(),
+                                                    child: const AddTipModalWidget(),
                                                   ),
                                                 );
                                               },
@@ -425,7 +423,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                                   BorderRadius.circular(100.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 10.0, 16.0, 10.0),
                                               child: Row(
@@ -458,7 +456,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -483,7 +481,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                                               ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 8.0)),
+                                                ].divide(const SizedBox(width: 8.0)),
                                               ),
                                             ),
                                           ),
@@ -512,13 +510,13 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                         ),
                                       ],
                                     ),
-                                  ].divide(SizedBox(height: 10.0)),
+                                  ].divide(const SizedBox(height: 10.0)),
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 16.0))
-                                .addToStart(SizedBox(height: 30.0))
-                                .addToEnd(SizedBox(height: 24.0)),
+                                .divide(const SizedBox(height: 16.0))
+                                .addToStart(const SizedBox(height: 30.0))
+                                .addToEnd(const SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
@@ -527,7 +525,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
@@ -538,9 +536,9 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                 ),
                                 options: FFButtonOptions(
                                   height: 60.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).secondary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -552,7 +550,7 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                                         letterSpacing: 0.0,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 0.0,
                                   ),
@@ -563,15 +561,15 @@ class _RateCourierWidgetState extends State<RateCourierWidget> {
                           ),
                         ],
                       ),
-                    ].addToEnd(SizedBox(height: 24.0)),
+                    ].addToEnd(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),

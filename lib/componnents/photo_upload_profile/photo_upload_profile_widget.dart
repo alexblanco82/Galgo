@@ -5,8 +5,6 @@ import '/flutter_flow/upload_data.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'photo_upload_profile_model.dart';
 export 'photo_upload_profile_model.dart';
 
@@ -56,14 +54,14 @@ class _PhotoUploadProfileWidgetState extends State<PhotoUploadProfileWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 120.0,
       height: 120.0,
       child: Stack(
-        alignment: AlignmentDirectional(0.0, 0.0),
+        alignment: const AlignmentDirectional(0.0, 0.0),
         children: [
           Align(
-            alignment: AlignmentDirectional(0.0, 0.0),
+            alignment: const AlignmentDirectional(0.0, 0.0),
             child: ClipOval(
               child: Container(
                 width: 120.0,
@@ -74,11 +72,11 @@ class _PhotoUploadProfileWidgetState extends State<PhotoUploadProfileWidget> {
                     color: FlutterFlowTheme.of(context).greyG300,
                   ),
                 ),
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   height: double.infinity,
                   child: Stack(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     children: [
                       if (_model.isDataUploading1)
                         ClipRRect(
@@ -160,8 +158,7 @@ class _PhotoUploadProfileWidgetState extends State<PhotoUploadProfileWidget> {
                       }
                     }
 
-                    if (_model.uploadedLocalFile1 != null &&
-                        (_model.uploadedLocalFile1.bytes?.isNotEmpty ??
+                    if ((_model.uploadedLocalFile1.bytes?.isNotEmpty ??
                             false)) {
                       _model.image1 = _model.image1;
                       _model.updatePage(() {});
@@ -173,14 +170,14 @@ class _PhotoUploadProfileWidgetState extends State<PhotoUploadProfileWidget> {
                     }
                   },
                 ),
-            ].divide(SizedBox(width: 5.0)),
+            ].divide(const SizedBox(width: 5.0)),
           ),
           if (_model.image1 != null && _model.image1 != '')
             Row(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: ClipOval(
                     child: Container(
                       width: 120.0,
@@ -191,23 +188,23 @@ class _PhotoUploadProfileWidgetState extends State<PhotoUploadProfileWidget> {
                           color: FlutterFlowTheme.of(context).greyG300,
                         ),
                       ),
-                      child: Container(
+                      child: SizedBox(
                         width: double.infinity,
                         height: double.infinity,
                         child: Stack(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(24.0),
                               child: CachedNetworkImage(
-                                fadeInDuration: Duration(milliseconds: 500),
-                                fadeOutDuration: Duration(milliseconds: 500),
+                                fadeInDuration: const Duration(milliseconds: 500),
+                                fadeOutDuration: const Duration(milliseconds: 500),
                                 imageUrl: _model.image1!,
                                 fit: BoxFit.contain,
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-0.67, 0.7),
+                              alignment: const AlignmentDirectional(-0.67, 0.7),
                               child: FlutterFlowIconButton(
                                 borderColor: Colors.transparent,
                                 borderRadius: 100.0,
@@ -265,8 +262,7 @@ class _PhotoUploadProfileWidgetState extends State<PhotoUploadProfileWidget> {
                                     }
                                   }
 
-                                  if (_model.uploadedLocalFile2 != null &&
-                                      (_model.uploadedLocalFile2.bytes
+                                  if ((_model.uploadedLocalFile2.bytes
                                               ?.isNotEmpty ??
                                           false)) {
                                     _model.image1 = '';
@@ -287,7 +283,7 @@ class _PhotoUploadProfileWidgetState extends State<PhotoUploadProfileWidget> {
                     ),
                   ),
                 ),
-              ].divide(SizedBox(width: 8.0)),
+              ].divide(const SizedBox(width: 8.0)),
             ),
         ],
       ),

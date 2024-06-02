@@ -1,13 +1,7 @@
 import '/componnents/navigator/navigator_widget.dart';
-import '/componnents/store_info4_modal/store_info4_modal_widget.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'order_picked_details_widget.dart' show OrderPickedDetailsWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class OrderPickedDetailsModel
     extends FlutterFlowModel<OrderPickedDetailsWidget> {

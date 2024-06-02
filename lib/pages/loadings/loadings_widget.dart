@@ -2,10 +2,7 @@ import '/componnents/loading_animation/loading_animation_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'loadings_model.dart';
 export 'loadings_model.dart';
 
@@ -71,7 +68,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 2.0,
         ),
@@ -82,7 +79,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -105,7 +102,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel1,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 1,
@@ -116,7 +113,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel2,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 1,
@@ -127,7 +124,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel3,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 1,
@@ -155,7 +152,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel4,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 2,
@@ -166,7 +163,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel5,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 2,
@@ -177,7 +174,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel6,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 2,
@@ -205,7 +202,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel7,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 3,
@@ -216,7 +213,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel8,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 3,
@@ -227,7 +224,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel9,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 3,
@@ -255,7 +252,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel10,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 4,
@@ -266,7 +263,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel11,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 4,
@@ -277,7 +274,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel12,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 4,
@@ -305,7 +302,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel13,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 5,
@@ -316,7 +313,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel14,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 5,
@@ -327,7 +324,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel15,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 5,
@@ -355,7 +352,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel16,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 6,
@@ -366,7 +363,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel17,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 6,
@@ -377,7 +374,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel18,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 6,
@@ -405,7 +402,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel19,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 7,
@@ -416,7 +413,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel20,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 7,
@@ -427,7 +424,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel21,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 7,
@@ -455,7 +452,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel22,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 8,
@@ -466,7 +463,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel23,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 8,
@@ -477,7 +474,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel24,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 8,
@@ -505,7 +502,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel25,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 9,
@@ -516,7 +513,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel26,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 9,
@@ -527,7 +524,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel27,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 9,
@@ -555,7 +552,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel28,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 10,
@@ -566,7 +563,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel29,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 10,
@@ -577,7 +574,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel30,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 10,
@@ -605,7 +602,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel31,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 11,
@@ -616,7 +613,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel32,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 11,
@@ -627,7 +624,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel33,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 11,
@@ -655,7 +652,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel34,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 12,
@@ -666,7 +663,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel35,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 12,
@@ -677,7 +674,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel36,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 12,
@@ -705,7 +702,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel37,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 13,
@@ -716,7 +713,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel38,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 13,
@@ -727,7 +724,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel39,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 13,
@@ -755,7 +752,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel40,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 14,
@@ -766,7 +763,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel41,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 14,
@@ -777,7 +774,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel42,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 14,
@@ -805,7 +802,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel43,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 15,
@@ -816,7 +813,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel44,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 15,
@@ -827,7 +824,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel45,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 15,
@@ -855,7 +852,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel46,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 16,
@@ -866,7 +863,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel47,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 16,
@@ -877,7 +874,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel48,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 16,
@@ -905,7 +902,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel49,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 17,
@@ -916,7 +913,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel50,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 17,
@@ -927,7 +924,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel51,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 17,
@@ -955,7 +952,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel52,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 18,
@@ -966,7 +963,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel53,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 18,
@@ -977,7 +974,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel54,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 18,
@@ -1005,7 +1002,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel55,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 19,
@@ -1016,7 +1013,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel56,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 19,
@@ -1027,7 +1024,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel57,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 19,
@@ -1055,7 +1052,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel58,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 75.0,
                                 height: 75.0,
                                 loadingAnimationNumner1to20: 20,
@@ -1066,7 +1063,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel59,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 50.0,
                                 height: 50.0,
                                 loadingAnimationNumner1to20: 20,
@@ -1077,7 +1074,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                             child: wrapWithModel(
                               model: _model.loadingAnimationModel60,
                               updateCallback: () => setState(() {}),
-                              child: LoadingAnimationWidget(
+                              child: const LoadingAnimationWidget(
                                 width: 25.0,
                                 height: 25.0,
                                 loadingAnimationNumner1to20: 20,
@@ -1086,7 +1083,7 @@ class _LoadingsWidgetState extends State<LoadingsWidget> {
                           ),
                         ],
                       ),
-                    ].divide(SizedBox(height: 16.0)),
+                    ].divide(const SizedBox(height: 16.0)),
                   ),
                 ),
               ],

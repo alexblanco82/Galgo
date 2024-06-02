@@ -2,13 +2,9 @@ import '/componnents/navigator/navigator_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'courier_details1_model.dart';
 export 'courier_details1_model.dart';
 
@@ -50,7 +46,7 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
@@ -58,15 +54,15 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                 Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 0.0, 8.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -113,7 +109,7 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                                           BorderRadius.circular(100.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 10.0, 16.0, 10.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -133,11 +129,11 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ],
                           ),
@@ -150,7 +146,7 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -173,7 +169,7 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -228,7 +224,7 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -252,7 +248,7 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -280,14 +276,14 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                                           FlutterFlowTheme.of(context).greyG300,
                                       size: 16.0,
                                     ),
-                                  ].divide(SizedBox(width: 4.0)),
+                                  ].divide(const SizedBox(width: 4.0)),
                                 ),
                               ),
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(0.0),
                                 child: CachedNetworkImage(
-                                  fadeInDuration: Duration(milliseconds: 500),
-                                  fadeOutDuration: Duration(milliseconds: 500),
+                                  fadeInDuration: const Duration(milliseconds: 500),
+                                  fadeOutDuration: const Duration(milliseconds: 500),
                                   imageUrl:
                                       'https://images.unsplash.com/photo-1478860409698-8707f313ee8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwyfHxtYXB8ZW58MHx8fHwxNzEyMDkyMzY5fDA&ixlib=rb-4.0.3&q=80&w=1080',
                                   width: double.infinity,
@@ -296,8 +292,8 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                                 ),
                               ),
                             ]
-                                .divide(SizedBox(height: 16.0))
-                                .addToStart(SizedBox(height: 16.0)),
+                                .divide(const SizedBox(height: 16.0))
+                                .addToStart(const SizedBox(height: 16.0)),
                           ),
                         ),
                       ),
@@ -305,14 +301,14 @@ class _CourierDetails1WidgetState extends State<CourierDetails1Widget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.96, -0.99),
+                  alignment: const AlignmentDirectional(0.96, -0.99),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 8.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 8.0, 0.0),
                     child: wrapWithModel(
                       model: _model.navigatorModel,
                       updateCallback: () => setState(() {}),
-                      child: NavigatorWidget(
+                      child: const NavigatorWidget(
                         expanded: false,
                       ),
                     ),

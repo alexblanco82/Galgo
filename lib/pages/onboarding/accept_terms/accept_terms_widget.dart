@@ -7,8 +7,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'accept_terms_model.dart';
 export 'accept_terms_model.dart';
 
@@ -50,11 +48,11 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
-              alignment: AlignmentDirectional(1.0, -1.0),
+              alignment: const AlignmentDirectional(1.0, -1.0),
               children: [
                 Container(
                   width: double.infinity,
@@ -71,7 +69,7 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -80,9 +78,9 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                     child: CachedNetworkImage(
                                       fadeInDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       fadeOutDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       imageUrl:
                                           'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/huber-eats-consumer-app-38yn7u/assets/1yoiptace4c3/Screenshot_2024-02-26_at_10.19.33.png',
                                       width: 77.0,
@@ -105,11 +103,11 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                                           ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 14.0)),
+                                ].divide(const SizedBox(width: 14.0)),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -217,14 +215,14 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                                 ],
                               ),
                             ),
-                          ].divide(SizedBox(height: 27.0)),
+                          ].divide(const SizedBox(height: 27.0)),
                         ),
                       ),
                       Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -233,7 +231,7 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                                   child: wrapWithModel(
                                     model: _model.dividerModel,
                                     updateCallback: () => setState(() {}),
-                                    child: DividerWidget(
+                                    child: const DividerWidget(
                                       hasText: false,
                                     ),
                                   ),
@@ -243,7 +241,7 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                           ),
                           Theme(
                             data: ThemeData(
-                              checkboxTheme: CheckboxThemeData(
+                              checkboxTheme: const CheckboxThemeData(
                                 visualDensity: VisualDensity.compact,
                                 materialTapTargetSize:
                                     MaterialTapTargetSize.shrinkWrap,
@@ -279,7 +277,7 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -322,9 +320,9 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                                   ),
                                   options: FFButtonOptions(
                                     height: 55.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 10.0, 16.0, 10.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).secondary,
@@ -337,7 +335,7 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Colors.transparent,
                                       width: 1.0,
                                     ),
@@ -354,16 +352,16 @@ class _AcceptTermsWidgetState extends State<AcceptTermsWidget> {
                         ],
                       ),
                     ]
-                        .addToStart(SizedBox(height: 20.0))
-                        .addToEnd(SizedBox(height: 24.0)),
+                        .addToStart(const SizedBox(height: 20.0))
+                        .addToEnd(const SizedBox(height: 24.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 8.0, 0.0),
                   child: wrapWithModel(
                     model: _model.navigatorModel,
                     updateCallback: () => setState(() {}),
-                    child: NavigatorWidget(
+                    child: const NavigatorWidget(
                       expanded: false,
                     ),
                   ),
